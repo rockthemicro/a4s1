@@ -49,7 +49,7 @@ long int is_prime(long int n) {
 	long int i = 5, w = 2;
 
 	if (n == 1)
-		return 0;
+		return 1;
 
 	if (n == 2)
 		return 1;
@@ -83,11 +83,16 @@ var * get_prime_1_svc(long int * nr, struct svc_req *cl) {
 
 	nr_recv = nr_recv < 0 ? (-nr_recv) : nr_recv;
 	if (nr_recv % 2 == 1) {
+		/*
+		 * daca e numar impar, il cautam in tabela hash de nr impare pentru a vedea
+		 * daca acesta e si prim
+		 */
 		struct is_prime *is_prime_p = NULL;
 		HASH_FIND_INT(prime_global_hash, &nr_recv, is_prime_p);
 
 		if (is_prime_p != NULL) {
 
+			/* daca il gasim in tabela, intoarcem raspunsul stocat acolo */
 			if (is_prime_p->is_prime == 0) {
 				sprintf(result.resp, "NO");
 				result.p = nr_recv;
@@ -98,6 +103,10 @@ var * get_prime_1_svc(long int * nr, struct svc_req *cl) {
 				result.q = 1;
 			}
 		} else {
+			/*
+			 * daca nu e in tabela, alocam o noua structura ce o vom insera
+			 * in tabela cu rezultatul rularii functiei is_prime
+			 */
 			is_prime_p = calloc(1, sizeof(*is_prime_p));
 			if (is_prime_p == NULL) {
 				fprintf(stderr, "No memory\n");
@@ -132,6 +141,11 @@ var * get_prime_1_svc(long int * nr, struct svc_req *cl) {
 			result.p = 1;
 			result.q = 1;
 
+		/*
+		 * if the number is even and there's an entry for it in the decomp_global_hash,
+		 * (which is a hashtable for storing even numers and a pair of primes which, if
+		 * added together, give you the even numbers) then we return those 2 numbers
+		 */
 		} else if (even_nr_decomp_p != NULL) {
 			result.p = even_nr_decomp_p->a;
 			result.q = even_nr_decomp_p->b;
@@ -145,6 +159,10 @@ var * get_prime_1_svc(long int * nr, struct svc_req *cl) {
 			}
 
 			even_nr_decomp_p->id = nr_recv;
+			/*
+			 * otherwise, we start looking at all the odd numbers smaller than nr, and
+			 * store the result in the table
+			 */
 			while (1) {
 				if (is_prime(start) == 1) {
 					if (is_prime(nr_recv - start) == 1) {
