@@ -1,0 +1,8 @@
+//actiuni
+
+-> skip;
+-> pushMode(modename);
+-> popMode;
+
+
+mode modename;

@@ -1,0 +1,55 @@
+class : CLASS
+A : CLASS_NAME
+{ : OPEN_AC
+x : ID
+: : DBL_DOT
+SELF_TYPE : SELF
+; : EOI
+} : CLOSED_AC
+; : EOI
+class : CLASS
+B : CLASS_NAME
+inherits : INHERITS
+A : CLASS_NAME
+{ : OPEN_AC
+y : ID
+: : DBL_DOT
+Int : CLASS_NAME
+<- : ASSIGN
+0 : NR
+; : EOI
+} : CLOSED_AC
+; : EOI
+<EOF> : EOF
+
+
+0:classA{x:SELF_TYPE;};classBinheritsA{y:Int<-0;};<EOF>  program
+
+  1:classA{x:SELF_TYPE;};  class_node
+
+    2:classA  class_header
+
+    3:x:SELF_TYPE;  class_body
+
+      4:x:SELF_TYPE  attr_or_meth
+
+        5:x:SELF_TYPE  attribute
+
+          6:SELF_TYPE  type
+
+  7:classBinheritsA{y:Int<-0;};  class_node
+
+    8:classBinheritsA  class_header
+
+    9:y:Int<-0;  class_body
+
+      10:y:Int<-0  attr_or_meth
+
+        11:y:Int<-0  attribute
+
+          12:Int  type
+
+          13:0  expr
+
+            14:0  constant
+

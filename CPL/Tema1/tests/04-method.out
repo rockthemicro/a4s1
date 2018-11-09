@@ -1,0 +1,106 @@
+class : CLASS
+A : CLASS_NAME
+{ : OPEN_AC
+x : ID
+: : DBL_DOT
+SELF_TYPE : SELF
+; : EOI
+f : ID
+( : OPEN_PAR
+) : CLOSED_PAR
+: : DBL_DOT
+Object : CLASS_NAME
+{ : OPEN_AC
+0 : NR
+} : CLOSED_AC
+; : EOI
+} : CLOSED_AC
+; : EOI
+class : CLASS
+B : CLASS_NAME
+inherits : INHERITS
+A : CLASS_NAME
+{ : OPEN_AC
+y : ID
+: : DBL_DOT
+Int : CLASS_NAME
+<- : ASSIGN
+0 : NR
+; : EOI
+g : ID
+( : OPEN_PAR
+x : ID
+: : DBL_DOT
+Int : CLASS_NAME
+, : COMMA
+y : ID
+: : DBL_DOT
+Bool : CLASS_NAME
+) : CLOSED_PAR
+: : DBL_DOT
+Int : CLASS_NAME
+{ : OPEN_AC
+0 : NR
+} : CLOSED_AC
+; : EOI
+} : CLOSED_AC
+; : EOI
+<EOF> : EOF
+
+
+0:classA{x:SELF_TYPE;f():Object{0};};classBinheritsA{y:Int<-0;g(x:Int,y:Bool):Int{0};};<EOF>  program
+
+  1:classA{x:SELF_TYPE;f():Object{0};};  class_node
+
+    2:classA  class_header
+
+    3:x:SELF_TYPE;f():Object{0};  class_body
+
+      4:x:SELF_TYPE  attr_or_meth
+
+        5:x:SELF_TYPE  attribute
+
+          6:SELF_TYPE  type
+
+      7:f():Object{0}  attr_or_meth
+
+        8:f():Object{0}  method
+
+          9:0  method_body
+
+            10:0  expr
+
+              11:0  constant
+
+  12:classBinheritsA{y:Int<-0;g(x:Int,y:Bool):Int{0};};  class_node
+
+    13:classBinheritsA  class_header
+
+    14:y:Int<-0;g(x:Int,y:Bool):Int{0};  class_body
+
+      15:y:Int<-0  attr_or_meth
+
+        16:y:Int<-0  attribute
+
+          17:Int  type
+
+          18:0  expr
+
+            19:0  constant
+
+      20:g(x:Int,y:Bool):Int{0}  attr_or_meth
+
+        21:g(x:Int,y:Bool):Int{0}  method
+
+          22:x:Int,y:Bool  method_params
+
+            23:Int  type
+
+            24:Bool  type
+
+          25:0  method_body
+
+            26:0  expr
+
+              27:0  constant
+

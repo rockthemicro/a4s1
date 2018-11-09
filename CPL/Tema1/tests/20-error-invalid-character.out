@@ -1,0 +1,15 @@
+class : CLASS
+A : CLASS_NAME
+{ : OPEN_AC
+x : ID
+: : DBL_DOT
+Int : CLASS_NAME
+; : EOI
+Invalid character: # : ERROR
+"20-error-invalid-character.cl", line 2:13, Lexical error: Invalid character: #
+} : CLOSED_AC
+; : EOI
+<EOF> : EOF
+
+
+Compilation halted

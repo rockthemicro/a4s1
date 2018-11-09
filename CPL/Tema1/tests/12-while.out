@@ -1,0 +1,68 @@
+class : CLASS
+A : CLASS_NAME
+{ : OPEN_AC
+f : ID
+( : OPEN_PAR
+x : ID
+: : DBL_DOT
+Int : CLASS_NAME
+) : CLOSED_PAR
+: : DBL_DOT
+Object : CLASS_NAME
+{ : OPEN_AC
+while : WHILE
+0 : NR
+< : LESS
+x : ID
+loop : LOOP
+x : ID
+<- : ASSIGN
+x : ID
+- : SUB
+1 : NR
+pool : POOL
+} : CLOSED_AC
+; : EOI
+} : CLOSED_AC
+; : EOI
+<EOF> : EOF
+
+
+0:classA{f(x:Int):Object{while0<xloopx<-x-1pool};};<EOF>  program
+
+  1:classA{f(x:Int):Object{while0<xloopx<-x-1pool};};  class_node
+
+    2:classA  class_header
+
+    3:f(x:Int):Object{while0<xloopx<-x-1pool};  class_body
+
+      4:f(x:Int):Object{while0<xloopx<-x-1pool}  attr_or_meth
+
+        5:f(x:Int):Object{while0<xloopx<-x-1pool}  method
+
+          6:x:Int  method_params
+
+            7:Int  type
+
+          8:while0<xloopx<-x-1pool  method_body
+
+            9:while0<xloopx<-x-1pool  expr
+
+              10:0<x  expr
+
+                11:0  expr
+
+                  12:0  constant
+
+                13:x  expr
+
+              14:x<-x-1  expr
+
+                15:x-1  expr
+
+                  16:x  expr
+
+                  17:1  expr
+
+                    18:1  constant
+

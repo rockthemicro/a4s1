@@ -1,0 +1,71 @@
+jupyter notebook
+
+reduce(lambda x, y: [y] + x, [4, 5, 6], [1, 2, 3])
+reduce(functie-lambda, lista-elem, acumulator)
+
+x = [1 , 2, 3]
+
+1. y = 4
+ [4] + x = [4] + [1, 2, 3] = [4, 1, 2, 3]
+....
+
+
+rezulta x = [6, 5, 4, 1, 2, 3]
+
+------------------------------------------------------------------------------
+
+dictionar.keys() intoarce toate cheile unui dictionar
+
+retrieve:
+dictionar.get(key) <=> dictionar[key]
+dictionar.get(key, error_value)
+
+atribuiri: dictionar['ana'] = 'are mere';
+
+
+------------------------------------------------------------------------------
+
+A* = Dijkstra + euristica
+
+noduri in graf: descoperite (stim ca exista), explorate (am generat toti vecinii pt el),
+neexplorate (nu stiu ca exista)
+la A* vom lucra doar cu nodurile descoperite si explorate
+
+Azi facem A* pt determinarea minimului
+
+- spatiul starilor
+- stare initiala
+- stare finala
+- euristica (functie de cost intre nodul curent si starea finala):
+h(st curenta, st finala) = cost_aproximativ
+De obicei lucram cu distanta euclidiana si distanta Manhattan
+
+x = (x0, x1)
+y = (y0, y1)
+notatie dubioasa a punctelor
+d(x, y) = rad((x0 - x1)^2 + (y0 - y1)^2) este distanta euclidiana
+
+d(x, y) = |x0 - y0| + |x1 - y1| este distanta manhtattan (laturile unei matrice pe care tre sa mergi
+de la casuta initiala la cea finala)
+
+- multimea nodurilor descoperite (notatie: open) -> coada de prioritati (cost, nod)
+- multimea nodurilro explorate (notatie: closed) -> dictionar ( nod = (parinte, cost) )
+cost = cost_real(stare_init, nod) + h(nod, stare_fin)
+
+open = (nod_start)
+closed = {}
+
+while Exista noduri in open:
+	extrag nodul de cost minim din open
+	if nodul e nod final
+		am termiant
+
+	pt fiecare succesor
+		calculez cost succesor = cost_real_nod_curent + 1
+		daca succesor Exista in closed:
+			daca cost succesor < cost_succesor_in_closed
+				closed[succesor] = (nod, cost_succesor)
+				push(succesor, open)
+
+		altfel
+			adaug succesor in open: push(succesor, open)

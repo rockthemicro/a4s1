@@ -1,0 +1,42 @@
+class : CLASS
+A : CLASS_NAME
+{ : OPEN_AC
+f : ID
+( : OPEN_PAR
+) : CLOSED_PAR
+: : DBL_DOT
+Bool : CLASS_NAME
+{ : OPEN_AC
+not : NOT
+isvoid : ISVOID
+new : NEW
+A : CLASS_NAME
+} : CLOSED_AC
+; : EOI
+} : CLOSED_AC
+; : EOI
+<EOF> : EOF
+
+
+0:classA{f():Bool{notisvoidnewA};};<EOF>  program
+
+  1:classA{f():Bool{notisvoidnewA};};  class_node
+
+    2:classA  class_header
+
+    3:f():Bool{notisvoidnewA};  class_body
+
+      4:f():Bool{notisvoidnewA}  attr_or_meth
+
+        5:f():Bool{notisvoidnewA}  method
+
+          6:notisvoidnewA  method_body
+
+            7:notisvoidnewA  expr
+
+              8:isvoidnewA  expr
+
+                9:newA  expr
+
+                  10:A  type
+

@@ -1,0 +1,83 @@
+rezolutie = metoda de inferenta
+
+- o sa folosim principiul respingerii rezolutiei
+- forma normal conjunctiva
+- avem o concluzie si ipoteze
+- ipotezele le aducem in FNC
+- negam concluzia si demonstram prin absurd (incercam sa ajungem la contradictie, adica la clauza
+vida, adica acel patrat)
+
+p -> q = ~p V q
+~(p ^ q) = !p V !q
+
+// modus pones
+P(A)
+Vx P(x) -> Q(x) in FNC: !P(x) V Q(x)
+----------------
+Q(A)
+
+
+
+--------------------- ex de la curs
+horses are faster than dogs
+there is a greyhound that is faster than every rabbit
+harry is a horse
+ralph is a rabbit
+
+derive that harry is faster than ralph
+
+1. Vx, Vy, Horse(x) ^ Dog(y) -> Faster(x, y)
+2. (Ex, Greyhound(x)) ^ (Vy, Rabbit(y)) -> Faster(x, y)
+3. Horse(Harry)
+4. Rabbit(Ralph)
+5. Vx, Vy, Vz Faster(x, y) ^ Faster(y, z) -> Faster(x, z)
+6. Vx, Greyhound(x) -> Dog(x)
+
+7 (C) : Faster(Harry, Ralph)
+
+Rezolvare:
+1. negam concluzia
+
+2. trecem toate clauzele in FNC
+	1. !(Horse(x) ^ Dog(y) V Faster(x, y)
+	   !Horse(x) V !Dog(y) V Faster(x, y)
+	2. valoare random lui Greyhound (cand ai E(xista) x)
+	   a. Greyhound(Greg)
+	   b. !Rabbit(y) V Faster(Greg, y)
+	3. Horse(Harry)
+	4. Rabbit(Ralph)
+	5. !Faster(x, y) V !Faster(y, z) V Faster(x, z)
+	6. !Greyhound(x) V Dog(x)
+
+3. aplicam unificare intre ele pana ajungem la clauza vida
+
+8. 2b-4 : !Rabbit(Ralph) V Faster(Greg, Ralph) V Rabbit(Ralph)
+	Faster(Greg, Ralph)
+	am folosit substitutia {y -> Ralph}
+
+9. 1-3 : {x -> Harry}
+	!Horse(Harry) V Dog(y) V Faster(Harry, y) V Horse(Harry)
+	!Dog(y) V Faster(Harry, y)
+
+10. 2a-6 : {x -> Greg}
+	Greyhound(Greg) V !Greyhound(Greg) V Dog(Greg)
+	dog(Greg)
+
+11. 9-10 : {y -> Greg}
+	!dog(Greg) V Faster(Harry, Greg) V Dog(Greg)
+	Faster(Harry, Greg)
+
+12. 8-5 : {x->Greg, y->Ralph} sau {y->Greg, z->Ralph} sau {x->Greg, z->Ralph}
+	O folosim pe a 2-a
+	!Faster(x, Greg) V !Faster(Greg, Ralph) V Faster(x, Ralph) V Faster(Greg, Ralph)
+	!Faster(x, Greg) V Faster(x, Ralph)
+
+13. 11-12 : {x -> Harry}
+	!Faster(Harry, Greg) V Faster(Harry, Greg) V Faster(Greg, Ralph)
+	Faster(Greg, Ralph)
+
+14. 13-7
+	Faster(Harry, Ralph) V !Faster(Harry, Ralph)
+
+e o greseala undeva pana la 13 :)) trebuia sa fie Faster(Harry, Ralph)
+

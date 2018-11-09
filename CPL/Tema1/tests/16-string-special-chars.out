@@ -1,0 +1,42 @@
+class : CLASS
+A : CLASS_NAME
+{ : OPEN_AC
+s1 : ID
+: : DBL_DOT
+String : CLASS_NAME
+<- : ASSIGN
+"ab\tcd" : STRING
+; : EOI
+s2 : ID
+: : DBL_DOT
+String : CLASS_NAME
+<- : ASSIGN
+"ab\ncd" : STRING
+; : EOI
+s3 : ID
+: : DBL_DOT
+String : CLASS_NAME
+<- : ASSIGN
+Unterminated string constant : ERROR
+"16-string-special-chars.cl", line 4:19, Lexical error: Unterminated string constant
+cd : ID
+Unterminated string constant : ERROR
+"16-string-special-chars.cl", line 5:2, Lexical error: Unterminated string constant
+s4 : ID
+: : DBL_DOT
+String : CLASS_NAME
+<- : ASSIGN
+"ab\\cd" : STRING
+; : EOI
+s5 : ID
+: : DBL_DOT
+String : CLASS_NAME
+<- : ASSIGN
+"ab\zcd" : STRING
+; : EOI
+} : CLOSED_AC
+; : EOI
+<EOF> : EOF
+
+
+Compilation halted

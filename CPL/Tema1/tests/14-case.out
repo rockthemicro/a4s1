@@ -1,0 +1,81 @@
+class : CLASS
+A : CLASS_NAME
+{ : OPEN_AC
+f : ID
+( : OPEN_PAR
+x : ID
+: : DBL_DOT
+Object : CLASS_NAME
+) : CLOSED_PAR
+: : DBL_DOT
+String : CLASS_NAME
+{ : OPEN_AC
+case : CASE
+x : ID
+of : OF
+s : ID
+: : DBL_DOT
+String : CLASS_NAME
+=> : TO
+"String" : STRING
+; : EOI
+i : ID
+: : DBL_DOT
+Int : CLASS_NAME
+=> : TO
+"Int" : STRING
+; : EOI
+o : ID
+: : DBL_DOT
+Object : CLASS_NAME
+=> : TO
+"Oops" : STRING
+; : EOI
+esac : ESAC
+} : CLOSED_AC
+; : EOI
+} : CLOSED_AC
+; : EOI
+<EOF> : EOF
+
+
+0:classA{f(x:Object):String{casexofs:String=>"String";i:Int=>"Int";o:Object=>"Oops";esac};};<EOF>  program
+
+  1:classA{f(x:Object):String{casexofs:String=>"String";i:Int=>"Int";o:Object=>"Oops";esac};};  class_node
+
+    2:classA  class_header
+
+    3:f(x:Object):String{casexofs:String=>"String";i:Int=>"Int";o:Object=>"Oops";esac};  class_body
+
+      4:f(x:Object):String{casexofs:String=>"String";i:Int=>"Int";o:Object=>"Oops";esac}  attr_or_meth
+
+        5:f(x:Object):String{casexofs:String=>"String";i:Int=>"Int";o:Object=>"Oops";esac}  method
+
+          6:x:Object  method_params
+
+            7:Object  type
+
+          8:casexofs:String=>"String";i:Int=>"Int";o:Object=>"Oops";esac  method_body
+
+            9:casexofs:String=>"String";i:Int=>"Int";o:Object=>"Oops";esac  expr
+
+              10:x  expr
+
+              11:String  type
+
+              12:"String"  expr
+
+                13:"String"  constant
+
+              14:Int  type
+
+              15:"Int"  expr
+
+                16:"Int"  constant
+
+              17:Object  type
+
+              18:"Oops"  expr
+
+                19:"Oops"  constant
+

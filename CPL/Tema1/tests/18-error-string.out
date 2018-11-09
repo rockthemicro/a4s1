@@ -1,0 +1,36 @@
+class : CLASS
+A : CLASS_NAME
+{ : OPEN_AC
+long : ID
+: : DBL_DOT
+String : CLASS_NAME
+<- : ASSIGN
+String constant too long : ERROR
+"18-error-string.cl", line 2:21, Lexical error: String constant too long
+; : EOI
+null : ID
+: : DBL_DOT
+String : CLASS_NAME
+<- : ASSIGN
+String contains null character : ERROR
+"18-error-string.cl", line 3:21, Lexical error: String contains null character
+b : ID
+Unterminated string constant : ERROR
+"18-error-string.cl", line 3:25, Lexical error: Unterminated string constant
+unterminated : ID
+: : DBL_DOT
+String : CLASS_NAME
+<- : ASSIGN
+Unterminated string constant : ERROR
+"18-error-string.cl", line 4:29, Lexical error: Unterminated string constant
+; : EOI
+eof : ID
+: : DBL_DOT
+String : CLASS_NAME
+<- : ASSIGN
+EOF in string constant : ERROR
+"18-error-string.cl", line 6:20, Lexical error: EOF in string constant
+<EOF> : EOF
+
+
+Compilation halted

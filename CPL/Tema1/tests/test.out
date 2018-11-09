@@ -1,0 +1,132 @@
+new : NEW
+SELF_TYPE : SELF
+a : ID
+<- : ASSIGN
+"ma\"ma" : STRING
+f : ID
+( : OPEN_PAR
+3 : NR
++ : PLUS
+10 : NR
+) : CLOSED_PAR
+( : OPEN_PAR
+a : ID
++ : PLUS
+b : ID
+) : CLOSED_PAR
+@ : AT
+Int : CLASS_NAME
+. : DOT
+func : ID
+( : OPEN_PAR
+{ : OPEN_AC
+9 : NR
++ : PLUS
+2 : NR
+; : EOI
+} : CLOSED_AC
+, : COMMA
+( : OPEN_PAR
+100 : NR
+) : CLOSED_PAR
+) : CLOSED_PAR
+mama : ID
+@ : AT
+Int : CLASS_NAME
+. : DOT
+funu : ID
+( : OPEN_PAR
+) : CLOSED_PAR
+. : DOT
+tata : ID
+( : OPEN_PAR
+) : CLOSED_PAR
+@ : AT
+Integer : CLASS_NAME
+. : DOT
+fdoi : ID
+( : OPEN_PAR
+) : CLOSED_PAR
+<EOF> : EOF
+
+
+0:newSELF_TYPEa<-"ma\"ma"f(3+10)(a+b)@Int.func({9+2;},(100))mama@Int.funu().tata()@Integer.fdoi()<EOF>  program
+
+  1:newSELF_TYPE  expr
+
+    2:SELF_TYPE  type
+
+  3:a<-"ma\"ma"  expr
+
+    4:"ma\"ma"  expr
+
+      5:"ma\"ma"  constant
+
+  6:f(3+10)  expr
+
+    7:f(3+10)  f_call
+
+      8:3+10  f_call_args
+
+        9:3+10  expr
+
+          10:3  expr
+
+            11:3  constant
+
+          12:10  expr
+
+            13:10  constant
+
+  14:(a+b)@Int.func({9+2;},(100))  expr
+
+    15:(a+b)  expr
+
+      16:a+b  expr
+
+        17:a  expr
+
+        18:b  expr
+
+    19:Int  type
+
+    20:func({9+2;},(100))  f_call
+
+      21:{9+2;},(100)  f_call_args
+
+        22:{9+2;}  expr
+
+          23:9+2  expr
+
+            24:9  expr
+
+              25:9  constant
+
+            26:2  expr
+
+              27:2  constant
+
+        28:(100)  expr
+
+          29:100  expr
+
+            30:100  constant
+
+  31:mama@Int.funu().tata()@Integer.fdoi()  expr
+
+    32:mama@Int.funu().tata()  expr
+
+      33:mama@Int.funu()  expr
+
+        34:mama  expr
+
+        35:Int  type
+
+        36:funu()  f_call
+
+      37:tata()  f_call
+
+    38:Integer  type
+
+    39:fdoi()  f_call
+

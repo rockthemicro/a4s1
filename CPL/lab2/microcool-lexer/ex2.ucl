@@ -1,0 +1,13 @@
+-- ignore ignore ignore
+
+
+fibo(x : Int) : Int {
+	if x	<
+	3 
+	then
+		1 -- sample comment 
+	else
+		fibo(x - 1) +
+		fibo(x - 2)      -- ignore
+};
+

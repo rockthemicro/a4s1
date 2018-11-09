@@ -1,0 +1,15 @@
+class : CLASS
+A : CLASS_NAME
+{ : OPEN_AC
+Unmatched *) : ERROR
+"19-error-comment.cl", line 2:4, Lexical error: Unmatched *)
+x : ID
+: : DBL_DOT
+Int : CLASS_NAME
+; : EOI
+EOF in comment : ERROR
+"19-error-comment.cl", line 6:4, Lexical error: EOF in comment
+<EOF> : EOF
+
+
+Compilation halted

@@ -1,0 +1,193 @@
+class : CLASS
+A : CLASS_NAME
+{ : OPEN_AC
+f : ID
+( : OPEN_PAR
+x : ID
+: : DBL_DOT
+Int : CLASS_NAME
+) : CLOSED_PAR
+: : DBL_DOT
+Bool : CLASS_NAME
+{ : OPEN_AC
+f : ID
+( : OPEN_PAR
+x : ID
++ : PLUS
+1 : NR
+) : CLOSED_PAR
+} : CLOSED_AC
+; : EOI
+g : ID
+( : OPEN_PAR
+x : ID
+: : DBL_DOT
+Int : CLASS_NAME
+, : COMMA
+y : ID
+: : DBL_DOT
+Int : CLASS_NAME
+) : CLOSED_PAR
+: : DBL_DOT
+Bool : CLASS_NAME
+{ : OPEN_AC
+self : ID
+. : DOT
+g : ID
+( : OPEN_PAR
+x : ID
++ : PLUS
+1 : NR
+, : COMMA
+y : ID
++ : PLUS
+1 : NR
+) : CLOSED_PAR
+} : CLOSED_AC
+; : EOI
+h : ID
+( : OPEN_PAR
+x : ID
+: : DBL_DOT
+Int : CLASS_NAME
+) : CLOSED_PAR
+: : DBL_DOT
+A : CLASS_NAME
+{ : OPEN_AC
+new : NEW
+A : CLASS_NAME
+@ : AT
+A : CLASS_NAME
+. : DOT
+h : ID
+( : OPEN_PAR
+x : ID
++ : PLUS
+1 : NR
+) : CLOSED_PAR
+. : DOT
+h : ID
+( : OPEN_PAR
+x : ID
++ : PLUS
+2 : NR
+) : CLOSED_PAR
+} : CLOSED_AC
+; : EOI
+} : CLOSED_AC
+; : EOI
+<EOF> : EOF
+
+
+0:classA{f(x:Int):Bool{f(x+1)};g(x:Int,y:Int):Bool{self.g(x+1,y+1)};h(x:Int):A{newA@A.h(x+1).h(x+2)};};<EOF>  program
+
+  1:classA{f(x:Int):Bool{f(x+1)};g(x:Int,y:Int):Bool{self.g(x+1,y+1)};h(x:Int):A{newA@A.h(x+1).h(x+2)};};  class_node
+
+    2:classA  class_header
+
+    3:f(x:Int):Bool{f(x+1)};g(x:Int,y:Int):Bool{self.g(x+1,y+1)};h(x:Int):A{newA@A.h(x+1).h(x+2)};  class_body
+
+      4:f(x:Int):Bool{f(x+1)}  attr_or_meth
+
+        5:f(x:Int):Bool{f(x+1)}  method
+
+          6:x:Int  method_params
+
+            7:Int  type
+
+          8:f(x+1)  method_body
+
+            9:f(x+1)  expr
+
+              10:f(x+1)  f_call
+
+                11:x+1  f_call_args
+
+                  12:x+1  expr
+
+                    13:x  expr
+
+                    14:1  expr
+
+                      15:1  constant
+
+      16:g(x:Int,y:Int):Bool{self.g(x+1,y+1)}  attr_or_meth
+
+        17:g(x:Int,y:Int):Bool{self.g(x+1,y+1)}  method
+
+          18:x:Int,y:Int  method_params
+
+            19:Int  type
+
+            20:Int  type
+
+          21:self.g(x+1,y+1)  method_body
+
+            22:self.g(x+1,y+1)  expr
+
+              23:self  expr
+
+              24:g(x+1,y+1)  f_call
+
+                25:x+1,y+1  f_call_args
+
+                  26:x+1  expr
+
+                    27:x  expr
+
+                    28:1  expr
+
+                      29:1  constant
+
+                  30:y+1  expr
+
+                    31:y  expr
+
+                    32:1  expr
+
+                      33:1  constant
+
+      34:h(x:Int):A{newA@A.h(x+1).h(x+2)}  attr_or_meth
+
+        35:h(x:Int):A{newA@A.h(x+1).h(x+2)}  method
+
+          36:x:Int  method_params
+
+            37:Int  type
+
+          38:newA@A.h(x+1).h(x+2)  method_body
+
+            39:newA@A.h(x+1).h(x+2)  expr
+
+              40:newA@A.h(x+1)  expr
+
+                41:newA  expr
+
+                  42:A  type
+
+                43:A  type
+
+                44:h(x+1)  f_call
+
+                  45:x+1  f_call_args
+
+                    46:x+1  expr
+
+                      47:x  expr
+
+                      48:1  expr
+
+                        49:1  constant
+
+              50:h(x+2)  f_call
+
+                51:x+2  f_call_args
+
+                  52:x+2  expr
+
+                    53:x  expr
+
+                    54:2  expr
+
+                      55:2  constant
+

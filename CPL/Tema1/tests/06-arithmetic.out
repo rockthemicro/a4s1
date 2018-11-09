@@ -1,0 +1,83 @@
+class : CLASS
+A : CLASS_NAME
+{ : OPEN_AC
+n : ID
+: : DBL_DOT
+Int : CLASS_NAME
+<- : ASSIGN
+1 : NR
++ : PLUS
+2 : NR
+* : MUL
+( : OPEN_PAR
+3 : NR
++ : PLUS
+4 : NR
+) : CLOSED_PAR
+/ : DIV
+( : OPEN_PAR
+5 : NR
+- : SUB
+~ : NEG
+6 : NR
+) : CLOSED_PAR
+; : EOI
+} : CLOSED_AC
+; : EOI
+<EOF> : EOF
+
+
+0:classA{n:Int<-1+2*(3+4)/(5-~6);};<EOF>  program
+
+  1:classA{n:Int<-1+2*(3+4)/(5-~6);};  class_node
+
+    2:classA  class_header
+
+    3:n:Int<-1+2*(3+4)/(5-~6);  class_body
+
+      4:n:Int<-1+2*(3+4)/(5-~6)  attr_or_meth
+
+        5:n:Int<-1+2*(3+4)/(5-~6)  attribute
+
+          6:Int  type
+
+          7:1+2*(3+4)/(5-~6)  expr
+
+            8:1  expr
+
+              9:1  constant
+
+            10:2*(3+4)/(5-~6)  expr
+
+              11:2*(3+4)  expr
+
+                12:2  expr
+
+                  13:2  constant
+
+                14:(3+4)  expr
+
+                  15:3+4  expr
+
+                    16:3  expr
+
+                      17:3  constant
+
+                    18:4  expr
+
+                      19:4  constant
+
+              20:(5-~6)  expr
+
+                21:5-~6  expr
+
+                  22:5  expr
+
+                    23:5  constant
+
+                  24:~6  expr
+
+                    25:6  expr
+
+                      26:6  constant
+

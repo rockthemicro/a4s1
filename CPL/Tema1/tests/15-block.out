@@ -1,0 +1,63 @@
+class : CLASS
+A : CLASS_NAME
+{ : OPEN_AC
+f : ID
+( : OPEN_PAR
+x : ID
+: : DBL_DOT
+Int : CLASS_NAME
+) : CLOSED_PAR
+: : DBL_DOT
+String : CLASS_NAME
+{ : OPEN_AC
+{ : OPEN_AC
+x : ID
+<- : ASSIGN
+x : ID
++ : PLUS
+1 : NR
+; : EOI
+"Done!" : STRING
+; : EOI
+} : CLOSED_AC
+} : CLOSED_AC
+; : EOI
+} : CLOSED_AC
+; : EOI
+<EOF> : EOF
+
+
+0:classA{f(x:Int):String{{x<-x+1;"Done!";}};};<EOF>  program
+
+  1:classA{f(x:Int):String{{x<-x+1;"Done!";}};};  class_node
+
+    2:classA  class_header
+
+    3:f(x:Int):String{{x<-x+1;"Done!";}};  class_body
+
+      4:f(x:Int):String{{x<-x+1;"Done!";}}  attr_or_meth
+
+        5:f(x:Int):String{{x<-x+1;"Done!";}}  method
+
+          6:x:Int  method_params
+
+            7:Int  type
+
+          8:{x<-x+1;"Done!";}  method_body
+
+            9:{x<-x+1;"Done!";}  expr
+
+              10:x<-x+1  expr
+
+                11:x+1  expr
+
+                  12:x  expr
+
+                  13:1  expr
+
+                    14:1  constant
+
+              15:"Done!"  expr
+
+                16:"Done!"  constant
+

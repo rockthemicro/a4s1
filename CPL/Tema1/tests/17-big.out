@@ -1,0 +1,752 @@
+class : CLASS
+List : CLASS_NAME
+inherits : INHERITS
+IO : CLASS_NAME
+{ : OPEN_AC
+elem : ID
+: : DBL_DOT
+Object : CLASS_NAME
+; : EOI
+next : ID
+: : DBL_DOT
+List : CLASS_NAME
+; : EOI
+init : ID
+( : OPEN_PAR
+e : ID
+: : DBL_DOT
+Object : CLASS_NAME
+, : COMMA
+n : ID
+: : DBL_DOT
+List : CLASS_NAME
+) : CLOSED_PAR
+: : DBL_DOT
+List : CLASS_NAME
+{ : OPEN_AC
+{ : OPEN_AC
+elem : ID
+<- : ASSIGN
+e : ID
+; : EOI
+next : ID
+<- : ASSIGN
+n : ID
+; : EOI
+self : ID
+; : EOI
+} : CLOSED_AC
+} : CLOSED_AC
+; : EOI
+print : ID
+( : OPEN_PAR
+) : CLOSED_PAR
+: : DBL_DOT
+IO : CLASS_NAME
+{ : OPEN_AC
+let : LET
+str : ID
+: : DBL_DOT
+String : CLASS_NAME
+<- : ASSIGN
+case : CASE
+elem : ID
+of : OF
+s : ID
+: : DBL_DOT
+String : CLASS_NAME
+=> : TO
+s : ID
+; : EOI
+n : ID
+: : DBL_DOT
+Int : CLASS_NAME
+=> : TO
+new : NEW
+A2I : CLASS_NAME
+. : DOT
+i2a : ID
+( : OPEN_PAR
+n : ID
+) : CLOSED_PAR
+; : EOI
+o : ID
+: : DBL_DOT
+Object : CLASS_NAME
+=> : TO
+{ : OPEN_AC
+abort : ID
+( : OPEN_PAR
+) : CLOSED_PAR
+; : EOI
+"" : STRING
+; : EOI
+} : CLOSED_AC
+; : EOI
+esac : ESAC
+in : IN
+{ : OPEN_AC
+out_string : ID
+( : OPEN_PAR
+str : ID
+. : DOT
+concat : ID
+( : OPEN_PAR
+" " : STRING
+) : CLOSED_PAR
+) : CLOSED_PAR
+; : EOI
+if : IF
+( : OPEN_PAR
+isvoid : ISVOID
+next : ID
+) : CLOSED_PAR
+then : THEN
+out_string : ID
+( : OPEN_PAR
+"\n" : STRING
+) : CLOSED_PAR
+else : ELSE
+next : ID
+. : DOT
+print : ID
+( : OPEN_PAR
+) : CLOSED_PAR
+fi : FI
+; : EOI
+} : CLOSED_AC
+} : CLOSED_AC
+; : EOI
+} : CLOSED_AC
+; : EOI
+class : CLASS
+Main : CLASS_NAME
+inherits : INHERITS
+IO : CLASS_NAME
+{ : OPEN_AC
+main : ID
+( : OPEN_PAR
+) : CLOSED_PAR
+: : DBL_DOT
+Object : CLASS_NAME
+{ : OPEN_AC
+{ : OPEN_AC
+let : LET
+x : ID
+: : DBL_DOT
+Int : CLASS_NAME
+<- : ASSIGN
+0 : NR
+, : COMMA
+y : ID
+: : DBL_DOT
+String : CLASS_NAME
+<- : ASSIGN
+"!" : STRING
+, : COMMA
+z : ID
+: : DBL_DOT
+Int : CLASS_NAME
+<- : ASSIGN
+x : ID
++ : PLUS
+2 : NR
+, : COMMA
+empty : ID
+: : DBL_DOT
+List : CLASS_NAME
+, : COMMA
+list : ID
+: : DBL_DOT
+List : CLASS_NAME
+<- : ASSIGN
+new : NEW
+List : CLASS_NAME
+. : DOT
+init : ID
+( : OPEN_PAR
+x : ID
+, : COMMA
+new : NEW
+List : CLASS_NAME
+. : DOT
+init : ID
+( : OPEN_PAR
+y : ID
+, : COMMA
+new : NEW
+List : CLASS_NAME
+. : DOT
+init : ID
+( : OPEN_PAR
+z : ID
+, : COMMA
+empty : ID
+) : CLOSED_PAR
+) : CLOSED_PAR
+) : CLOSED_PAR
+in : IN
+list : ID
+. : DOT
+print : ID
+( : OPEN_PAR
+) : CLOSED_PAR
+; : EOI
+let : LET
+n : ID
+: : DBL_DOT
+Int : CLASS_NAME
+<- : ASSIGN
+out_string : ID
+( : OPEN_PAR
+"Calculăm factorial pentru: " : STRING
+) : CLOSED_PAR
+. : DOT
+in_int : ID
+( : OPEN_PAR
+) : CLOSED_PAR
+in : IN
+{ : OPEN_AC
+out_string : ID
+( : OPEN_PAR
+"Factorial recursiv: " : STRING
+) : CLOSED_PAR
+. : DOT
+out_int : ID
+( : OPEN_PAR
+fact_rec : ID
+( : OPEN_PAR
+n : ID
+) : CLOSED_PAR
+) : CLOSED_PAR
+. : DOT
+out_string : ID
+( : OPEN_PAR
+"\n" : STRING
+) : CLOSED_PAR
+; : EOI
+out_string : ID
+( : OPEN_PAR
+"Factorial iterativ: " : STRING
+) : CLOSED_PAR
+. : DOT
+out_int : ID
+( : OPEN_PAR
+fact_iter : ID
+( : OPEN_PAR
+n : ID
+) : CLOSED_PAR
+) : CLOSED_PAR
+. : DOT
+out_string : ID
+( : OPEN_PAR
+"\n" : STRING
+) : CLOSED_PAR
+; : EOI
+} : CLOSED_AC
+; : EOI
+} : CLOSED_AC
+} : CLOSED_AC
+; : EOI
+fact_rec : ID
+( : OPEN_PAR
+n : ID
+: : DBL_DOT
+Int : CLASS_NAME
+) : CLOSED_PAR
+: : DBL_DOT
+Int : CLASS_NAME
+{ : OPEN_AC
+if : IF
+n : ID
+= : EQ
+0 : NR
+then : THEN
+1 : NR
+else : ELSE
+n : ID
+* : MUL
+fact_rec : ID
+( : OPEN_PAR
+n : ID
+- : SUB
+1 : NR
+) : CLOSED_PAR
+fi : FI
+} : CLOSED_AC
+; : EOI
+fact_iter : ID
+( : OPEN_PAR
+n : ID
+: : DBL_DOT
+Int : CLASS_NAME
+) : CLOSED_PAR
+: : DBL_DOT
+Int : CLASS_NAME
+{ : OPEN_AC
+let : LET
+res : ID
+: : DBL_DOT
+Int : CLASS_NAME
+<- : ASSIGN
+1 : NR
+in : IN
+{ : OPEN_AC
+while : WHILE
+( : OPEN_PAR
+not : NOT
+( : OPEN_PAR
+n : ID
+= : EQ
+0 : NR
+) : CLOSED_PAR
+) : CLOSED_PAR
+loop : LOOP
+{ : OPEN_AC
+res : ID
+<- : ASSIGN
+res : ID
+* : MUL
+n : ID
+; : EOI
+n : ID
+<- : ASSIGN
+n : ID
+- : SUB
+1 : NR
+; : EOI
+} : CLOSED_AC
+pool : POOL
+; : EOI
+res : ID
+; : EOI
+} : CLOSED_AC
+} : CLOSED_AC
+; : EOI
+} : CLOSED_AC
+; : EOI
+<EOF> : EOF
+
+
+0:classListinheritsIO{elem:Object;next:List;init(e:Object,n:List):List{{elem<-e;next<-n;self;}};print():IO{letstr:String<-caseelemofs:String=>s;n:Int=>newA2I.i2a(n);o:Object=>{abort();"";};esacin{out_string(str.concat(" "));if(isvoidnext)thenout_string("\n")elsenext.print()fi;}};};classMaininheritsIO{main():Object{{letx:Int<-0,y:String<-"!",z:Int<-x+2,empty:List,list:List<-newList.init(x,newList.init(y,newList.init(z,empty)))inlist.print();letn:Int<-out_string("Calculăm factorial pentru: ").in_int()in{out_string("Factorial recursiv: ").out_int(fact_rec(n)).out_string("\n");out_string("Factorial iterativ: ").out_int(fact_iter(n)).out_string("\n");};}};fact_rec(n:Int):Int{ifn=0then1elsen*fact_rec(n-1)fi};fact_iter(n:Int):Int{letres:Int<-1in{while(not(n=0))loop{res<-res*n;n<-n-1;}pool;res;}};};<EOF>  program
+
+  1:classListinheritsIO{elem:Object;next:List;init(e:Object,n:List):List{{elem<-e;next<-n;self;}};print():IO{letstr:String<-caseelemofs:String=>s;n:Int=>newA2I.i2a(n);o:Object=>{abort();"";};esacin{out_string(str.concat(" "));if(isvoidnext)thenout_string("\n")elsenext.print()fi;}};};  class_node
+
+    2:classListinheritsIO  class_header
+
+    3:elem:Object;next:List;init(e:Object,n:List):List{{elem<-e;next<-n;self;}};print():IO{letstr:String<-caseelemofs:String=>s;n:Int=>newA2I.i2a(n);o:Object=>{abort();"";};esacin{out_string(str.concat(" "));if(isvoidnext)thenout_string("\n")elsenext.print()fi;}};  class_body
+
+      4:elem:Object  attr_or_meth
+
+        5:elem:Object  attribute
+
+          6:Object  type
+
+      7:next:List  attr_or_meth
+
+        8:next:List  attribute
+
+          9:List  type
+
+      10:init(e:Object,n:List):List{{elem<-e;next<-n;self;}}  attr_or_meth
+
+        11:init(e:Object,n:List):List{{elem<-e;next<-n;self;}}  method
+
+          12:e:Object,n:List  method_params
+
+            13:Object  type
+
+            14:List  type
+
+          15:{elem<-e;next<-n;self;}  method_body
+
+            16:{elem<-e;next<-n;self;}  expr
+
+              17:elem<-e  expr
+
+                18:e  expr
+
+              19:next<-n  expr
+
+                20:n  expr
+
+              21:self  expr
+
+      22:print():IO{letstr:String<-caseelemofs:String=>s;n:Int=>newA2I.i2a(n);o:Object=>{abort();"";};esacin{out_string(str.concat(" "));if(isvoidnext)thenout_string("\n")elsenext.print()fi;}}  attr_or_meth
+
+        23:print():IO{letstr:String<-caseelemofs:String=>s;n:Int=>newA2I.i2a(n);o:Object=>{abort();"";};esacin{out_string(str.concat(" "));if(isvoidnext)thenout_string("\n")elsenext.print()fi;}}  method
+
+          24:letstr:String<-caseelemofs:String=>s;n:Int=>newA2I.i2a(n);o:Object=>{abort();"";};esacin{out_string(str.concat(" "));if(isvoidnext)thenout_string("\n")elsenext.print()fi;}  method_body
+
+            25:letstr:String<-caseelemofs:String=>s;n:Int=>newA2I.i2a(n);o:Object=>{abort();"";};esacin{out_string(str.concat(" "));if(isvoidnext)thenout_string("\n")elsenext.print()fi;}  expr
+
+              26:str:String<-caseelemofs:String=>s;n:Int=>newA2I.i2a(n);o:Object=>{abort();"";};esac  let_bind
+
+                27:String  type
+
+                28:caseelemofs:String=>s;n:Int=>newA2I.i2a(n);o:Object=>{abort();"";};esac  expr
+
+                  29:elem  expr
+
+                  30:String  type
+
+                  31:s  expr
+
+                  32:Int  type
+
+                  33:newA2I.i2a(n)  expr
+
+                    34:newA2I  expr
+
+                      35:A2I  type
+
+                    36:i2a(n)  f_call
+
+                      37:n  f_call_args
+
+                        38:n  expr
+
+                  39:Object  type
+
+                  40:{abort();"";}  expr
+
+                    41:abort()  expr
+
+                      42:abort()  f_call
+
+                    43:""  expr
+
+                      44:""  constant
+
+              45:{out_string(str.concat(" "));if(isvoidnext)thenout_string("\n")elsenext.print()fi;}  expr
+
+                46:out_string(str.concat(" "))  expr
+
+                  47:out_string(str.concat(" "))  f_call
+
+                    48:str.concat(" ")  f_call_args
+
+                      49:str.concat(" ")  expr
+
+                        50:str  expr
+
+                        51:concat(" ")  f_call
+
+                          52:" "  f_call_args
+
+                            53:" "  expr
+
+                              54:" "  constant
+
+                55:if(isvoidnext)thenout_string("\n")elsenext.print()fi  expr
+
+                  56:(isvoidnext)  expr
+
+                    57:isvoidnext  expr
+
+                      58:next  expr
+
+                  59:out_string("\n")  expr
+
+                    60:out_string("\n")  f_call
+
+                      61:"\n"  f_call_args
+
+                        62:"\n"  expr
+
+                          63:"\n"  constant
+
+                  64:next.print()  expr
+
+                    65:next  expr
+
+                    66:print()  f_call
+
+  67:classMaininheritsIO{main():Object{{letx:Int<-0,y:String<-"!",z:Int<-x+2,empty:List,list:List<-newList.init(x,newList.init(y,newList.init(z,empty)))inlist.print();letn:Int<-out_string("Calculăm factorial pentru: ").in_int()in{out_string("Factorial recursiv: ").out_int(fact_rec(n)).out_string("\n");out_string("Factorial iterativ: ").out_int(fact_iter(n)).out_string("\n");};}};fact_rec(n:Int):Int{ifn=0then1elsen*fact_rec(n-1)fi};fact_iter(n:Int):Int{letres:Int<-1in{while(not(n=0))loop{res<-res*n;n<-n-1;}pool;res;}};};  class_node
+
+    68:classMaininheritsIO  class_header
+
+    69:main():Object{{letx:Int<-0,y:String<-"!",z:Int<-x+2,empty:List,list:List<-newList.init(x,newList.init(y,newList.init(z,empty)))inlist.print();letn:Int<-out_string("Calculăm factorial pentru: ").in_int()in{out_string("Factorial recursiv: ").out_int(fact_rec(n)).out_string("\n");out_string("Factorial iterativ: ").out_int(fact_iter(n)).out_string("\n");};}};fact_rec(n:Int):Int{ifn=0then1elsen*fact_rec(n-1)fi};fact_iter(n:Int):Int{letres:Int<-1in{while(not(n=0))loop{res<-res*n;n<-n-1;}pool;res;}};  class_body
+
+      70:main():Object{{letx:Int<-0,y:String<-"!",z:Int<-x+2,empty:List,list:List<-newList.init(x,newList.init(y,newList.init(z,empty)))inlist.print();letn:Int<-out_string("Calculăm factorial pentru: ").in_int()in{out_string("Factorial recursiv: ").out_int(fact_rec(n)).out_string("\n");out_string("Factorial iterativ: ").out_int(fact_iter(n)).out_string("\n");};}}  attr_or_meth
+
+        71:main():Object{{letx:Int<-0,y:String<-"!",z:Int<-x+2,empty:List,list:List<-newList.init(x,newList.init(y,newList.init(z,empty)))inlist.print();letn:Int<-out_string("Calculăm factorial pentru: ").in_int()in{out_string("Factorial recursiv: ").out_int(fact_rec(n)).out_string("\n");out_string("Factorial iterativ: ").out_int(fact_iter(n)).out_string("\n");};}}  method
+
+          72:{letx:Int<-0,y:String<-"!",z:Int<-x+2,empty:List,list:List<-newList.init(x,newList.init(y,newList.init(z,empty)))inlist.print();letn:Int<-out_string("Calculăm factorial pentru: ").in_int()in{out_string("Factorial recursiv: ").out_int(fact_rec(n)).out_string("\n");out_string("Factorial iterativ: ").out_int(fact_iter(n)).out_string("\n");};}  method_body
+
+            73:{letx:Int<-0,y:String<-"!",z:Int<-x+2,empty:List,list:List<-newList.init(x,newList.init(y,newList.init(z,empty)))inlist.print();letn:Int<-out_string("Calculăm factorial pentru: ").in_int()in{out_string("Factorial recursiv: ").out_int(fact_rec(n)).out_string("\n");out_string("Factorial iterativ: ").out_int(fact_iter(n)).out_string("\n");};}  expr
+
+              74:letx:Int<-0,y:String<-"!",z:Int<-x+2,empty:List,list:List<-newList.init(x,newList.init(y,newList.init(z,empty)))inlist.print()  expr
+
+                75:x:Int<-0  let_bind
+
+                  76:Int  type
+
+                  77:0  expr
+
+                    78:0  constant
+
+                79:y:String<-"!"  let_bind
+
+                  80:String  type
+
+                  81:"!"  expr
+
+                    82:"!"  constant
+
+                83:z:Int<-x+2  let_bind
+
+                  84:Int  type
+
+                  85:x+2  expr
+
+                    86:x  expr
+
+                    87:2  expr
+
+                      88:2  constant
+
+                89:empty:List  let_bind
+
+                  90:List  type
+
+                91:list:List<-newList.init(x,newList.init(y,newList.init(z,empty)))  let_bind
+
+                  92:List  type
+
+                  93:newList.init(x,newList.init(y,newList.init(z,empty)))  expr
+
+                    94:newList  expr
+
+                      95:List  type
+
+                    96:init(x,newList.init(y,newList.init(z,empty)))  f_call
+
+                      97:x,newList.init(y,newList.init(z,empty))  f_call_args
+
+                        98:x  expr
+
+                        99:newList.init(y,newList.init(z,empty))  expr
+
+                          100:newList  expr
+
+                            101:List  type
+
+                          102:init(y,newList.init(z,empty))  f_call
+
+                            103:y,newList.init(z,empty)  f_call_args
+
+                              104:y  expr
+
+                              105:newList.init(z,empty)  expr
+
+                                106:newList  expr
+
+                                  107:List  type
+
+                                108:init(z,empty)  f_call
+
+                                  109:z,empty  f_call_args
+
+                                    110:z  expr
+
+                                    111:empty  expr
+
+                112:list.print()  expr
+
+                  113:list  expr
+
+                  114:print()  f_call
+
+              115:letn:Int<-out_string("Calculăm factorial pentru: ").in_int()in{out_string("Factorial recursiv: ").out_int(fact_rec(n)).out_string("\n");out_string("Factorial iterativ: ").out_int(fact_iter(n)).out_string("\n");}  expr
+
+                116:n:Int<-out_string("Calculăm factorial pentru: ").in_int()  let_bind
+
+                  117:Int  type
+
+                  118:out_string("Calculăm factorial pentru: ").in_int()  expr
+
+                    119:out_string("Calculăm factorial pentru: ")  expr
+
+                      120:out_string("Calculăm factorial pentru: ")  f_call
+
+                        121:"Calculăm factorial pentru: "  f_call_args
+
+                          122:"Calculăm factorial pentru: "  expr
+
+                            123:"Calculăm factorial pentru: "  constant
+
+                    124:in_int()  f_call
+
+                125:{out_string("Factorial recursiv: ").out_int(fact_rec(n)).out_string("\n");out_string("Factorial iterativ: ").out_int(fact_iter(n)).out_string("\n");}  expr
+
+                  126:out_string("Factorial recursiv: ").out_int(fact_rec(n)).out_string("\n")  expr
+
+                    127:out_string("Factorial recursiv: ").out_int(fact_rec(n))  expr
+
+                      128:out_string("Factorial recursiv: ")  expr
+
+                        129:out_string("Factorial recursiv: ")  f_call
+
+                          130:"Factorial recursiv: "  f_call_args
+
+                            131:"Factorial recursiv: "  expr
+
+                              132:"Factorial recursiv: "  constant
+
+                      133:out_int(fact_rec(n))  f_call
+
+                        134:fact_rec(n)  f_call_args
+
+                          135:fact_rec(n)  expr
+
+                            136:fact_rec(n)  f_call
+
+                              137:n  f_call_args
+
+                                138:n  expr
+
+                    139:out_string("\n")  f_call
+
+                      140:"\n"  f_call_args
+
+                        141:"\n"  expr
+
+                          142:"\n"  constant
+
+                  143:out_string("Factorial iterativ: ").out_int(fact_iter(n)).out_string("\n")  expr
+
+                    144:out_string("Factorial iterativ: ").out_int(fact_iter(n))  expr
+
+                      145:out_string("Factorial iterativ: ")  expr
+
+                        146:out_string("Factorial iterativ: ")  f_call
+
+                          147:"Factorial iterativ: "  f_call_args
+
+                            148:"Factorial iterativ: "  expr
+
+                              149:"Factorial iterativ: "  constant
+
+                      150:out_int(fact_iter(n))  f_call
+
+                        151:fact_iter(n)  f_call_args
+
+                          152:fact_iter(n)  expr
+
+                            153:fact_iter(n)  f_call
+
+                              154:n  f_call_args
+
+                                155:n  expr
+
+                    156:out_string("\n")  f_call
+
+                      157:"\n"  f_call_args
+
+                        158:"\n"  expr
+
+                          159:"\n"  constant
+
+      160:fact_rec(n:Int):Int{ifn=0then1elsen*fact_rec(n-1)fi}  attr_or_meth
+
+        161:fact_rec(n:Int):Int{ifn=0then1elsen*fact_rec(n-1)fi}  method
+
+          162:n:Int  method_params
+
+            163:Int  type
+
+          164:ifn=0then1elsen*fact_rec(n-1)fi  method_body
+
+            165:ifn=0then1elsen*fact_rec(n-1)fi  expr
+
+              166:n=0  expr
+
+                167:n  expr
+
+                168:0  expr
+
+                  169:0  constant
+
+              170:1  expr
+
+                171:1  constant
+
+              172:n*fact_rec(n-1)  expr
+
+                173:n  expr
+
+                174:fact_rec(n-1)  expr
+
+                  175:fact_rec(n-1)  f_call
+
+                    176:n-1  f_call_args
+
+                      177:n-1  expr
+
+                        178:n  expr
+
+                        179:1  expr
+
+                          180:1  constant
+
+      181:fact_iter(n:Int):Int{letres:Int<-1in{while(not(n=0))loop{res<-res*n;n<-n-1;}pool;res;}}  attr_or_meth
+
+        182:fact_iter(n:Int):Int{letres:Int<-1in{while(not(n=0))loop{res<-res*n;n<-n-1;}pool;res;}}  method
+
+          183:n:Int  method_params
+
+            184:Int  type
+
+          185:letres:Int<-1in{while(not(n=0))loop{res<-res*n;n<-n-1;}pool;res;}  method_body
+
+            186:letres:Int<-1in{while(not(n=0))loop{res<-res*n;n<-n-1;}pool;res;}  expr
+
+              187:res:Int<-1  let_bind
+
+                188:Int  type
+
+                189:1  expr
+
+                  190:1  constant
+
+              191:{while(not(n=0))loop{res<-res*n;n<-n-1;}pool;res;}  expr
+
+                192:while(not(n=0))loop{res<-res*n;n<-n-1;}pool  expr
+
+                  193:(not(n=0))  expr
+
+                    194:not(n=0)  expr
+
+                      195:(n=0)  expr
+
+                        196:n=0  expr
+
+                          197:n  expr
+
+                          198:0  expr
+
+                            199:0  constant
+
+                  200:{res<-res*n;n<-n-1;}  expr
+
+                    201:res<-res*n  expr
+
+                      202:res*n  expr
+
+                        203:res  expr
+
+                        204:n  expr
+
+                    205:n<-n-1  expr
+
+                      206:n-1  expr
+
+                        207:n  expr
+
+                        208:1  expr
+
+                          209:1  constant
+
+                210:res  expr
+

@@ -1,0 +1,37 @@
+class : CLASS
+A : CLASS_NAME
+{ : OPEN_AC
+} : CLOSED_AC
+; : EOI
+class : CLASS
+B : CLASS_NAME
+inherits : INHERITS
+A : CLASS_NAME
+{ : OPEN_AC
+} : CLOSED_AC
+; : EOI
+class : CLASS
+D : CLASS_NAME
+{ : OPEN_AC
+(* ana are emr
+merefds *)} : CLOSED_AC
+; : EOI
+<EOF> : EOF
+
+
+0:classA{};classBinheritsA{};classD{(* ana are emr
+merefds *)};<EOF>  program
+
+  1:classA{};  class_node
+
+    2:classA  class_header
+
+  3:classBinheritsA{};  class_node
+
+    4:classBinheritsA  class_header
+
+  5:classD{(* ana are emr
+merefds *)};  class_node
+
+    6:classD  class_header
+

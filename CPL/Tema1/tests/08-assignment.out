@@ -1,0 +1,92 @@
+class : CLASS
+A : CLASS_NAME
+{ : OPEN_AC
+x : ID
+: : DBL_DOT
+Int : CLASS_NAME
+; : EOI
+f : ID
+( : OPEN_PAR
+y : ID
+: : DBL_DOT
+Int : CLASS_NAME
+) : CLOSED_PAR
+: : DBL_DOT
+Int : CLASS_NAME
+{ : OPEN_AC
+x : ID
+<- : ASSIGN
+y : ID
+} : CLOSED_AC
+; : EOI
+f : ID
+( : OPEN_PAR
+y : ID
+: : DBL_DOT
+Int : CLASS_NAME
+, : COMMA
+z : ID
+: : DBL_DOT
+Int : CLASS_NAME
+) : CLOSED_PAR
+: : DBL_DOT
+Int : CLASS_NAME
+{ : OPEN_AC
+x : ID
+<- : ASSIGN
+y : ID
+<- : ASSIGN
+z : ID
+} : CLOSED_AC
+; : EOI
+} : CLOSED_AC
+; : EOI
+<EOF> : EOF
+
+
+0:classA{x:Int;f(y:Int):Int{x<-y};f(y:Int,z:Int):Int{x<-y<-z};};<EOF>  program
+
+  1:classA{x:Int;f(y:Int):Int{x<-y};f(y:Int,z:Int):Int{x<-y<-z};};  class_node
+
+    2:classA  class_header
+
+    3:x:Int;f(y:Int):Int{x<-y};f(y:Int,z:Int):Int{x<-y<-z};  class_body
+
+      4:x:Int  attr_or_meth
+
+        5:x:Int  attribute
+
+          6:Int  type
+
+      7:f(y:Int):Int{x<-y}  attr_or_meth
+
+        8:f(y:Int):Int{x<-y}  method
+
+          9:y:Int  method_params
+
+            10:Int  type
+
+          11:x<-y  method_body
+
+            12:x<-y  expr
+
+              13:y  expr
+
+      14:f(y:Int,z:Int):Int{x<-y<-z}  attr_or_meth
+
+        15:f(y:Int,z:Int):Int{x<-y<-z}  method
+
+          16:y:Int,z:Int  method_params
+
+            17:Int  type
+
+            18:Int  type
+
+          19:x<-y<-z  method_body
+
+            20:x<-y<-z  expr
+
+              21:y<-z  expr
+
+                22:z  expr
+

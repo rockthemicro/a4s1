@@ -1,0 +1,89 @@
+class : CLASS
+A : CLASS_NAME
+{ : OPEN_AC
+n : ID
+: : DBL_DOT
+Int : CLASS_NAME
+; : EOI
+b : ID
+: : DBL_DOT
+Bool : CLASS_NAME
+<- : ASSIGN
+not : NOT
+2 : NR
+<= : LESS_OR_EQ
+n : ID
+; : EOI
+c : ID
+: : DBL_DOT
+Bool : CLASS_NAME
+<- : ASSIGN
+2 : NR
+< : LESS
+n : ID
++ : PLUS
+1 : NR
+= : EQ
+false : BOOLEAN
+; : EOI
+} : CLOSED_AC
+; : EOI
+<EOF> : EOF
+
+
+0:classA{n:Int;b:Bool<-not2<=n;c:Bool<-2<n+1=false;};<EOF>  program
+
+  1:classA{n:Int;b:Bool<-not2<=n;c:Bool<-2<n+1=false;};  class_node
+
+    2:classA  class_header
+
+    3:n:Int;b:Bool<-not2<=n;c:Bool<-2<n+1=false;  class_body
+
+      4:n:Int  attr_or_meth
+
+        5:n:Int  attribute
+
+          6:Int  type
+
+      7:b:Bool<-not2<=n  attr_or_meth
+
+        8:b:Bool<-not2<=n  attribute
+
+          9:Bool  type
+
+          10:not2<=n  expr
+
+            11:2<=n  expr
+
+              12:2  expr
+
+                13:2  constant
+
+              14:n  expr
+
+      15:c:Bool<-2<n+1=false  attr_or_meth
+
+        16:c:Bool<-2<n+1=false  attribute
+
+          17:Bool  type
+
+          18:2<n+1=false  expr
+
+            19:2<n+1  expr
+
+              20:2  expr
+
+                21:2  constant
+
+              22:n+1  expr
+
+                23:n  expr
+
+                24:1  expr
+
+                  25:1  constant
+
+            26:false  expr
+
+              27:false  constant
+

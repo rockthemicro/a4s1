@@ -1,0 +1,17 @@
+<head>
+  <style>
+  body{
+    text-align: center;
+  }
+  </style>
+</head>
+<div class="card bg-secondary" style="width: 10rem;">
+  <img class="card-img-top" src="<%= @player.photo_url %>" alt="Headshot">
+  <div class="card-body">
+    <h5 class="card-title"><%= @player.name %></h5>
+    <h6 class="card-text">Att: <%= @player.attack %> Def: <%= @player.defence %></h6>
+    <h6 class="card-text"><%= @player.position.capitalize %></h6>
+    <img src="<%= @player.country.flag_url %>" style="float:left" height="32" alt="Flag">
+    <img src="<%= @player.league.badge_url %>" style="float:right" height="32" alt="Badge">
+  </div>
+</div>

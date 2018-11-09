@@ -1,0 +1,17 @@
+(* Exemplu
+   de program (* uCool *)
+*)
+x : Int;
+y : Int <- x;
+inc(x : Int) : Int { x + 1 };
+x <- inc(y);
+print_float(mult2(x));  -- utilizare mult2 inainte de definire
+mult2(x : Float) : Float { x * 2 };
+b : Bool <- x = x;
+print_bool(b);
+x <- if b then 5 else 7 fi;
+print_int(x);
+
+4.0
+3.
+.545

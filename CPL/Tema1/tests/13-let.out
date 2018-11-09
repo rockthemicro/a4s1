@@ -1,0 +1,83 @@
+class : CLASS
+A : CLASS_NAME
+{ : OPEN_AC
+f : ID
+( : OPEN_PAR
+x : ID
+: : DBL_DOT
+Int : CLASS_NAME
+) : CLOSED_PAR
+: : DBL_DOT
+Int : CLASS_NAME
+{ : OPEN_AC
+let : LET
+x : ID
+: : DBL_DOT
+Int : CLASS_NAME
+<- : ASSIGN
+x : ID
++ : PLUS
+1 : NR
+, : COMMA
+y : ID
+: : DBL_DOT
+Int : CLASS_NAME
+<- : ASSIGN
+x : ID
++ : PLUS
+1 : NR
+in : IN
+x : ID
+} : CLOSED_AC
+; : EOI
+} : CLOSED_AC
+; : EOI
+<EOF> : EOF
+
+
+0:classA{f(x:Int):Int{letx:Int<-x+1,y:Int<-x+1inx};};<EOF>  program
+
+  1:classA{f(x:Int):Int{letx:Int<-x+1,y:Int<-x+1inx};};  class_node
+
+    2:classA  class_header
+
+    3:f(x:Int):Int{letx:Int<-x+1,y:Int<-x+1inx};  class_body
+
+      4:f(x:Int):Int{letx:Int<-x+1,y:Int<-x+1inx}  attr_or_meth
+
+        5:f(x:Int):Int{letx:Int<-x+1,y:Int<-x+1inx}  method
+
+          6:x:Int  method_params
+
+            7:Int  type
+
+          8:letx:Int<-x+1,y:Int<-x+1inx  method_body
+
+            9:letx:Int<-x+1,y:Int<-x+1inx  expr
+
+              10:x:Int<-x+1  let_bind
+
+                11:Int  type
+
+                12:x+1  expr
+
+                  13:x  expr
+
+                  14:1  expr
+
+                    15:1  constant
+
+              16:y:Int<-x+1  let_bind
+
+                17:Int  type
+
+                18:x+1  expr
+
+                  19:x  expr
+
+                  20:1  expr
+
+                    21:1  constant
+
+              22:x  expr
+
