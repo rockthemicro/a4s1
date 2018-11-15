@@ -1,0 +1,14 @@
+IF=1
+THEN=2
+ELSE=3
+FI=4
+INT=5
+ID=6
+REAL=7
+STRING=8
+BLOCK_COMMENT=9
+WS=10
+'if'=1
+'then'=2
+'else'=3
+'fi'=4

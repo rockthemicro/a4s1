@@ -43,11 +43,11 @@ from itertools import combinations
 # Vom reprezenta o **soluție** printr-un dicționar ce indică o valoare pentru fiecare variabilă (e.g. `{"A": 1, "B": 1, "C" -2}`) și vom defini **costul** ca fiind egal cu numărul de constrângeri încălcate de acea soluție.
 
 # In[2]:
-
+from typing import List, Any, Tuple, Callable
 
 VarsA = ["A", "B", "C", "D", "E"]
 DomainsA = {v: [i for i in range(10)] for v in VarsA}
-ConstraintsA = [(list(p), lambda x,y: x != y) for p in combinations(VarsA, 2)] # toate valorile diferite
+ConstraintsA: List[Tuple[List[str], Callable[[Any, Any], bool]]] = [(list(p), lambda x,y: x != y) for p in combinations(VarsA, 2)] # toate valorile diferite
 ConstraintsA.append((["A","B"], lambda a, b: a + b == 10))
 ConstraintsA.append((["B","D"], lambda b, d: b + d == 6))
 ConstraintsA.append((["C"], lambda c: c < 5))
@@ -243,7 +243,8 @@ def PCSP(vars, domains, constraints, acceptable_cost, solution, cost):
             return PCSP(vars, deepcopy(domains), constraints, acceptable_cost, solution, cost)
         else:
             return True
-    
+
+
 # Un wrapper care să instanțieze variabilele globale
 def run_pcsp(problem, acceptable_cost):
     global best_solution

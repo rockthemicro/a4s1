@@ -1,0 +1,30 @@
+
+    x : Int;
+    r : Int;
+    2 + x;
+    f1() : Int {
+        x : Int;
+        y : Int;
+        y : Int;
+        3 + y + x;       
+        f2() : Int {
+            z : Int;
+            z + u;
+        };
+        
+        f(x, y);
+    };
+    
+    f(a : Int, b : Int) : Int {
+    	x + 3;
+    	y + 1;
+    	
+    	a + 3;
+    	10 + b;
+    	
+    	7 + c;
+    };
+    
+    r : Int;
+    f(r, r);
+    f(r, s);

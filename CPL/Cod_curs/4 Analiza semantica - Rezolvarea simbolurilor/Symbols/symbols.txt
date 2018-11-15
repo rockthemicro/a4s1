@@ -1,0 +1,14 @@
+{
+    x : Int;
+    2 + x;
+    {
+        x : Int;
+        y : Int;
+        y : Int;
+        3 + y + x;       
+        {
+            z : Int;
+            z + u;
+        };
+    };
+};

@@ -1,1 +1,0 @@
-if a then 1 else if b then 3 else 4 fi fi

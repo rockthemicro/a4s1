@@ -5,6 +5,7 @@ costs:
     c_preferred_interval: 10
     c_excluded_interval: 30
     c_activity_distance: 10
+
 activity_list:
     # ==== TV series activities ====
     - activity:
