@@ -11,7 +11,7 @@ activity_list:
   - activity:
       name: Dinner
       scheduling_type: nr_instances
-      instances_per_week: 7
+      instances_per_week: 2
       instances_per_day: 1
       duration:
         value: 1
@@ -22,18 +22,15 @@ activity_list:
           end: 20:00
 
   - activity:
-      name: BP_measurement_3
+      name: BP_measurement_1
       scheduling_type: relative
-      instances_per_week: 7
+      instances_per_week: 2
       instances_per_day: 1
       before:
-          activity_type: Dinner
-          relative_within:
-              value: 15
-              unit: minute
-      duration:
-          value: 10
+        activity_type: Dinner
+        relative_within:
+          value: 15
           unit: minute
-
-
-
+      duration:
+        value: 10
+        unit: minute

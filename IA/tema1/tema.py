@@ -34,7 +34,8 @@ def build_domain(delta: int, add_flag: bool = False) -> list:
             else:
                 domain[i].append((start, interval_end))
 
-            start = interval_end
+            start += 5
+            # start = interval_end
 
     return domain
 
@@ -237,7 +238,7 @@ def build_generic_activity(generic_activity):
 
         global cost_of_all_missing_instances
         cost_of_all_missing_instances += (instances_week * c_missing_instance_week +
-                                          instances_day * c_missing_instance_day)
+                                          instances_week * instances_day * c_missing_instance_day)
 
         positioning = []
         for i in range(instances_week):
@@ -362,7 +363,7 @@ def pcsp(variables, domains, cost, solution, acceptable_cost):
             # same day with us
             for i in range(len(positioning)):
                 if i != var_index and positioning[i] != -1:
-                    indexes_to_remove[i] = True
+                    indexes_to_remove[positioning[i]] = True
 
             empty_domain = get_empty_domain()
             for i in range(7):
@@ -406,6 +407,10 @@ def pcsp(variables, domains, cost, solution, acceptable_cost):
     if is_first_instance:
         for i in range(7):
             day_domain = domain[i]
+
+            if len(day_domain) == 0:
+                continue
+
             instances_position[var][1][var_index] = i
 
             for interval in day_domain:
@@ -423,6 +428,9 @@ def pcsp(variables, domains, cost, solution, acceptable_cost):
     else:
         for i in range(7):
             day_domain = domain[i]
+
+            if len(day_domain) == 0:
+                continue
 
             for interval in day_domain:
                 if interval_is_free(interval, global_domain[i]):
