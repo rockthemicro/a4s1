@@ -2,7 +2,7 @@
     x : Int;
     r : Int;
     2 + x;
-    f1() : Int {
+    f1() : Bool {
         x : Int;
         y : Int;
         y : Int;
@@ -25,6 +25,8 @@
     	7 + c;
     };
     
+    f() + da;
+    
     r : Int;
     f(r, r);
-    f(r, s);
+    f1(r, s);

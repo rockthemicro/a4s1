@@ -81,6 +81,16 @@ def occupy_interval(interval, slots):
         start += 5
 
 
+def intersection_duration(a1, b1, a2, b2):
+    start = max(a1, a2)
+    end = min(b1, b2)
+
+    if end < start:
+        return 0
+
+    return end - start
+
+
 def free_interval(interval, slots):
     start = interval[0]
     end = interval[1]
@@ -143,10 +153,12 @@ def build_exact_interval_activity(exact_interval_activity):
     instances_of_activity[name] = [name]
 
 
-def get_cost_relative_restriction(day, start, end, solution, relative_to_instances, relative_within):
+def get_cost_relative_restriction(day, start, _, solution, relative_to_instances, relative_within):
     cost = sys.maxsize
     for relative_instance in relative_to_instances:
-        # if relative_instance in solution:
+        if relative_instance not in solution:
+            continue
+
         [relative_day, (relative_start, relative_end)] = solution[relative_instance]
         if day != relative_day:
             continue
@@ -174,6 +186,118 @@ def get_cost_relative_restriction(day, start, end, solution, relative_to_instanc
         return cost
     else:
         return None
+
+
+def get_cost_preferred_intervals(day, start, end, _, preferred_intervals):
+    interval_time = end - start
+    cost = c_preferred_interval
+
+    for interval in preferred_intervals:
+        interval = interval['interval']
+        if 'day' in interval and interval['day'] != day:
+            continue
+
+        diff = interval_time - intersection_duration(start, end, interval['start'], interval['end'])
+        tmp_cost = (diff * c_preferred_interval) / interval_time
+
+        if tmp_cost == 0:
+            cost = 0
+            break
+
+        elif tmp_cost < cost:
+            cost = tmp_cost
+
+    return cost
+
+
+def get_cost_excluded_intervals(day, start, end, _, excluded_intervals):
+    interval_time = end - start
+    sum = 0
+
+    for interval in excluded_intervals:
+        interval = interval['interval']
+        if 'day' in interval and interval['day'] != day:
+            continue
+
+        sum += intersection_duration(start, end, interval['start'], interval['end'])
+
+    return c_excluded_interval * sum / interval_time
+
+
+def get_cost_minimal_distance(day, start, end, solution, minimal_distance_from, name):
+    cost = 0
+
+    for target in minimal_distance_from:
+        value = target['value']
+        unit = target['unit']
+
+        if target['activity_type'] == 'self':
+            self_instances = instances_of_activity[name]  # dinner_w0_d0, dinner_w1_d0
+            for self_instance in self_instances:
+                if self_instance not in solution:
+                    continue
+
+                (s_day, (s_start, s_end)) = solution[self_instance]
+                if s_day == day and s_start == start and s_end == end:
+                    continue
+
+                aux_start = start
+                aux_end = end
+
+                if unit == 'day' and abs(day - s_day) < value:
+                    start += (day * 24 * 60)
+                    end += (day * 24 * 60)
+
+                    s_start += (s_day * 24 * 60)
+                    s_end += (s_day * 24 * 60)
+
+                    if s_start >= end:
+                        cost += (intersection_duration(s_start, s_end, end, end + value * 24 * 60) / 2)
+                    elif s_end < start:
+                        cost += (intersection_duration(s_start, s_end, start - value * 24 * 60, start) / 2)
+
+                else:
+                    if unit == 'hour':
+                        value *= 60
+
+                    if s_start >= end:
+                        cost += (intersection_duration(s_start, s_end, end, end + value))
+                    elif s_end < start:
+                        cost += (intersection_duration(s_start, s_end, start - value, start))
+
+                start = aux_start
+                end = aux_end
+
+        else:
+            target_instances = instances_of_activity[target['activity_type']]
+            for target_instance in target_instances:
+                if target_instance not in solution:
+                    continue
+
+                (s_day, (s_start, s_end)) = solution[target_instance]
+
+                if unit == 'day' and abs(day - s_day) < value:
+                    start += (day * 24 * 60)
+                    end += (day * 24 * 60)
+
+                    s_start += (s_day * 24 * 60)
+                    s_end += (s_day * 24 * 60)
+
+                    if s_start >= end:
+                        cost += (intersection_duration(s_start, s_end, end, end + value * 24 * 60))
+                    elif s_end < start:
+                        cost += (intersection_duration(s_start, s_end, start - value * 24 * 60, start))
+
+                else:
+                    if unit == 'hour':
+                        value *= 60
+
+                    if s_start >= end:
+                        cost += (intersection_duration(s_start, s_end, end, end + value))
+                    elif s_end < start:
+                        cost += (intersection_duration(s_start, s_end, start - value, start))
+
+    return cost * c_activity_distance
 
 
 def create_restrictions(tmp_names, generic_activity):
@@ -206,8 +330,36 @@ def create_restrictions(tmp_names, generic_activity):
                relative_within2=relative_within):
             return get_cost_relative_restriction(day, start, end, solution, relative_to_instances2, relative_within2)
 
-        restriction_func = f1
-        curr_constraints.append(restriction_func)
+        curr_constraints.append(f1)
+
+    if 'preferred_intervals' in generic_activity:
+        preferred_intervals = generic_activity['preferred_intervals']
+
+        def f2(day, start, end, solution, preferred_intervals2=preferred_intervals):
+            return get_cost_preferred_intervals(day, start, end, solution, preferred_intervals2)
+
+        curr_constraints.append(f2)
+
+    if 'excluded_intervals' in generic_activity:
+        excluded_intervals = generic_activity['excluded_intervals']
+
+        def f3(day, start, end, solution, excluded_intervals2=excluded_intervals):
+            return get_cost_excluded_intervals(day, start, end, solution, excluded_intervals2)
+
+        curr_constraints.append(f3)
+
+    if 'minimal_distance_from' in generic_activity:
+        minimal_distance_from = generic_activity['minimal_distance_from']
+        targets = []
+
+        for target_activity in minimal_distance_from:
+            target_name = target_activity['activity']
+            targets.append(target_name)
+
+        def f4(day, start, end, solution, minimal_distance_from2=targets, name2=generic_activity['name']):
+            return get_cost_minimal_distance(day, start, end, solution, minimal_distance_from2, name2)
+
+        curr_constraints.append(f4)
 
     for name in tmp_names:
         constraints[name] = curr_constraints
@@ -320,7 +472,8 @@ def pcsp(variables, domains, cost, solution, acceptable_cost):
     global best_solution
     global activities_list
 
-    new_cost = cost + get_cost_of_all_restrictions(solution)
+    # new_cost = cost + get_cost_of_all_restrictions(solution)
+    new_cost = get_cost_of_all_restrictions(solution)
     if new_cost >= best_cost:
         return False
 
@@ -330,12 +483,6 @@ def pcsp(variables, domains, cost, solution, acceptable_cost):
         best_solution = solution
 
         print('New best found (' + str(new_cost) + '): ' + str(solution))
-
-        global cnt
-        cnt += 1
-
-        if cnt == 3:
-            return True
 
         if new_cost <= acceptable_cost:
             return True
@@ -357,18 +504,30 @@ def pcsp(variables, domains, cost, solution, acceptable_cost):
         # of activity as the current one
         if chosen_day == -1:
             is_first_instance = True
-            indexes_to_remove = [False for _ in range(7)]
+            empty_domain = get_empty_domain()
 
             # we mark for removal those days that are already chosen by other instances that mustn't be in the
             # same day with us
+            '''
+            indexes_to_remove = [False for _ in range(7)]
             for i in range(len(positioning)):
                 if i != var_index and positioning[i] != -1:
                     indexes_to_remove[positioning[i]] = True
 
-            empty_domain = get_empty_domain()
             for i in range(7):
                 if not indexes_to_remove[i]:
                     empty_domain[i] = domain[i]
+
+            domain = empty_domain
+            '''
+
+            loc_max = -1
+            for i in range(len(positioning)):
+                if i != var_index and positioning[i] > loc_max:
+                    loc_max = positioning[i]
+
+            for i in range(loc_max + 1, 7):
+                empty_domain[i] = domain[i]
 
             domain = empty_domain
 

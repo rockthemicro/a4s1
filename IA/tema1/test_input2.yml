@@ -109,7 +109,7 @@ activity_list:
             unit: minute
         preferred_intervals:
             - interval:
-                start: 07:00
+                start: 7:00
                 end: 10:00
 
 
@@ -151,7 +151,7 @@ activity_list:
             unit: minute
         preferred_intervals:
             - interval:
-                start: 08:00
+                start: 8:00
                 end: 10:00
             - interval:
                 start: 16:00
@@ -177,7 +177,7 @@ activity_list:
         excluded_intervals:
             - interval:
                 day: 7
-                start: 08:00
+                start: 8:00
                 end: 23:59
 
     - activity:
@@ -190,7 +190,7 @@ activity_list:
             unit: hour
         preferred_intervals:
             - interval:
-                start: 08:00
+                start: 8:00
                 end: 12:00
             - interval:
                 start: 16:00
@@ -199,11 +199,11 @@ activity_list:
         excluded_intervals:
             - interval:
                 day: 6
-                start: 00:00
+                start: 7:00
                 end: 23:59
             - interval:
                 day: 7
-                start: 00:00
+                start: 7:00
                 end: 23:59
 
 
@@ -241,11 +241,11 @@ activity_list:
         excluded_intervals:
             - interval:
                 day: 6
-                start: 00:00
+                start: 7:00
                 end: 23:59
             - interval:
                 day: 7
-                start: 00:00
+                start: 7:00
                 end: 23:59
 
 

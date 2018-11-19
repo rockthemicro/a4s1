@@ -1,0 +1,17 @@
+{
+    x : Int;
+    a : Float;
+    2 + x;
+    {
+        x : Int;
+        y : Int;
+        y : Int;
+        3 + y + x;       
+        {
+            z : Int;
+            u : Bool;
+            y + z + w;
+            y + u;
+        };
+    };
+};

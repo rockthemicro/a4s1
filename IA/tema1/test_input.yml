@@ -11,26 +11,22 @@ activity_list:
   - activity:
       name: Dinner
       scheduling_type: nr_instances
-      instances_per_week: 2
+      instances_per_week: 1
       instances_per_day: 1
       duration:
         value: 1
         unit: hour
-      preferred_intervals:
-      - interval:
-          start: 17:00
-          end: 20:00
+      minimal_distance_from:
+      - activity:
+          activity_type: Breakfast
+          value: 2
+          unit: day
 
   - activity:
-      name: BP_measurement_1
-      scheduling_type: relative
-      instances_per_week: 2
+      name: Breakfast
+      scheduling_type: nr_instances
+      instances_per_week: 1
       instances_per_day: 1
-      before:
-        activity_type: Dinner
-        relative_within:
-          value: 15
-          unit: minute
       duration:
-        value: 10
-        unit: minute
+        value: 1
+        unit: hour
