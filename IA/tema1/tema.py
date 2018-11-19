@@ -4,7 +4,7 @@ import yaml
 import sys
 from copy import copy
 
-with open("test_input2.yml", 'r') as stream:
+with open("test_input.yml", 'r') as stream:
     data_loaded = yaml.load(stream)
 
 sevenHundredHours: int = 7 * 60
@@ -504,7 +504,9 @@ def order_variables(non_relatives, relatives):
 # planned before relative_activities
 non_relative_activities = exact_activities + instances_activities
 
-order_variables(non_relative_activities, relative_activities)
+# variable ordering step
+# order_variables(non_relative_activities, relative_activities)
+# end of variable ordering
 
 activities = non_relative_activities + relative_activities
 
@@ -551,7 +553,7 @@ def pcsp(variables, domains, cost, solution, acceptable_cost, path):
             return False
 
     # path consistency step
-    '''
+
     if len(path) >= 2:
         path_len = len(path)
         last = path[path_len - 1]
@@ -580,7 +582,7 @@ def pcsp(variables, domains, cost, solution, acceptable_cost, path):
                 return False
 
         domains = new_domains
-    '''
+
     # end of path consistency
 
     var = variables[0]
@@ -601,22 +603,6 @@ def pcsp(variables, domains, cost, solution, acceptable_cost, path):
         if chosen_day == -1:
             is_first_instance = True
             empty_domain = get_empty_domain()
-
-            '''
-            # we mark for removal those days that are already chosen by other instances that mustn't be in the
-            # same day with us
-            
-            indexes_to_remove = [False for _ in range(7)]
-            for i in range(len(positioning)):
-                if i != var_index and positioning[i] != -1:
-                    indexes_to_remove[positioning[i]] = True
-
-            for i in range(7):
-                if not indexes_to_remove[i]:
-                    empty_domain[i] = domain[i]
-
-            domain = empty_domain
-            '''
 
             # we only choose days later in the week than the latest day we already find planned
             loc_max = -1
@@ -656,6 +642,39 @@ def pcsp(variables, domains, cost, solution, acceptable_cost, path):
                 empty_domain[i] = domain[i]
 
         domain = empty_domain
+
+    # value ordering step
+    '''
+    costs = get_empty_domain()
+    empty_domain = get_empty_domain()
+    for i in range(7):
+        day_domain = domain[i]
+        for interval in day_domain:
+            if interval_is_free(interval, global_domain[i]):
+                solution[var] = (i, interval)
+
+                cost = get_cost_of_all_restrictions(solution)
+
+                if cost < best_cost:
+                    costs[i].append(cost)
+                    empty_domain[i].append(interval)
+
+                del solution[var]
+
+        for j1 in range(len(costs[i])):
+            for j2 in range(j1 + 1, len(costs[i])):
+                if costs[i][j1] > costs[i][j2]:
+                    aux = costs[i][j1]
+                    costs[i][j1] = costs[i][j2]
+                    costs[i][j2] = aux
+
+                    aux = empty_domain[i][j1]
+                    empty_domain[i][j1] = empty_domain[i][j2]
+                    empty_domain[i][j2] = aux
+
+    domain = empty_domain
+    '''
+    # end of value ordering
 
     ret = False
     # if we have multiple instances of the current variable, we have to specify in 'positioning' the day we
