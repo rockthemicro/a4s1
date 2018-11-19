@@ -1,0 +1,25 @@
+SONTICA Alexandru-Florentin 341C3
+
+Fara euristica
+    Motorul de baza obtine un cost median de ~20 milioane pe inputul primit ca exemplu.
+
+
+Euristica ordonare a variabilelor
+    Pentru ordonarea variabilelor am ales sa implementez MRV (minimum remaining variables), pentru a pastra la
+    inceputul listei de activitati variabilele cu cele mai mici domenii posibile. Motorul obtine un cost median
+    de ~12 milioane.
+    
+    Grafic: variable_ordering.png
+
+Euristica ordonare a valorilor
+    Pentru ordonarea valorilor am ales sa implementez o euristica care imi sorteaza (in cadrul unui domeniu) valorile
+    (crescator) in functie de cat de mare este costul total al solutiei. De exemplu, daca prin asignarea unei valori v1
+    la variabila curenta obtinem un cost x, iar prin asignarea unei alte valori v2 obtine un cost y, iar y < x, atunci
+    v2 va aparea inaintea lui v1 in domeniul de valori al variabilei curente.
+    Motorul obtine un cost median de ~7 milioane.
+
+    Grafic: value_ordering.png
+
+Cale consistenta
+    Pentru cale-consistenta am implementat algoritmul PC-2 al lui Mackworth, ca un pas de preprocesare.
+    Din insuficienta de timp nu am apucat sa rezolv un bug care-mi sterge prea multe intervale.

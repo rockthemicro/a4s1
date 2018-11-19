@@ -2,15 +2,17 @@
 
 import yaml
 import sys
+import time
 from copy import copy
 
-with open("test_input.yml", 'r') as stream:
+with open("test_input2.yml", 'r') as stream:
     data_loaded = yaml.load(stream)
 
 sevenHundredHours: int = 7 * 60
 twentyFourHundredHours: int = 24 * 60
 
 
+# creates a list of 7 lists, containing all possible intervals of duration 'delta', with 5 min increments
 def build_domain(delta: int, add_flag: bool = False) -> list:
     domain = []
 
@@ -81,6 +83,7 @@ def occupy_interval(interval, slots):
         start += 5
 
 
+# returns the intersection of 2 intervals in minutes
 def intersection_duration(a1, b1, a2, b2):
     start = max(a1, a2)
     end = min(b1, b2)
@@ -128,6 +131,7 @@ activities = []  # exact_activities + instances_activities + relative_activities
 
 intervals = {}  # dictionary containing a domain of interval values for each day of the week for all variables
 constraints = {}  # dictionary containing a list of cost/restriction functions for all variables that have them
+binary_constraints = {}  # dictionary containing a list of binary cost functions
 
 instances_position = {}  # used by the same type of instance variables to coordinate between them
 instances_of_activity = {}  # for ex, Breakfast -> [Breakfast_w0_d0, Breakfast_w1_d0, ...]
@@ -139,13 +143,13 @@ relative = {}  # for ex, Medication is relative to Dinner means relative['Medica
 is_needed_by = {}
 
 
+# creates variable, domain and constraint for an exact_interval activity
 def build_exact_interval_activity(exact_interval_activity):
     name = exact_interval_activity['name']
     day = exact_interval_activity['interval']['day'] - 1
     start = exact_interval_activity['interval']['start']
     end = exact_interval_activity['interval']['end']
 
-    # activities.append(name)
     exact_activities.append(name)
 
     curr_domain = get_empty_domain()
@@ -159,6 +163,9 @@ def build_exact_interval_activity(exact_interval_activity):
     is_needed_by[name] = []
 
 
+# given a day, start time, end time and a partial solution, we calculate the cost of breaking a 'relative'
+# activity constraint (relative_to_instances and relative_within are always set by default when adding this
+# function to a list of functions)
 def get_cost_relative_restriction(day, start, _, solution, relative_to_instances, relative_within):
     cost = sys.maxsize
     for relative_instance in relative_to_instances:
@@ -194,6 +201,7 @@ def get_cost_relative_restriction(day, start, _, solution, relative_to_instances
         return 0
 
 
+# cost of breaking unary restriction 'preferred_intervals'
 def get_cost_preferred_intervals(day, start, end, _, preferred_intervals):
     interval_time = end - start
     cost = c_preferred_interval
@@ -216,6 +224,7 @@ def get_cost_preferred_intervals(day, start, end, _, preferred_intervals):
     return cost
 
 
+# cost of breaking unary restriction 'excluded_intervals'
 def get_cost_excluded_intervals(day, start, end, _, excluded_intervals):
     interval_time = end - start
     sum = 0
@@ -230,6 +239,7 @@ def get_cost_excluded_intervals(day, start, end, _, excluded_intervals):
     return c_excluded_interval * sum / interval_time
 
 
+# cost of breaking binary restriction 'minimal_distance_from'
 def get_cost_minimal_distance(day, start, end, solution, minimal_distance_from, name):
     cost = 0
 
@@ -291,7 +301,7 @@ def get_cost_minimal_distance(day, start, end, solution, minimal_distance_from, 
 
                     if s_start >= end:
                         cost += (intersection_duration(s_start, s_end, end, end + value * 24 * 60))
-                    elif s_end < start:
+                    elif s_end <= start:
                         cost += (intersection_duration(s_start, s_end, start - value * 24 * 60, start))
 
                 else:
@@ -306,8 +316,13 @@ def get_cost_minimal_distance(day, start, end, solution, minimal_distance_from, 
     return cost * c_activity_distance
 
 
+# creates a list of restrictions for an exact_interval or relative activity
+# tmp_names is a list of all the names that a variable can appear under (e.g. if we have a relative Breakfast
+# activity, with instances_per_week: 3 and instances_per_day: 2, tmp_names will be [Breakfast_w0_d0, Breakfast_w0_d1,
+# Breakfast_w1_d0, Breakfast_w1_d1, Breakfast_w2_d0, Breakfast_w2_d1]
 def create_restrictions(tmp_names, generic_activity):
     curr_constraints = []
+    curr_binary_constraints = []
     relative_within = 1
 
     if 'before' in generic_activity:
@@ -337,6 +352,7 @@ def create_restrictions(tmp_names, generic_activity):
             return get_cost_relative_restriction(day, start, end, solution, relative_to_instances2, relative_within2)
 
         curr_constraints.append(f1)
+        curr_binary_constraints.append(f1)
 
     if 'preferred_intervals' in generic_activity:
         preferred_intervals = generic_activity['preferred_intervals']
@@ -371,11 +387,14 @@ def create_restrictions(tmp_names, generic_activity):
             return get_cost_minimal_distance(day, start, end, solution, minimal_distance_from2, name2)
 
         curr_constraints.append(f4)
+        curr_binary_constraints.append(f4)
 
     for name in tmp_names:
         constraints[name] = curr_constraints
+        binary_constraints[name] = curr_binary_constraints
 
 
+# creates variable, domain and constraint for an exact_interval or relative activity
 def build_generic_activity(generic_activity):
     name = generic_activity['name']
     dependencies = []
@@ -505,7 +524,7 @@ def order_variables(non_relatives, relatives):
 non_relative_activities = exact_activities + instances_activities
 
 # variable ordering step
-# order_variables(non_relative_activities, relative_activities)
+order_variables(non_relative_activities, relative_activities)
 # end of variable ordering
 
 activities = non_relative_activities + relative_activities
@@ -530,10 +549,151 @@ def get_cost_of_all_restrictions(partial_solution):
     return new_cost
 
 
+def get_cost_of_all_binary_restrictions(partial_solution):
+    new_cost = 0
+
+    for variable in partial_solution:
+        if variable in binary_constraints:
+            (var_day, (var_start, var_end)) = partial_solution[variable]
+            constr = binary_constraints[variable]
+
+            for constr_function in constr:
+                new_cost += constr_function(var_day, var_start, var_end, partial_solution)
+
+    return new_cost
+
+
+def revise3(vars, head, domains):
+    v_i = domains[head[0]]
+    v_k = domains[head[1]]
+    v_j = domains[head[2]]
+
+    has_changed = False
+    solution_ij = {head[0]: None, head[2]: None}
+    solution_ik = {head[0]: None, head[1]: None}
+    solution_jk = {head[2]: None, head[1]: None}
+
+    name_i = head[0]
+    name_k = head[1]
+    name_j = head[2]
+
+    for i1 in range(7):
+        day_domain_i = v_i[i1]
+        new_day_domain_i = []
+        for i2 in range(len(day_domain_i)):
+            if not interval_is_free(day_domain_i[i2], global_domain[i1]):
+                continue
+
+            occupy_interval(day_domain_i[i2], global_domain[i1])
+
+            for j1 in range(7):
+                day_domain_j = v_j[j1]
+                new_day_domain_j = []
+                for j2 in range(len(day_domain_j)):
+                    if not interval_is_free(day_domain_j[j2], global_domain[j1]):
+                        continue
+
+                    occupy_interval(day_domain_j[j2], global_domain[j1])
+
+                    solution_ij[name_i] = (i1, day_domain_i[i2])
+                    solution_ij[name_j] = (j1, day_domain_j[j2])
+
+                    keep_ij = False
+
+                    cost1 = get_cost_of_all_binary_restrictions(solution_ij)
+                    if cost1 != 0:
+                        free_interval(day_domain_j[j2], global_domain[j1])
+                        continue
+
+                    for k1 in range(7):
+                        day_domain_k = v_k[k1]
+                        for k2 in range(len(day_domain_k)):
+                            if not interval_is_free(day_domain_k[k2], global_domain[k1]):
+                                continue
+
+                            occupy_interval(day_domain_k[k2], global_domain[k1])
+
+                            solution_ik[name_i] = (i1, day_domain_i[i2])
+                            solution_ik[name_k] = (k1, day_domain_k[k2])
+
+                            cost2 = get_cost_of_all_binary_restrictions(solution_ik)
+                            if cost2 != 0:
+                                free_interval(day_domain_k[k2], global_domain[k1])
+                                continue
+
+                            solution_jk[name_j] = (j1, day_domain_j[j2])
+                            solution_jk[name_k] = (k1, day_domain_k[k2])
+
+                            cost3 = get_cost_of_all_binary_restrictions(solution_jk)
+                            if cost3 != 0:
+                                free_interval(day_domain_k[k2], global_domain[k1])
+                                continue
+
+                            keep_ij = True
+                            free_interval(day_domain_k[k2], global_domain[k1])
+                            break
+
+                        if keep_ij:
+                            break
+
+                    if not keep_ij:
+                        has_changed = True
+                    else:
+                        new_day_domain_i.append(day_domain_i[i2])
+                        new_day_domain_j.append(day_domain_j[j2])
+
+                    free_interval(day_domain_j[j2], global_domain[j1])
+
+                v_j[j1] = new_day_domain_j
+
+            free_interval(day_domain_i[i2], global_domain[i1])
+
+        v_i[i1] = new_day_domain_i
+
+    return has_changed
+
+
+# PC-2 algorithm
+def apply_path_consistency(vars, domains):
+    n = len(vars)
+    queue = []
+
+    for i in range(n - 1):
+        for j in range(i + 1, n):
+
+            for k in range(n):
+                if k != i and k != j:
+                    queue.append((vars[i], vars[k], vars[j]))
+
+    while len(queue) > 0:
+        head = queue[0]
+        queue.pop(0)
+
+        has_changed = revise3(vars, head, domains)
+
+        if has_changed:
+            for l in range(n):
+                if vars[l] != head[0] and vars[l] != head[2]:
+                    queue.append((vars[l], head[0], head[2]))
+                    queue.append((vars[l], head[2], head[0]))
+
+
 def pcsp(variables, domains, cost, solution, acceptable_cost, path):
     global best_cost
     global best_solution
     global activities_list
+    global start_time
+    global counter
+
+    elapsed_time = time.time() - start_time
+    if elapsed_time >= 1:
+        counter += 1
+        if counter == 60:
+            exit(0)
+
+        start_time = time.time()
+
+        print(str(counter) + ' ' + str(cost + get_cost_of_all_restrictions(solution)))
 
     # new_cost = cost + get_cost_of_all_restrictions(solution)
     new_cost = get_cost_of_all_restrictions(solution)
@@ -552,39 +712,6 @@ def pcsp(variables, domains, cost, solution, acceptable_cost, path):
         else:
             return False
 
-    # path consistency step
-
-    if len(path) >= 2:
-        path_len = len(path)
-        last = path[path_len - 1]
-        before_last = path[path_len - 2]
-        new_domains = copy(domains)
-
-        for var in variables:
-            not_empty = False
-            domain = domains[var]
-            new_domain = get_empty_domain()
-
-            for i in range(7):
-                day_domain = domain[i]
-
-                for interval in day_domain:
-                    if interval_is_free(interval, global_domain[i]):
-                        tmp_solution = {last: solution[last], before_last: solution[before_last], var: (i, interval)}
-                        tmp_cost = get_cost_of_all_restrictions(tmp_solution)
-
-                        if tmp_cost == 0:
-                            new_domain[i].append(interval)
-                            not_empty = True
-
-            new_domains[var] = new_domain
-            if not not_empty:
-                return False
-
-        domains = new_domains
-
-    # end of path consistency
-
     var = variables[0]
     domain = domains[var]
 
@@ -593,7 +720,7 @@ def pcsp(variables, domains, cost, solution, acceptable_cost, path):
     is_first_instance = False
     var_index = -1
 
-    # if we have multiple instances for a certain activity
+    # if we have multiple instances for a certain activity, we need to be careful about when we plan it
     if var in instances_position:
         (var_index, positioning) = instances_position[var]
         chosen_day = positioning[var_index]
@@ -644,7 +771,6 @@ def pcsp(variables, domains, cost, solution, acceptable_cost, path):
         domain = empty_domain
 
     # value ordering step
-    '''
     costs = get_empty_domain()
     empty_domain = get_empty_domain()
     for i in range(7):
@@ -673,7 +799,6 @@ def pcsp(variables, domains, cost, solution, acceptable_cost, path):
                     empty_domain[i][j2] = aux
 
     domain = empty_domain
-    '''
     # end of value ordering
 
     ret = False
@@ -720,6 +845,12 @@ def pcsp(variables, domains, cost, solution, acceptable_cost, path):
 
     return ret
 
+
+# apply_path_consistency(activities, intervals)
+# print(intervals)
+
+start_time = time.time()
+counter = 0
 
 pcsp(activities, intervals, cost_of_all_missing_instances, {}, 0, [])
 
