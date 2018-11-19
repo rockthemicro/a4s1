@@ -134,6 +134,10 @@ instances_of_activity = {}  # for ex, Breakfast -> [Breakfast_w0_d0, Breakfast_w
 
 relative = {}  # for ex, Medication is relative to Dinner means relative['Medication'] == 'Dinner'
 
+# for ex, Medication is relative to Dinner means depends_on['Medication'] has 'Dinner'
+# and if Medication needs to be at a minimum distance from Breakfast means depends_on['Medication'] has Break
+is_needed_by = {}
+
 
 def build_exact_interval_activity(exact_interval_activity):
     name = exact_interval_activity['name']
@@ -151,6 +155,8 @@ def build_exact_interval_activity(exact_interval_activity):
     constraints[name] = []
 
     instances_of_activity[name] = [name]
+
+    is_needed_by[name] = []
 
 
 def get_cost_relative_restriction(day, start, _, solution, relative_to_instances, relative_within):
@@ -172,9 +178,9 @@ def get_cost_relative_restriction(day, start, _, solution, relative_to_instances
             interval_end = relative_end + relative_within
 
         if start <= interval_start:
-            new_cost = c_relative * abs(start - interval_start)  # TODO x60 (trebuie in secunde)
+            new_cost = c_relative * abs(start - interval_start) * 60
         elif start > interval_end:
-            new_cost = c_relative * abs(start - interval_end)
+            new_cost = c_relative * abs(start - interval_end) * 60
         else:
             cost = 0
             break
@@ -185,7 +191,7 @@ def get_cost_relative_restriction(day, start, _, solution, relative_to_instances
     if cost != sys.maxsize:
         return cost
     else:
-        return None
+        return 0
 
 
 def get_cost_preferred_intervals(day, start, end, _, preferred_intervals):
@@ -351,10 +357,15 @@ def create_restrictions(tmp_names, generic_activity):
     if 'minimal_distance_from' in generic_activity:
         minimal_distance_from = generic_activity['minimal_distance_from']
         targets = []
+        target_names = []
 
         for target_activity in minimal_distance_from:
             target_name = target_activity['activity']
             targets.append(target_name)
+            target_names.append(target_activity['activity']['activity_type'])
+
+        for tmp_name in tmp_names:
+            is_needed_by[tmp_name] = target_names
 
         def f4(day, start, end, solution, minimal_distance_from2=targets, name2=generic_activity['name']):
             return get_cost_minimal_distance(day, start, end, solution, minimal_distance_from2, name2)
@@ -367,6 +378,7 @@ def create_restrictions(tmp_names, generic_activity):
 
 def build_generic_activity(generic_activity):
     name = generic_activity['name']
+    dependencies = []
     tmp_names = []  # names of all variables created in this function
 
     if generic_activity['duration']['unit'] == 'minute':
@@ -430,9 +442,16 @@ def build_generic_activity(generic_activity):
             for tmp_name in tmp_names:
                 relative[tmp_name] = generic_activity['before']['activity_type']
 
+            dependencies.append(generic_activity['before']['activity_type'])
+
         elif 'after' in generic_activity:
             for tmp_name in tmp_names:
                 relative[tmp_name] = generic_activity['after']['activity_type']
+
+            dependencies.append(generic_activity['after']['activity_type'])
+
+        for tmp_name in tmp_names:
+            is_needed_by[tmp_name] = is_needed_by.get(tmp_name, []) + dependencies
 
 
 global_domain = build_domain(5, True)
@@ -445,7 +464,49 @@ for activity in activities_list:
     else:
         build_generic_activity(activity)
 
-activities = exact_activities + instances_activities + relative_activities
+
+# heuristic for ordering variables
+def order_variables(non_relatives, relatives):
+    for i in range(len(non_relatives)):
+        for j in range(i + 1, len(non_relatives)):
+            dom_i = intervals[non_relatives[i]]
+            dom_j = intervals[non_relatives[j]]
+
+            sum_i = 0
+            sum_j = 0
+            for k in range(7):
+                sum_i += len(dom_i[k])
+                sum_j += len(dom_j[k])
+
+            if sum_i > sum_j:
+                aux = non_relatives[i]
+                non_relatives[i] = non_relatives[j]
+                non_relatives[j] = aux
+
+    for i in range(len(relatives)):
+        for j in range(i + 1, len(relatives)):
+            dom_i = intervals[relatives[i]]
+            dom_j = intervals[relatives[j]]
+
+            sum_i = 0
+            sum_j = 0
+            for k in range(7):
+                sum_i += len(dom_i[k])
+                sum_j += len(dom_j[k])
+
+            if sum_i > sum_j:
+                aux = relatives[i]
+                relatives[i] = relatives[j]
+                relatives[j] = aux
+
+
+# we group exact_activities and instances_activities together because we always want them to be
+# planned before relative_activities
+non_relative_activities = exact_activities + instances_activities
+
+order_variables(non_relative_activities, relative_activities)
+
+activities = non_relative_activities + relative_activities
 
 best_cost = sys.maxsize
 best_solution = {}
@@ -467,7 +528,7 @@ def get_cost_of_all_restrictions(partial_solution):
     return new_cost
 
 
-def pcsp(variables, domains, cost, solution, acceptable_cost):
+def pcsp(variables, domains, cost, solution, acceptable_cost, path):
     global best_cost
     global best_solution
     global activities_list
@@ -489,8 +550,43 @@ def pcsp(variables, domains, cost, solution, acceptable_cost):
         else:
             return False
 
+    # path consistency step
+    '''
+    if len(path) >= 2:
+        path_len = len(path)
+        last = path[path_len - 1]
+        before_last = path[path_len - 2]
+        new_domains = copy(domains)
+
+        for var in variables:
+            not_empty = False
+            domain = domains[var]
+            new_domain = get_empty_domain()
+
+            for i in range(7):
+                day_domain = domain[i]
+
+                for interval in day_domain:
+                    if interval_is_free(interval, global_domain[i]):
+                        tmp_solution = {last: solution[last], before_last: solution[before_last], var: (i, interval)}
+                        tmp_cost = get_cost_of_all_restrictions(tmp_solution)
+
+                        if tmp_cost == 0:
+                            new_domain[i].append(interval)
+                            not_empty = True
+
+            new_domains[var] = new_domain
+            if not not_empty:
+                return False
+
+        domains = new_domains
+    '''
+    # end of path consistency
+
     var = variables[0]
     domain = domains[var]
+
+    path = path + [var]
 
     is_first_instance = False
     var_index = -1
@@ -506,9 +602,10 @@ def pcsp(variables, domains, cost, solution, acceptable_cost):
             is_first_instance = True
             empty_domain = get_empty_domain()
 
+            '''
             # we mark for removal those days that are already chosen by other instances that mustn't be in the
             # same day with us
-            '''
+            
             indexes_to_remove = [False for _ in range(7)]
             for i in range(len(positioning)):
                 if i != var_index and positioning[i] != -1:
@@ -521,6 +618,7 @@ def pcsp(variables, domains, cost, solution, acceptable_cost):
             domain = empty_domain
             '''
 
+            # we only choose days later in the week than the latest day we already find planned
             loc_max = -1
             for i in range(len(positioning)):
                 if i != var_index and positioning[i] > loc_max:
@@ -578,7 +676,7 @@ def pcsp(variables, domains, cost, solution, acceptable_cost):
 
                     new_solution = copy(solution)
                     new_solution[var] = (i, interval)
-                    ret = ret or pcsp(variables[1:], domains, cost, new_solution, acceptable_cost)
+                    ret = ret or pcsp(variables[1:], domains, cost, new_solution, acceptable_cost, path)
 
                     free_interval(interval, global_domain[i])
 
@@ -597,14 +695,14 @@ def pcsp(variables, domains, cost, solution, acceptable_cost):
 
                     new_solution = copy(solution)
                     new_solution[var] = (i, interval)
-                    ret = ret or pcsp(variables[1:], domains, cost, new_solution, acceptable_cost)
+                    ret = ret or pcsp(variables[1:], domains, cost, new_solution, acceptable_cost, path)
 
                     free_interval(interval, global_domain[i])
 
     return ret
 
 
-pcsp(activities, intervals, cost_of_all_missing_instances, {}, 0)
+pcsp(activities, intervals, cost_of_all_missing_instances, {}, 0, [])
 
 
 # global_domain[1][get_index_of(8 * 60 + 10)][2] = False

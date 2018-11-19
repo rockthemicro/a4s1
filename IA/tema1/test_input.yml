@@ -11,22 +11,27 @@ activity_list:
   - activity:
       name: Dinner
       scheduling_type: nr_instances
-      instances_per_week: 1
+      instances_per_week: 2
       instances_per_day: 1
       duration:
-        value: 1
+        value: 15
         unit: hour
       minimal_distance_from:
       - activity:
-          activity_type: Breakfast
+          activity_type: self
           value: 2
           unit: day
 
   - activity:
       name: Breakfast
-      scheduling_type: nr_instances
-      instances_per_week: 1
+      scheduling_type: relative
+      instances_per_week: 2
       instances_per_day: 1
       duration:
         value: 1
         unit: hour
+      before:
+        activity_type: Dinner
+        relative_within:
+          value: 60
+          unit: minute
