@@ -8,7 +8,7 @@ Euristica ordonare a variabilelor
     Pentru ordonarea variabilelor am ales sa implementez MRV (minimum remaining variables), pentru a pastra la
     inceputul listei de activitati variabilele cu cele mai mici domenii posibile. Motorul obtine un cost median
     de ~12 milioane.
-    
+
     Grafic: variable_ordering.png
 
 Euristica ordonare a valorilor

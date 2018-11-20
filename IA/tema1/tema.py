@@ -5,7 +5,7 @@ import sys
 import time
 from copy import copy
 
-with open("test_input2.yml", 'r') as stream:
+with open("test_input.yml", 'r') as stream:
     data_loaded = yaml.load(stream)
 
 sevenHundredHours: int = 7 * 60
@@ -524,7 +524,7 @@ def order_variables(non_relatives, relatives):
 non_relative_activities = exact_activities + instances_activities
 
 # variable ordering step
-order_variables(non_relative_activities, relative_activities)
+# order_variables(non_relative_activities, relative_activities)
 # end of variable ordering
 
 activities = non_relative_activities + relative_activities
@@ -771,6 +771,7 @@ def pcsp(variables, domains, cost, solution, acceptable_cost, path):
         domain = empty_domain
 
     # value ordering step
+    '''
     costs = get_empty_domain()
     empty_domain = get_empty_domain()
     for i in range(7):
@@ -799,6 +800,7 @@ def pcsp(variables, domains, cost, solution, acceptable_cost, path):
                     empty_domain[i][j2] = aux
 
     domain = empty_domain
+    '''
     # end of value ordering
 
     ret = False
@@ -846,8 +848,8 @@ def pcsp(variables, domains, cost, solution, acceptable_cost, path):
     return ret
 
 
-# apply_path_consistency(activities, intervals)
-# print(intervals)
+apply_path_consistency(activities, intervals)
+print(intervals)
 
 start_time = time.time()
 counter = 0

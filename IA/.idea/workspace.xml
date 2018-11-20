@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d181381-69aa-4d9d-a99f-c97c508022f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tema1/README" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema1/README" beforeDir="false" afterPath="$PROJECT_DIR$/tema1/README" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tema1/tema.py" beforeDir="false" afterPath="$PROJECT_DIR$/tema1/tema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tema1/test_input.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tema1/test_input.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +15,7 @@
     <session id="1297690920">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.8" value="2" />
@@ -43,14 +41,14 @@
         <counts>
           <entry key="Python Console" value="156" />
           <entry key="README" value="1314" />
-          <entry key="py" value="25619" />
+          <entry key="py" value="25666" />
           <entry key="yml" value="476" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="1314" />
-          <entry key="Python" value="25775" />
+          <entry key="Python" value="25822" />
           <entry key="YAML" value="476" />
         </counts>
       </usages-collector>
@@ -70,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tema1/test_input.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-13">
-              <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+            <state relative-caret-position="420">
+              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -82,21 +80,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tema1/tema.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-117">
-              <caret line="800" column="25" selection-start-line="800" selection-start-column="25" selection-end-line="800" selection-end-column="25" />
+            <state relative-caret-position="411">
+              <caret line="646" selection-start-line="646" selection-end-line="646" />
               <folding>
                 <element signature="e#25#36#0" expanded="true" />
-                <marker date="1542661563264" expanded="true" signature="404:409" ph="..." />
+                <marker date="1542662096807" expanded="true" signature="403:408" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tema1/README">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -132,8 +121,8 @@
       <find>medica</find>
       <find>breakfas</find>
       <find>dependencies</find>
-      <find>heal</find>
       <find>step</find>
+      <find>heal</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -145,12 +134,12 @@
         <option value="$PROJECT_DIR$/lab3/lab3.py" />
         <option value="$PROJECT_DIR$/tema1/test_input2.yml" />
         <option value="$PROJECT_DIR$/tema1/test_input.yml" />
-        <option value="$PROJECT_DIR$/tema1/tema.py" />
         <option value="$PROJECT_DIR$/tema1/README" />
+        <option value="$PROJECT_DIR$/tema1/tema.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="67" />
     <option name="y" value="25" />
     <option name="width" value="927" />
@@ -288,10 +277,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.50085473" side_tool="true" weight="0.2431694" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49785408" visible="true" weight="0.21092896" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49785408" visible="true" weight="0.21092896" />
       <window_info id="Structure" order="2" sideWeight="0.50214595" side_tool="true" weight="0.21092896" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.40216216" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -299,7 +287,7 @@
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
       <window_info anchor="bottom" id="Version Control" order="5" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.44216216" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.3189189" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.3545946" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -313,8 +301,32 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tema1/tema.py</url>
+          <line>646</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+    </breakpoint-manager>
+  </component>
   <component name="debuggerHistoryManager">
     <expressions id="breakpointCondition">
+      <expression>
+        <expression-string>has_changed == True</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>len(queue) == 1</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>len(dependencies) &gt; 0</expression-string>
         <language-id>Python</language-id>
@@ -364,10 +376,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tema1/test_input.yml">
+    <entry file="file://$PROJECT_DIR$/tema1/README">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13">
-          <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        <state relative-caret-position="345">
+          <caret line="23" column="72" selection-start-line="23" selection-start-column="72" selection-end-line="23" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tema1/tema.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="646" selection-start-line="646" selection-end-line="646" />
+          <folding>
+            <element signature="e#25#36#0" expanded="true" />
+            <marker date="1542662096807" expanded="true" signature="403:408" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -378,21 +401,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tema1/tema.py">
+    <entry file="file://$PROJECT_DIR$/tema1/test_input.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-117">
-          <caret line="800" column="25" selection-start-line="800" selection-start-column="25" selection-end-line="800" selection-end-column="25" />
-          <folding>
-            <element signature="e#25#36#0" expanded="true" />
-            <marker date="1542661563264" expanded="true" signature="404:409" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tema1/README">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        <state relative-caret-position="420">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
         </state>
       </provider>
     </entry>
