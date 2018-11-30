@@ -2,12 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66c325b1-bd9c-4388-b111-97ae55d11560" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../CliClient/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/MySQLAdmin_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../IA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../IA/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../MPS/blood-donation-platform" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MPS/blood-donation-platform" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs-rest-service/initial/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs-rest-service/initial/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs-rest-service/initial/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs-rest-service/initial/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs-rest-service/initial/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs-rest-service/initial/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs-rest-service/initial/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs-rest-service/initial/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs-rest-service/initial/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs-rest-service/initial/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs-rest-service/initial/src/main/java/hello/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs-rest-service/test/run.sh" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,7 +41,7 @@
     <session id="-838689343">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.10" value="1" />
@@ -210,12 +217,12 @@
       <workItem from="1543491502689" duration="8276000" />
       <workItem from="1543506498595" duration="22976000" />
       <workItem from="1543601788986" duration="635000" />
-      <workItem from="1543603115358" duration="1497000" />
+      <workItem from="1543603115358" duration="1498000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36184000" />
+    <option name="totallyTimeSpent" value="36185000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
