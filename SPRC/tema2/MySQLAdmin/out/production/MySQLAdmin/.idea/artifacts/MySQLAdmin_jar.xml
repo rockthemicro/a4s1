@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="MySQLAdmin:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/MySQLAdmin_jar</output-path>
+    <root id="archive" name="MySQLAdmin.jar">
+      <element id="module-output" name="MySQLAdmin" />
+      <element id="extracted-dir" path="$USER_HOME$/mysql-connector-java-8.0.13/mysql-connector-java-8.0.13.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

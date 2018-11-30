@@ -1,0 +1,7 @@
+p(C, F | !G) = p(C, F, !G) / p(!G) = p(C, F, !G) / sumF(sumC(p(C, F, !G)))
+
+asadar, m-ar ajuta sa obtin urmatoareala tabela:
+C	F	G	Fi(CFG)
+0	0	0	0.7
+0	0	1	0.5
+...
