@@ -1,0 +1,41 @@
+POPESCU Mihaela 341C5
+
+Pentru buildul acestei teme este nevoie de gradle (pentru modulul de servicii - gs-rest-service).
+
+Cele 3 module ale aplicatiei sunt
+gs-rest-service: serviciu implementat in Spring (Java)
+MySQLAdmin: interfata de administrare a bazei de date, implementata in Java
+CliClient: interfata client, implementata in Java
+
+Interfata client si interfata de administrare a bazei de date au o implementare in linie de comanda,
+asa ca vom rula comenzile din ele folosind docker attach <name>
+
+Pentru buildul intregului proiect (repet, e nevoie de gradle), se foloseste:
+
+cd tema2
+./full_build.sh
+
+
+Pentru rularea intregului stack de servicii, se foloseste:
+docker swarm init
+docker stack deploy -c docker-compose.yml aplicatie
+Vom folosi apoi docker service ls pentru a vedea sub ce nume au fost lansate in executie containerele: <mysql_name> <server_name> <client_name> <admin_name>
+
+
+Vom deschide apoi 4 terminale pt monitorizarea aplicatiei
+In primul terminal vom scrie docker logs --follow <mysql_name> pentru monitorizarea activitatii mysql
+In al 2-lea terminal vom scrie docker logs --follow <server_name> pentru monitorizarea activitatii serviciului spring
+!!!Nota: serviciul va incepe sa ruleze doar dupa ce MySQL este complet functional (lucru care dureaza aproximativ 3-4 minute);
+	 vor mai dura aproximativ inca 2-3 minute pana serviciul este si el complet functional
+
+In al 3-lea terminal vom scrie docker attach <client_name>
+In al 4-lea terminal vom scrie docker attach <admin_name>
+!!!Nota: clientul va fi functional doar dupa ce serviciul este complet functional, adica la aproximativ 5-6 minute de la docker stack deploy
+	 Administrarea va fi functionala dupa ce baza de date mysql este complet functionala, adica la aproximativ 2-3 minute dupa docker stack deploy,
+	 DAR (!!!!!!) orice comanda data pe aplicatia de administrare va rezulta in EROARE daca aceasta va fi executata inainte ca serviciul sa fie
+	 complet functional, deoarece serviciul Spring este cel care creeaza tabelele din MySQL, conform cu directivele AutoWired si Entity din Spring
+
+
+Implementarea serviciului este in tema2/gs-rest-service/complete/src/main/java/hello/
+Implementarea clientului este in tema2/CliClient/src/client/
+Implementarea aplicatiei de administrare este in tema2/MySQLAdmin/src/admin/
