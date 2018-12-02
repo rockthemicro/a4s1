@@ -1,7 +1,7 @@
 ---
 applications:
 - name: server
-  memory: 256M
+  memory: 512M
   instances: 1
   host: rest-service
   domain: guides.spring.io

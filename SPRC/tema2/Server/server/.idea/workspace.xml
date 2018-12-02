@@ -2,136 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18521fd9-e108-4edd-b3c2-00c7dd462fe5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../AdminDB/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../AdminDB/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../AdminDB/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AdminDB/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../TextClient/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../TextClient/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../TextClient/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../TextClient/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../MPS/blood-donation-platform" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../MPS/blood-donation-platform" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CliClient/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CliClient/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CliClient/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CliClient/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CliClient/Client.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CliClient/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CliClient/client.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CliClient/full_build.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CliClient/out/production/CliClient/client/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CliClient/src/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CliClient/src/client/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CliClient/src/client/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MySQLAdmin/.idea/artifacts/MySQLAdmin_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MySQLAdmin/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MySQLAdmin/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MySQLAdmin/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MySQLAdmin/.idea/project-template.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MySQLAdmin/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MySQLAdmin/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MySQLAdmin/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MySQLAdmin/MySQLAdmin.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MySQLAdmin/admin.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MySQLAdmin/full_build.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MySQLAdmin/lib/mysql-connector-java-8.0.13.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MySQLAdmin/out/artifacts/MySQLAdmin_jar/MySQLAdmin.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MySQLAdmin/out/production/MySQLAdmin/.idea/artifacts/MySQLAdmin_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MySQLAdmin/out/production/MySQLAdmin/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MySQLAdmin/out/production/MySQLAdmin/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MySQLAdmin/out/production/MySQLAdmin/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MySQLAdmin/out/production/MySQLAdmin/.idea/project-template.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MySQLAdmin/out/production/MySQLAdmin/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MySQLAdmin/out/production/MySQLAdmin/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MySQLAdmin/out/production/MySQLAdmin/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MySQLAdmin/out/production/MySQLAdmin/MySQLAdmin.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MySQLAdmin/out/production/MySQLAdmin/admin/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MySQLAdmin/out/production/MySQLAdmin/admin/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MySQLAdmin/out/production/MySQLAdmin/full_build.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MySQLAdmin/out/production/MySQLAdmin/lib/mysql-connector-java-8.0.13.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MySQLAdmin/out/production/MySQLAdmin/src/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MySQLAdmin/out/production/MySQLAdmin/src/admin/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MySQLAdmin/out/production/MySQLAdmin/src/admin/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MySQLAdmin/out/production/MySQLAdmin/src/admin/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MySQLAdmin/src/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MySQLAdmin/src/admin/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MySQLAdmin/src/admin/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/.idea/libraries/gradle_wrapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/.idea/libraries/gradle_wrapper1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/.idea/libraries/maven_wrapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/.idea/libraries/maven_wrapper1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/CONTRIBUTING.adoc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/LICENSE.code.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/LICENSE.writing.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/README.adoc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/.gradle/4.6/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/.gradle/4.6/fileContent/annotation-processors.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/.gradle/4.6/fileContent/fileContent.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/.gradle/4.6/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/.gradle/4.6/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/.gradle/4.6/fileHashes/resourceHashesCache.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/.gradle/4.6/taskHistory/taskHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/.gradle/4.6/taskHistory/taskHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/.gradle/vcsWorkingDirs/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/.idea/kotlinc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/build/classes/java/main/hello/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/build/classes/java/main/hello/Dijkstra.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/build/classes/java/main/hello/Flight.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/build/classes/java/main/hello/FlightRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/build/classes/java/main/hello/Greeting.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/build/classes/java/main/hello/GreetingController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/build/classes/java/main/hello/MainController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/build/classes/java/main/hello/PathAndCost.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/build/classes/java/main/hello/State.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/build/classes/java/main/hello/Ticket.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/build/classes/java/main/hello/TicketRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/build/distributions/complete.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/build/docker/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/build/libs/gs-rest-service-0.1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/build/resources/main/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/full_build.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/manifest.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/out/production/classes/hello/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/out/production/classes/hello/Dijkstra.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/out/production/classes/hello/Flight.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/out/production/classes/hello/FlightRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/out/production/classes/hello/Greeting.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/out/production/classes/hello/GreetingController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/out/production/classes/hello/MainController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/out/production/classes/hello/PathAndCost.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/out/production/classes/hello/State.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/out/production/classes/hello/Ticket.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/out/production/classes/hello/TicketRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/out/production/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/src/main/java/hello/Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/src/main/java/hello/Dijkstra.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/src/main/java/hello/Flight.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/src/main/java/hello/FlightRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/src/main/java/hello/Greeting.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/src/main/java/hello/GreetingController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/src/main/java/hello/MainController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/src/main/java/hello/Ticket.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/src/main/java/hello/TicketRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/src/main/main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/complete/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gs-rest-service/run-on-pws.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdminDB/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../AdminDB/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdminDB/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AdminDB/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdminDB/target/AdminDB-0.0.1-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../AdminDB/target/AdminDB-0.0.1-jar-with-dependencies.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdminDB/target/AdminDB-0.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../AdminDB/target/AdminDB-0.0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AdminDB/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../AdminDB/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileContent/fileContent.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/services/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/services/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/services/Dijkstra.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/services/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/services/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/services/PathAndCost.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/services/State.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/services/zborRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/distributions/complete.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/docker/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/gs-rest-service-0.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/server-0.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/server-0.0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/full_build.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manifest.yml" beforeDir="false" afterPath="$PROJECT_DIR$/manifest.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/services/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/services/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/services/RouteCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/services/RouteCalculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/RouteCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/RouteCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../full_build.sh" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -151,44 +63,75 @@
     <session id="2094591541">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="2" />
+          <entry key="Dockerfile" value="2" />
+          <entry key="gradle" value="1" />
+          <entry key="java" value="3" />
+          <entry key="properties" value="4" />
+          <entry key="sh" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="2" />
+          <entry key="Bash" value="1" />
+          <entry key="Dockerfile" value="2" />
+          <entry key="Groovy" value="1" />
+          <entry key="JAVA" value="3" />
+          <entry key="Properties" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="Dockerfile" value="38" />
+          <entry key="java" value="162" />
+          <entry key="properties" value="18" />
+          <entry key="sh" value="11" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Bash" value="11" />
+          <entry key="Dockerfile" value="38" />
+          <entry key="JAVA" value="162" />
+          <entry key="Properties" value="18" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/services/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="90">
+              <caret line="9" column="41" lean-forward="true" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/services/RouteCalculator.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+            <state relative-caret-position="45">
+              <caret line="3" column="40" lean-forward="true" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>var</find>
+      <find>COPY</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
@@ -624,6 +567,18 @@
       </map>
     </option>
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/services/RouteCalculator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/services/MainController.java" />
+        <option value="$PROJECT_DIR$/full_build.sh" />
+        <option value="$PROJECT_DIR$/Dockerfile" />
+        <option value="$PROJECT_DIR$/src/main/java/services/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+      </list>
+    </option>
+  </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
@@ -642,6 +597,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -665,28 +622,23 @@
               <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -725,28 +677,21 @@
       <option name="presentableId" value="Default" />
       <updated>1543709728438</updated>
       <workItem from="1543709731933" duration="218000" />
+      <workItem from="1543710698447" duration="3308000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="218000" />
+    <option name="totallyTimeSpent" value="3526000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Designer" />
-      <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24958494" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25235197" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" weight="0.32972974" />
-      <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Build" weight="0.32972974" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Learn" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32972974" />
@@ -754,14 +699,22 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Gradle" />
-      <window_info anchor="right" id="Bean Validation" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Spring" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Build" order="13" weight="0.32972974" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.32972974" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" />
+      <window_info anchor="right" id="Bean Validation" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -770,18 +723,76 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/services/RouteCalculator.java</url>
+          <line>24</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/services/Application.java">
+    <entry file="file://$PROJECT_DIR$/build/docker/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="45">
+          <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/services/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="22" column="90" selection-start-line="22" selection-start-column="90" selection-end-line="22" selection-end-column="90" />
+          <folding>
+            <element signature="method#getOptimalRoute#0;class#MainController#0" />
+            <element signature="method#bookTicket#0;class#MainController#0" />
+            <element signature="method#buyTicket#0;class#MainController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/services/RouteCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        <state relative-caret-position="-58">
+          <caret line="38" column="30" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/services/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="41" lean-forward="true" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="40" lean-forward="true" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
         </state>
       </provider>
     </entry>

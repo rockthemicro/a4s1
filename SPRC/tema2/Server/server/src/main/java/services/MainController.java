@@ -22,6 +22,13 @@ public class MainController {
                                                   @RequestParam(value="flights") Integer flights,
                                                   @RequestParam(value="day") Integer day) {
 
+        if (flights < 1) {
+            String[] result = new String[1];
+            result[0] = "Can't calculate route for max flights smaller than 1";
+
+            return result;
+        }
+
         Iterable<Zbor> flightIterable = zborRepo.findAll();
         Iterator<Zbor> flightIterator = flightIterable.iterator();
         LinkedList<Zbor> candidati = new LinkedList<>();

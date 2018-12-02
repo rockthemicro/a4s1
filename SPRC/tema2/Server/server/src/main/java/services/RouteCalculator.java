@@ -10,7 +10,7 @@ public class RouteCalculator {
     private LinkedList<Zbor> global_path = null;
 
     public LinkedList<Zbor> calculate(String from, String to, Integer flights, Integer day, LinkedList<Zbor> candidates) {
-        for (var zbor : candidates) {
+        for (Zbor zbor : candidates) {
             if (zbor.getDeparture_day() == day && zbor.getSource().equalsIgnoreCase(from)) {
                 calculateRouteStartingWith(zbor, from, to, flights, day, candidates);
             }
@@ -38,7 +38,7 @@ public class RouteCalculator {
         reachable.add(first);
         Integer iterations = 0;
 
-        while (iterations < flights && reachable.size() > 0) {
+        while (++iterations < flights && reachable.size() > 0) {
             LinkedList<TimeSpaceMoment> nextReachable = new LinkedList<>();
 
             for (TimeSpaceMoment moment : reachable) {
@@ -72,7 +72,6 @@ public class RouteCalculator {
             }
 
             reachable = nextReachable;
-            iterations++;
         }
 
         if (cost.containsKey(to)) {

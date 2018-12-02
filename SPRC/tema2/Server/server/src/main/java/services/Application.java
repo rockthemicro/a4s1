@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 @SpringBootApplication
 public class Application {
-    static String db_server_name = "localhost";
+    static String db_server_name = "mysqldatabase";
     static String db_server_init_usedb = "sys";
     static String db_server_usedb = "application";
     static String db_server_root_user = "root";

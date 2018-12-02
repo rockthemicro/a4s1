@@ -4,7 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Main {
 
-    private static final String db_host = "localhost";
+    private static final String db_host = "mysqldatabase";
     private static final String db_database = "application";
     private static final String db_user = "root";
     private static final String db_pass = "root";

@@ -2,107 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="848ecccf-aaea-4d16-9149-02a013820f88" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server/complete/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server/complete/src/main/java/services/RouteCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server/complete/src/main/java/services/TimeSpaceMoment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TextClient/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TextClient/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TextClient/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TextClient/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../MPS/blood-donation-platform" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MPS/blood-donation-platform" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CliClient/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CliClient/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CliClient/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CliClient/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CliClient/Client.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CliClient/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CliClient/client.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CliClient/full_build.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CliClient/out/production/CliClient/client/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CliClient/src/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CliClient/src/client/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CliClient/src/client/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MySQLAdmin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MySQLAdmin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MySQLAdmin/admin.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../MySQLAdmin/admin.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/.idea/libraries/gradle_wrapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/.idea/libraries/gradle_wrapper1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/.idea/libraries/maven_wrapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/.idea/libraries/maven_wrapper1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/CONTRIBUTING.adoc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/LICENSE.code.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/LICENSE.writing.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/README.adoc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/.gradle/4.6/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/.gradle/4.6/fileContent/annotation-processors.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/.gradle/4.6/fileContent/fileContent.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/.gradle/4.6/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/.gradle/4.6/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/.gradle/4.6/fileHashes/resourceHashesCache.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/.gradle/4.6/taskHistory/taskHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/.gradle/4.6/taskHistory/taskHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/.gradle/vcsWorkingDirs/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/.idea/kotlinc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/build/classes/java/main/hello/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/build/classes/java/main/hello/Dijkstra.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/build/classes/java/main/hello/Flight.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/build/classes/java/main/hello/FlightRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/build/classes/java/main/hello/Greeting.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/build/classes/java/main/hello/GreetingController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/build/classes/java/main/hello/MainController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/build/classes/java/main/hello/PathAndCost.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/build/classes/java/main/hello/State.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/build/classes/java/main/hello/Ticket.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/build/classes/java/main/hello/TicketRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/build/distributions/complete.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/build/docker/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/build/libs/gs-rest-service-0.1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/build/resources/main/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/full_build.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/manifest.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/out/production/classes/hello/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/out/production/classes/hello/Dijkstra.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/out/production/classes/hello/Flight.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/out/production/classes/hello/FlightRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/out/production/classes/hello/Greeting.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/out/production/classes/hello/GreetingController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/out/production/classes/hello/MainController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/out/production/classes/hello/PathAndCost.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/out/production/classes/hello/State.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/out/production/classes/hello/Ticket.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/out/production/classes/hello/TicketRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/out/production/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/src/main/java/hello/Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/src/main/java/hello/Dijkstra.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/src/main/java/hello/Flight.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/src/main/java/hello/FlightRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/src/main/java/hello/Greeting.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/src/main/java/hello/GreetingController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/src/main/java/hello/MainController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/src/main/java/hello/Ticket.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/src/main/java/hello/TicketRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/src/main/main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/complete/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gs-rest-service/run-on-pws.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AdminDB-0.0.1-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/AdminDB-0.0.1-jar-with-dependencies.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AdminDB-0.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/AdminDB-0.0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/server/.gradle/4.6/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/server/.gradle/4.6/fileContent/fileContent.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/server/.gradle/4.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/server/.gradle/4.6/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/server/.gradle/4.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/server/.gradle/4.6/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/server/.gradle/4.6/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/server/.gradle/4.6/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/server/.gradle/4.6/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/server/.gradle/4.6/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/server/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/server/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/server/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/server/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/server/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/server/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/server/build/classes/java/main/services/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/server/build/classes/java/main/services/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/server/build/classes/java/main/services/Dijkstra.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/server/build/classes/java/main/services/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/server/build/classes/java/main/services/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/server/build/classes/java/main/services/PathAndCost.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/server/build/classes/java/main/services/State.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/server/build/classes/java/main/services/zborRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/server/build/distributions/complete.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/server/build/docker/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/server/build/libs/gs-rest-service-0.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/server/build/libs/server-0.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/server/build/libs/server-0.0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/server/build/resources/main/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/server/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/server/build/tmp/bootJar/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/server/full_build.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/server/manifest.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/server/manifest.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/server/out/production/classes/services/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/server/out/production/classes/services/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/server/out/production/classes/services/RouteCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/server/out/production/classes/services/RouteCalculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/server/src/main/java/services/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/server/src/main/java/services/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/server/src/main/java/services/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/server/src/main/java/services/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/server/src/main/java/services/RouteCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/server/src/main/java/services/RouteCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../full_build.sh" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -116,17 +57,18 @@
     <session id="1745407500">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="Dockerfile" value="1" />
           <entry key="class" value="1" />
-          <entry key="iml" value="1" />
+          <entry key="iml" value="2" />
           <entry key="java" value="1" />
           <entry key="xml" value="1" />
         </counts>
@@ -134,20 +76,23 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="IDEA_MODULE" value="1" />
+          <entry key="Dockerfile" value="1" />
+          <entry key="IDEA_MODULE" value="2" />
           <entry key="JAVA" value="1" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1965" />
+          <entry key="Dockerfile" value="29" />
+          <entry key="java" value="1994" />
           <entry key="xml" value="88" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1965" />
+          <entry key="Dockerfile" value="29" />
+          <entry key="JAVA" value="1994" />
           <entry key="XML" value="88" />
         </counts>
       </usages-collector>
@@ -158,11 +103,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="174" column="23" selection-start-line="174" selection-start-column="23" selection-end-line="174" selection-end-column="23" />
+            <state relative-caret-position="90">
+              <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Dockerfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -188,6 +142,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
       </list>
     </option>
@@ -228,24 +183,6 @@
             <path>
               <item name="AdminDB" type="b2602c69:ProjectViewProjectNode" />
               <item name="AdminDB" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AdminDB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AdminDB" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AdminDB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AdminDB" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AdminDB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AdminDB" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -265,6 +202,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
@@ -331,16 +269,17 @@
       <workItem from="1543660943104" duration="10091000" />
       <workItem from="1543679777100" duration="2714000" />
       <workItem from="1543689609669" duration="9301000" />
+      <workItem from="1543711796535" duration="2212000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22106000" />
+    <option name="totallyTimeSpent" value="24318000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.255119" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.257886" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Learn" order="3" />
@@ -381,12 +320,6 @@
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
-          <line>32</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -415,10 +348,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="174" column="23" selection-start-line="174" selection-start-column="23" selection-end-line="174" selection-end-column="23" />
+        <state relative-caret-position="90">
+          <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
