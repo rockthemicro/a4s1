@@ -1,0 +1,42 @@
+Sontica Alexandru-Florentin 341C3
+
+Instructiuni utilizare:
+
+1. Build jaruri + containere din surse (e nevoie de maven si gradle)
+./build.sh
+
+2. Rulare stack de servicii
+./run.sh
+
+3. Atasare la clientul text si interfata de administrare
+docker ps
+docker attach system_textclient.1.....
+docker attach system_mysqldatabase.1....
+
+4. Comenzile clientului sunt: route, book si buy
+   Comenzile interfetei de administrare sunt 1 (add flight), 2 (cancel flight), 3 (afiseaza tabelul de zboruri)
+   si 4 (afiseaza tabelul de rezervari)
+
+5. Oprire stack de servicii
+./stop.sh
+
+
+
+
+Descrierea implementarii
+
+1. Serviciul
+Partea de servicii am ales sa o implementez in frameworkul de Java, Spring. Aplicatia aceasta are 2 parti:
+	- In Application.java, primul lucru care se face in main este sa se incerce la infinit conexiunea
+	la baza de date, pana aceasta reuseste. Motivul pt care facem asta este ca aplicatia Spring crapa
+	in momentul in care vede ca nu se poate conecta la baza de date
+	- Pornim aplicatia spring cu SpringApplication.run(..). Astfel, intr-un final, ajung sa se mapeze
+	routele /route, /book, si /buy, concatenate la http://server:8080, la metodele din MainController
+
+2. Clientul Text
+Clientul este implementat tot in Java, si urmareste aceeasi politica de incercare la infinit de conectare
+la server inainte de a intra in partea de logica si interactiune cu utilizatorul
+
+3. Aplicatia de administrare
+Implementare in Java. Se foloseste de un driver JDBC pentru conexiunea la baza de date. Si aceasta aplicatie
+incearca la infinit conectarea la baza de date, pana ii reuseste
