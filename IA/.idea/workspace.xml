@@ -2,10 +2,178 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d181381-69aa-4d9d-a99f-c97c508022f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../SPRC/tema2/CliClient/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SPRC/tema2/MySQLAdmin/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/1 Introducere/intro.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/1 Introducere/list.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/1 Introducere/self-type.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/2 Analiza lexicala/Lexer/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/2 Analiza lexicala/Lexer/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/2 Analiza lexicala/Lexer/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/2 Analiza lexicala/Lexer/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/2 Analiza lexicala/Lexer/.settings/org.eclipse.wst.common.project.facet.core.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/2 Analiza lexicala/Lexer/HelloLexer.g4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/2 Analiza lexicala/Lexer/HelloLexer.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/2 Analiza lexicala/Lexer/build/classes/HelloLexer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/2 Analiza lexicala/Lexer/build/classes/HelloLexer.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/2 Analiza lexicala/Lexer/build/classes/HelloLexer.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/2 Analiza lexicala/Lexer/build/classes/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/2 Analiza lexicala/Lexer/lib/antlr-4.7.1-complete.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/2 Analiza lexicala/Lexer/program.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/2 Analiza lexicala/Lexer/src/HelloLexer.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/2 Analiza lexicala/Lexer/src/HelloLexer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/2 Analiza lexicala/Lexer/src/HelloLexer.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/2 Analiza lexicala/Lexer/src/HelloParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/2 Analiza lexicala/Lexer/src/HelloParserBaseListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/2 Analiza lexicala/Lexer/src/HelloParserBaseVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/2 Analiza lexicala/Lexer/src/HelloParserListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/2 Analiza lexicala/Lexer/src/HelloParserVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/2 Analiza lexicala/Lexer/src/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/3 Analiza sintactica/Parser/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/3 Analiza sintactica/Parser/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/3 Analiza sintactica/Parser/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/3 Analiza sintactica/Parser/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/3 Analiza sintactica/Parser/.settings/org.eclipse.wst.common.project.facet.core.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/3 Analiza sintactica/Parser/HelloLexer.g4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/3 Analiza sintactica/Parser/HelloLexer.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/3 Analiza sintactica/Parser/HelloParser.g4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/3 Analiza sintactica/Parser/HelloParser.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/3 Analiza sintactica/Parser/build/classes/HelloLexer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/3 Analiza sintactica/Parser/build/classes/HelloLexer.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/3 Analiza sintactica/Parser/build/classes/HelloLexer.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/3 Analiza sintactica/Parser/build/classes/HelloParser$ExprContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/3 Analiza sintactica/Parser/build/classes/HelloParser$IdContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/3 Analiza sintactica/Parser/build/classes/HelloParser$IfContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/3 Analiza sintactica/Parser/build/classes/HelloParser$IntContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/3 Analiza sintactica/Parser/build/classes/HelloParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/3 Analiza sintactica/Parser/build/classes/HelloParser.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/3 Analiza sintactica/Parser/build/classes/HelloParser.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/3 Analiza sintactica/Parser/build/classes/HelloParserBaseListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/3 Analiza sintactica/Parser/build/classes/HelloParserBaseVisitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/3 Analiza sintactica/Parser/build/classes/HelloParserListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/3 Analiza sintactica/Parser/build/classes/HelloParserVisitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/3 Analiza sintactica/Parser/build/classes/Test$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/3 Analiza sintactica/Parser/build/classes/Test$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/3 Analiza sintactica/Parser/build/classes/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/3 Analiza sintactica/Parser/lib/antlr-4.7.1-complete.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/3 Analiza sintactica/Parser/program.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/3 Analiza sintactica/Parser/program2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/3 Analiza sintactica/Parser/src/HelloLexer.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/3 Analiza sintactica/Parser/src/HelloLexer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/3 Analiza sintactica/Parser/src/HelloLexer.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/3 Analiza sintactica/Parser/src/HelloParser.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/3 Analiza sintactica/Parser/src/HelloParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/3 Analiza sintactica/Parser/src/HelloParser.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/3 Analiza sintactica/Parser/src/HelloParserBaseListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/3 Analiza sintactica/Parser/src/HelloParserBaseVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/3 Analiza sintactica/Parser/src/HelloParserListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/3 Analiza sintactica/Parser/src/HelloParserVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/3 Analiza sintactica/Parser/src/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/.settings/org.eclipse.wst.common.project.facet.core.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/HelloLexer.g4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/HelloLexer.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/HelloParser.g4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/HelloParser.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/build/classes/DefaultScope.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/build/classes/HelloLexer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/build/classes/HelloLexer.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/build/classes/HelloLexer.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/build/classes/HelloParser$BlockContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/build/classes/HelloParser$DefContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/build/classes/HelloParser$ExprContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/build/classes/HelloParser$IdContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/build/classes/HelloParser$IfContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/build/classes/HelloParser$IntContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/build/classes/HelloParser$PlusContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/build/classes/HelloParser$ProgramContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/build/classes/HelloParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/build/classes/HelloParser.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/build/classes/HelloParser.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/build/classes/HelloParserBaseListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/build/classes/HelloParserBaseVisitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/build/classes/HelloParserListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/build/classes/HelloParserVisitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/build/classes/IdSymbol.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/build/classes/Scope.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/build/classes/Symbol.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/build/classes/Test$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/build/classes/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/lib/antlr-4.7.1-complete.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/program.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/program2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/src/DefaultScope.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/src/HelloLexer.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/src/HelloLexer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/src/HelloLexer.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/src/HelloParser.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/src/HelloParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/src/HelloParser.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/src/HelloParserBaseListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/src/HelloParserBaseVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/src/HelloParserListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/src/HelloParserVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/src/Scope.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/src/Symbol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/src/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/4 Analiza semantica - Rezolvarea simbolurilor/Symbols/symbols.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/.settings/org.eclipse.wst.common.project.facet.core.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/HelloLexer.g4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/HelloLexer.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/HelloParser.g4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/HelloParser.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/build/classes/DefaultScope.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/build/classes/HelloLexer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/build/classes/HelloLexer.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/build/classes/HelloLexer.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/build/classes/HelloParser$BlockContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/build/classes/HelloParser$DefContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/build/classes/HelloParser$ExprContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/build/classes/HelloParser$IdContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/build/classes/HelloParser$IfContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/build/classes/HelloParser$IntContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/build/classes/HelloParser$PlusContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/build/classes/HelloParser$ProgramContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/build/classes/HelloParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/build/classes/HelloParser.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/build/classes/HelloParser.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/build/classes/HelloParserBaseListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/build/classes/HelloParserBaseVisitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/build/classes/HelloParserListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/build/classes/HelloParserVisitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/build/classes/IdSymbol.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/build/classes/Scope.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/build/classes/Symbol.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/build/classes/Test$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/build/classes/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/build/classes/TypeSymbol.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/lib/antlr-4.7.1-complete.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/program.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/program2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/src/DefaultScope.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/src/HelloLexer.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/src/HelloLexer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/src/HelloLexer.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/src/HelloParser.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/src/HelloParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/src/HelloParser.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/src/HelloParserBaseListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/src/HelloParserBaseVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/src/HelloParserListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/src/HelloParserVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/src/Scope.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/src/Symbol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/src/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Cod_curs/5 Analiza semantica - Verificarea tipurilor/Types/symbols.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema1/tema.py" beforeDir="false" afterPath="$PROJECT_DIR$/tema1/tema.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MPS/blood-donation-platform" beforeDir="false" afterPath="$PROJECT_DIR$/../MPS/blood-donation-platform" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SPRC/tema2/AdminDB/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SPRC/tema2/AdminDB/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,26 +185,12 @@
     <favorites_list name="IA" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lab9/Lab09-VariableElimination-Skel.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lab9/Lab09-VariableElimination-Skel-Py36.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lab9/Lab09-VariableElimination-solved.py">
+        <entry file="file://$PROJECT_DIR$/lab10/Lab10_GraphPlan.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6975">
-              <caret line="465" column="32" lean-forward="true" selection-start-line="465" selection-start-column="32" selection-end-line="465" selection-end-column="32" />
+            <state relative-caret-position="246">
+              <caret line="341" column="112" selection-start-line="341" selection-start-column="112" selection-end-line="341" selection-end-column="112" />
             </state>
           </provider>
         </entry>
@@ -72,9 +226,11 @@
       <find>medica</find>
       <find>breakfas</find>
       <find>dependencies</find>
-      <find>step</find>
       <find>heal</find>
       <find>Elini</find>
+      <find>step</find>
+      <find>TODO</find>
+      <find>extend_graph</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -87,8 +243,10 @@
         <option value="$PROJECT_DIR$/tema1/test_input2.yml" />
         <option value="$PROJECT_DIR$/tema1/test_input.yml" />
         <option value="$PROJECT_DIR$/tema1/README" />
-        <option value="$PROJECT_DIR$/tema1/tema.py" />
         <option value="$PROJECT_DIR$/lab9/Lab09-VariableElimination-solved.py" />
+        <option value="$PROJECT_DIR$/tema1/tema.py" />
+        <option value="$PROJECT_DIR$/lab10/Lab10-GraphPlan-Skel.py" />
+        <option value="$PROJECT_DIR$/lab10/Lab10_GraphPlan.py" />
       </list>
     </option>
   </component>
@@ -106,7 +264,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="IA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IA" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IA" type="462c0819:PsiDirectoryNode" />
+              <item name="lab10" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
     </panes>
   </component>
@@ -132,8 +305,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Lab09-VariableElimination-solved">
-    <configuration name="Lab09-VariableElimination-solved" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.Lab10_GraphPlan">
+    <configuration name="Lab10-GraphPlan-Skel" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="IA" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -141,11 +314,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab9" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab10" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab9/Lab09-VariableElimination-solved.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab10/Lab10-GraphPlan-Skel.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -154,7 +327,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="lab3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Lab10_GraphPlan" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="IA" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -162,32 +335,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab10" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab3/lab3.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="tema" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="IA" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tema1" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tema1/tema.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab10/Lab10_GraphPlan.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -197,15 +349,13 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Lab09-VariableElimination-solved" />
-      <item itemvalue="Python.lab3" />
-      <item itemvalue="Python.tema" />
+      <item itemvalue="Python.Lab10_GraphPlan" />
+      <item itemvalue="Python.Lab10-GraphPlan-Skel" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Lab09-VariableElimination-solved" />
-        <item itemvalue="Python.tema" />
-        <item itemvalue="Python.lab3" />
+        <item itemvalue="Python.Lab10_GraphPlan" />
+        <item itemvalue="Python.Lab10-GraphPlan-Skel" />
       </list>
     </recent_temporary>
   </component>
@@ -233,17 +383,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.50085473" side_tool="true" weight="0.2431694" />
       <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49785408" visible="true" weight="0.21092896" />
       <window_info id="Structure" order="2" sideWeight="0.50214595" side_tool="true" weight="0.21092896" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.40216216" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.40172786" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="2" weight="0.32864866" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
       <window_info anchor="bottom" id="Version Control" order="5" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.31857452" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.31857452" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.35421166" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -258,14 +409,19 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tema1/tema.py</url>
-          <line>646</line>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/lab9/Lab09-VariableElimination-solved.py</url>
           <line>461</line>
           <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/lab10/Lab10-GraphPlan-Skel.py</url>
+          <line>275</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/lab10/Lab10_GraphPlan.py</url>
+          <line>264</line>
+          <option name="timeStamp" value="44" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -352,17 +508,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tema1/tema.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="646" selection-start-line="646" selection-end-line="646" />
-          <folding>
-            <element signature="e#25#36#0" expanded="true" />
-            <marker date="1542662096807" expanded="true" signature="403:408" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lab9/Lab09-VariableElimination-Skel.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -375,8 +520,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lab9/Lab09-VariableElimination-solved.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6975">
-          <caret line="465" column="32" lean-forward="true" selection-start-line="465" selection-start-column="32" selection-end-line="465" selection-end-column="32" />
+        <state relative-caret-position="844">
+          <caret line="465" column="32" selection-start-line="465" selection-start-column="32" selection-end-line="465" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tema1/tema.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="772" column="25" selection-start-line="772" selection-start-column="21" selection-end-line="772" selection-end-column="25" />
+          <folding>
+            <element signature="e#25#36#0" expanded="true" />
+            <marker date="1544009266254" expanded="true" signature="404:409" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab10/Lab10-GraphPlan-Skel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="277" selection-start-line="277" selection-end-line="277" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab10/Lab10_GraphPlan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="341" column="112" selection-start-line="341" selection-start-column="112" selection-end-line="341" selection-end-column="112" />
         </state>
       </provider>
     </entry>

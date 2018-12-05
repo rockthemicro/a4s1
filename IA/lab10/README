@@ -1,0 +1,48 @@
+actiuni in reprezentarea strips:
+
+a. preconditii
+b. fapte adaugate
+c. eliminari
+
+ex: Eat(cake)
+- preconditii: Have(cake)
+- adaugare: Eaten(Cake)
+- eliminare: !Have(Cake)
+
+in labul de azi, avem fapte adaugate si eliminari la un loc
+
+Graful Plan
+
+- are 2 niveluri:
+	- nivel de stare (niveluri pare)
+	- nivel de actiuni (niveluri impare)
+
+ex. de stare initiala S0: { Have(Cake), !Eaten(Cake) }
+       stare goal G: { Have(Cake), Eaten(Cake) }
+
+actiuni:
+	- propriu zise: Eat(Cake)
+	- de persistenta: pastrez proprietatile, un fel de "nop"
+
+
+Have(Cake)
+	-persistenta
+		- Have(Cake)
+	-Eat(Cake)
+		- !Have(Cake)
+		- Eaten(Cake)
+
+
+!Eaten(Cake)
+	-persistenta
+		!Eaten(Cake)
+
+
+Actiuni mutual exclusive:
+1. preconditii contradictorii (Pa = !Pb)
+2. efecte inconsistente (Ea = !Eb)
+3. inferenta (Pa = !Eb)
+
+Fapte mutual exclusive:
+1. a, !a
+2. daca nu exista o pereche de actiuni care nu sunt mutual exclusive sa le genereze

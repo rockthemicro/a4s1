@@ -2,48 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="848ecccf-aaea-4d16-9149-02a013820f88" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextClient/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextClient/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextClient/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextClient/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../MPS/blood-donation-platform" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MPS/blood-donation-platform" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AdminDB-0.0.1-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/AdminDB-0.0.1-jar-with-dependencies.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AdminDB-0.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/AdminDB-0.0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/server/.gradle/4.6/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/server/.gradle/4.6/fileContent/fileContent.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/server/.gradle/4.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/server/.gradle/4.6/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/server/.gradle/4.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/server/.gradle/4.6/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/server/.gradle/4.6/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/server/.gradle/4.6/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/server/.gradle/4.6/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/server/.gradle/4.6/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/server/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/server/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/server/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/server/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/server/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/server/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/server/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/server/build/classes/java/main/services/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/server/build/classes/java/main/services/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/server/build/classes/java/main/services/Dijkstra.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/server/build/classes/java/main/services/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/server/build/classes/java/main/services/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/server/build/classes/java/main/services/PathAndCost.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/server/build/classes/java/main/services/State.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/server/build/classes/java/main/services/zborRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/server/build/distributions/complete.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/server/build/docker/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/server/build/libs/gs-rest-service-0.1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/server/build/libs/server-0.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/server/build/libs/server-0.0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/server/build/resources/main/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/server/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/server/build/tmp/bootJar/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/server/full_build.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/server/manifest.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/server/manifest.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/server/out/production/classes/services/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/server/out/production/classes/services/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/server/out/production/classes/services/RouteCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/server/out/production/classes/services/RouteCalculator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/server/src/main/java/services/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/server/src/main/java/services/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/server/src/main/java/services/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/server/src/main/java/services/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/server/src/main/java/services/RouteCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/server/src/main/java/services/RouteCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/server/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../full_build.sh" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -57,11 +17,13 @@
     <session id="1745407500">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -103,8 +65,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
+            <state relative-caret-position="115">
+              <caret line="93" column="57" selection-start-line="93" selection-start-column="57" selection-end-line="93" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -115,8 +77,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="145">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -172,6 +134,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -189,7 +152,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -270,16 +232,19 @@
       <workItem from="1543679777100" duration="2714000" />
       <workItem from="1543689609669" duration="9301000" />
       <workItem from="1543711796535" duration="2212000" />
+      <workItem from="1543749186916" duration="382000" />
+      <workItem from="1543749604750" duration="12000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24318000" />
+    <option name="totallyTimeSpent" value="24712000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <frame x="134" y="35" width="3706" height="2125" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.257886" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26727474" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Learn" order="3" />
@@ -293,7 +258,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32972974" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.22563274" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5002767" side_tool="true" weight="0.32972974" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="12" />
@@ -348,20 +313,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
+        <state relative-caret-position="115">
+          <caret line="93" column="57" selection-start-line="93" selection-start-column="57" selection-end-line="93" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
