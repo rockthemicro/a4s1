@@ -116,7 +116,6 @@ def build_graph_from_input(G, N, lines):
         curr_line_parts = curr_line.split(";")
 
         var_name = curr_line_parts[0].split(" ")[0]
-        print(var_name)
 
         G.addVertex(var_name)
 
@@ -157,8 +156,6 @@ def build_graph_from_input(G, N, lines):
             increment_indexes(indexes)
 
         G.getVertex(var_name).setFactor(Factor(vars=vars, values=values))
-
-    print(G)
 
 
 def build_unoriented_graph_from_oriented(G):
@@ -463,6 +460,30 @@ def multiply(phi1, phi2):
     return Factor(vars3, vals)
 
 
+def attach_factors(T, G):
+    for vertex in G.getVertices():
+        vertex_factor = G.getVertex(vertex).getFactor()
+
+        for T_vertex in T.getVertices():
+            vars = vertex_factor.vars
+            all_vars_are_included = True
+
+            for var in vars:
+                if var not in T_vertex:
+                    all_vars_are_included = False
+                    break
+
+            if all_vars_are_included:
+
+                if T.getVertex(T_vertex).getFactor() == None:
+                    T.getVertex(T_vertex).setFactor(vertex_factor)
+
+                else:
+                    T.getVertex(T_vertex).setFactor(multiply(vertex_factor, T.getVertex(T_vertex).getFactor()))
+
+                break
+
+
 def main():
     print('python main function: ', __name__)
     input_file = open("bn1", "r")
@@ -487,6 +508,23 @@ def main():
     C = build_graph_with_BronKerbosch1(H_star)
 
     T = build_minimum_tree(C)
+
+    attach_factors(T, G)
+
+    clique_vertices = T.getVertices()
+    clique_vertices = list(clique_vertices)
+    for i in range(len(clique_vertices) - 1):
+        new_output = "Vertex " + clique_vertices[i] + " has the factor: " + str(T.getVertex(clique_vertices[i]).getFactor())
+        print(new_output)
+
+        new_output = "Vertex " + clique_vertices[i] + " has the following connections: "
+
+        for j in range(i + 1, len(clique_vertices)):
+            if T.getVertex(clique_vertices[i]).isConnectedTo(clique_vertices[j]):
+                new_output += clique_vertices[j] + "  "
+
+        print(new_output)
+        print()
 
 
 if __name__ == '__main__':
