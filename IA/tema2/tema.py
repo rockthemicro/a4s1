@@ -188,7 +188,7 @@ def moralize_graph(U, G):
 def has_no_cords(H, cycle):
     for i in range(len(cycle) - 2):
         for j in range(i + 2, len(cycle)):
-            if H.getVertex(cycle[i]).isConnectedTo(cycle[j]):
+            if H.getVertex(cycle[i]).isConnectedTo(cycle[j]) and (i != 0 or j != len(cycle) - 1):
                 return False
 
     return True
@@ -202,9 +202,7 @@ def dfs(H, vertex, visited, parent, path):
             continue
 
         # if we have a cycle
-        if visited[neighbour] == True:
-            if neighbour not in path:
-                continue
+        if neighbour in path:
 
             # obtain the index of the neighbour in the path so far
             neighbour_index = path.index(neighbour)
@@ -243,8 +241,8 @@ def graph_is_cordal(H):
 
 
 def build_cordal_graph(H):
-    #if graph_is_cordal(H):
-    #    return H
+    if graph_is_cordal(H):
+        return H
 
     tmp_vertices = H.getVertices()
     done = False
