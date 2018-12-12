@@ -1,0 +1,25 @@
+concepte sisteme multiagent
+- cooperare
+- comunicare
+- organizare
+
+2 actiuni (S1, S2) sunt in echilibru Nash daca:
+- A alege S1 => B nu poate obtine un scor mai mare fata de cazul in care
+alege S2
+- A alege S2 => A nu poate alege un scor mai mare fata de cazul in care
+alege S1
+
+A/B		Defect	Cooperate
+Defect		-2 -2	0 -3
+Cooperate	-3 0	-1 -1
+
+Strategii:
+AllD -> Defect (tradare) intotdeauna
+Random -> evident ce face (functia choice in python)
+TFT (tit for tat) -> 0 -> C
+		     1...n -> ce a facut oponentul
+TFT + 10% sa dam defect
+Tester -> 0 -> D
+	  1 -> m-a atacat jucatorul? => TFT
+	  			altfel  CC D CC D
+
