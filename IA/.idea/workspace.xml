@@ -14,17 +14,51 @@
     <favorites_list name="IA" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lab10/Lab10_GraphPlan.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="352" column="32" selection-start-line="352" selection-start-column="32" selection-end-line="352" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.63504153">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/tema2/tema.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-25">
+                  <caret line="429" lean-forward="true" selection-start-line="429" selection-end-line="429" />
+                  <folding>
+                    <element signature="e#104#948#0" />
+                    <element signature="e#498#1581#0" />
+                    <element signature="e#2428#2677#0" />
+                    <element signature="e#2736#4132#0" />
+                    <element signature="e#2910#3184#0" />
+                    <element signature="e#3203#3522#0" />
+                    <element signature="e#3674#3685#0" />
+                    <element signature="e#3730#4042#0" />
+                    <element signature="e#3666#3677#0" />
+                    <element signature="e#5156#5499#0" />
+                    <element signature="e#8311#8784#0" />
+                    <element signature="e#8294#8333#0" />
+                    <element signature="e#9605#9634#0" />
+                    <element signature="e#11657#12760#0" />
+                    <element signature="e#12793#13547#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/tema2/bn1">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="90">
+                  <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -60,6 +94,8 @@
       <find>step</find>
       <find>TODO</find>
       <find>extend_graph</find>
+      <find>parents</find>
+      <find>copy</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -72,10 +108,11 @@
         <option value="$PROJECT_DIR$/tema1/test_input2.yml" />
         <option value="$PROJECT_DIR$/tema1/test_input.yml" />
         <option value="$PROJECT_DIR$/tema1/README" />
-        <option value="$PROJECT_DIR$/lab9/Lab09-VariableElimination-solved.py" />
         <option value="$PROJECT_DIR$/tema1/tema.py" />
         <option value="$PROJECT_DIR$/lab10/Lab10-GraphPlan-Skel.py" />
         <option value="$PROJECT_DIR$/lab10/Lab10_GraphPlan.py" />
+        <option value="$PROJECT_DIR$/lab9/Lab09-VariableElimination-solved.py" />
+        <option value="$PROJECT_DIR$/tema2/tema.py" />
       </list>
     </option>
   </component>
@@ -103,7 +140,12 @@
             <path>
               <item name="IA" type="b2602c69:ProjectViewProjectNode" />
               <item name="IA" type="462c0819:PsiDirectoryNode" />
-              <item name="lab10" type="462c0819:PsiDirectoryNode" />
+              <item name="lab9" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IA" type="462c0819:PsiDirectoryNode" />
+              <item name="tema2" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -134,8 +176,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Lab10_GraphPlan">
-    <configuration name="Lab10-GraphPlan-Skel" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.tema">
+    <configuration name="Lab09-VariableElimination-solved" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="IA" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -143,11 +185,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab10" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab9" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab10/Lab10-GraphPlan-Skel.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab9/Lab09-VariableElimination-solved.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -156,7 +198,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Lab10_GraphPlan" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="tema" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="IA" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -164,11 +206,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab10" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tema2" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab10/Lab10_GraphPlan.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tema2/tema.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -178,13 +220,13 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Lab10_GraphPlan" />
-      <item itemvalue="Python.Lab10-GraphPlan-Skel" />
+      <item itemvalue="Python.tema" />
+      <item itemvalue="Python.Lab09-VariableElimination-solved" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Lab10_GraphPlan" />
-        <item itemvalue="Python.Lab10-GraphPlan-Skel" />
+        <item itemvalue="Python.tema" />
+        <item itemvalue="Python.Lab09-VariableElimination-solved" />
       </list>
     </recent_temporary>
   </component>
@@ -221,10 +263,10 @@
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="2" weight="0.32864866" />
       <window_info anchor="bottom" id="Message" order="3" />
-      <window_info anchor="bottom" id="Find" order="4" />
+      <window_info anchor="bottom" id="Find" order="4" weight="0.32937366" />
       <window_info anchor="bottom" id="Version Control" order="5" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.31857452" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.35421166" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.24514039" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.36177105" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" weight="0.32972974" />
@@ -257,6 +299,11 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="breakpointCondition">
+      <expression>
+        <expression-string>neighbour == &quot;M&quot;</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>has_changed == True</expression-string>
         <language-id>Python</language-id>
@@ -347,13 +394,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab9/Lab09-VariableElimination-solved.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="844">
-          <caret line="465" column="32" selection-start-line="465" selection-start-column="32" selection-end-line="465" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tema1/tema.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -374,8 +414,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lab10/Lab10_GraphPlan.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="352" column="32" selection-start-line="352" selection-start-column="32" selection-end-line="352" selection-end-column="32" />
+        <state relative-caret-position="645">
+          <caret line="394" column="27" lean-forward="true" selection-start-line="394" selection-start-column="27" selection-end-line="394" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.6/copy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="685">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tema2/bn1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab9/Lab09-VariableElimination-solved.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tema2/tema.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-25">
+          <caret line="429" lean-forward="true" selection-start-line="429" selection-end-line="429" />
+          <folding>
+            <element signature="e#104#948#0" />
+            <element signature="e#498#1581#0" />
+            <element signature="e#2428#2677#0" />
+            <element signature="e#2736#4132#0" />
+            <element signature="e#2910#3184#0" />
+            <element signature="e#3203#3522#0" />
+            <element signature="e#3674#3685#0" />
+            <element signature="e#3730#4042#0" />
+            <element signature="e#3666#3677#0" />
+            <element signature="e#5156#5499#0" />
+            <element signature="e#8311#8784#0" />
+            <element signature="e#8294#8333#0" />
+            <element signature="e#9605#9634#0" />
+            <element signature="e#11657#12760#0" />
+            <element signature="e#12793#13547#0" />
+          </folding>
         </state>
       </provider>
     </entry>
