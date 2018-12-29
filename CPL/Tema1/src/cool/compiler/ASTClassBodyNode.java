@@ -1,5 +1,7 @@
 package cool.compiler;
 
+import cool.visitors.ASTVisitor;
+
 import java.util.ArrayList;
 
 public class ASTClassBodyNode extends ASTBaseNode {
@@ -15,4 +17,12 @@ public class ASTClassBodyNode extends ASTBaseNode {
 		}
 	}
 
+	@Override
+	public void accept(ASTVisitor v) {
+		v.visit(this);
+
+		for (var child : children) {
+			child.accept(v);
+		}
+	}
 }

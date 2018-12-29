@@ -1,5 +1,7 @@
 package cool.compiler;
 
+import cool.visitors.ASTVisitor;
+
 public class ASTExprBlockNode extends ASTBaseNode {
 	ASTManyExprNode child = new ASTManyExprNode();
 	
@@ -11,4 +13,10 @@ public class ASTExprBlockNode extends ASTBaseNode {
 		child.print(depth + 1);
 	}
 
+	@Override
+	public void accept(ASTVisitor v) {
+		v.visit(this);
+
+		child.accept(v);
+	}
 }

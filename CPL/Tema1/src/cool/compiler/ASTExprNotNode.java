@@ -1,5 +1,7 @@
 package cool.compiler;
 
+import cool.visitors.ASTVisitor;
+
 public class ASTExprNotNode extends ASTBaseNode {
 
 	ASTBaseNode expr = null;
@@ -10,6 +12,13 @@ public class ASTExprNotNode extends ASTBaseNode {
 		System.out.println("not");
 		
 		expr.print(depth + 1);
+	}
+
+	@Override
+	public void accept(ASTVisitor v) {
+		v.visit(this);
+
+		expr.accept(v);
 	}
 
 }

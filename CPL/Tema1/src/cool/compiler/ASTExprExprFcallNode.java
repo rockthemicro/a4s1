@@ -1,5 +1,7 @@
 package cool.compiler;
 
+import cool.visitors.ASTVisitor;
+
 public class ASTExprExprFcallNode extends ASTBaseNode {
 	ASTBaseNode expr = null;
 	String type = null;
@@ -16,6 +18,14 @@ public class ASTExprExprFcallNode extends ASTBaseNode {
 			System.out.println(type);	
 		}
 		fcall.print(depth + 1);
+	}
+
+	@Override
+	public void accept(ASTVisitor v) {
+		v.visit(this);
+
+		expr.accept(v);
+		fcall.accept(v);
 	}
 
 }

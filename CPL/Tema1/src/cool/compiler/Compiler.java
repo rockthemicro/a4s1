@@ -3,6 +3,10 @@ package cool.compiler;
 import java.io.File;
 import java.io.IOException;
 
+import cool.visitors.ASTNopVisitor;
+import cool.visitors.ASTSymbolsDefineVisitor;
+import cool.visitors.ASTSymbolsSolveVisitor;
+import cool.visitors.ASTSymbolsSolveVisitor2;
 import org.antlr.v4.runtime.BaseErrorListener;
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
@@ -15,6 +19,7 @@ import org.antlr.v4.runtime.tree.ParseTreeProperty;
 import cool.lexer.CoolLexer;
 import cool.parser.CoolParser;
 import cool.parser.CoolParser.ProgramContext;
+import cool.structures.SymbolTable;
 
 
 public class Compiler {
@@ -143,9 +148,36 @@ public class Compiler {
         }
         
         // Create and print AST
-        var visitor = new ASTVisitor();
+        var visitor = new BuildASTVisitor();
         var ast = visitor.visit(globalTree);
-        ast.print(0);
+        
+        // output pentru tema1
+        // ast.print(0);
+        
+        // Populate global scope.
+        SymbolTable.defineBasicClasses();
+        
+        // Semantic analysis
+        var symbolsDefineVisitor = new ASTSymbolsDefineVisitor();
+        ast.accept(symbolsDefineVisitor);
+
+        var symbolsSolveVisitor = new ASTSymbolsSolveVisitor();
+        ast.accept(symbolsSolveVisitor);
+
+        var symbolsSolveVisitor2 = new ASTSymbolsSolveVisitor2();
+        ast.accept(symbolsSolveVisitor2);
+
+        // TODO
+        // modifica visitorul default si acceptul: o sa muti tot codul din metodele accept in
+        // visitorul default, mai putin v.visit(this); apoi, toti visitorii care mostenesc visitorul default
+        // isi vor face treaba la nivel curent, vor simula intrarea intr-un scope nou, apoi vor apela
+        // super.visit(node) pentru a merge recursiv, si vor simula iesirea din scope
+
+
+        if (SymbolTable.hasSemanticErrors()) {
+            System.err.println("Compilation halted");
+            return;
+        }
         
         // Print parse tree for debugging
         /*

@@ -1,5 +1,7 @@
 package cool.compiler;
 
+import cool.visitors.ASTVisitor;
+
 public class ASTExprWhileNode extends ASTBaseNode {
 
 	ASTBaseNode cond = null;
@@ -14,4 +16,11 @@ public class ASTExprWhileNode extends ASTBaseNode {
 		body.print(depth + 1);
 	}
 
+	@Override
+	public void accept(ASTVisitor v) {
+		v.visit(this);
+
+		cond.accept(v);
+		body.accept(v);
+	}
 }

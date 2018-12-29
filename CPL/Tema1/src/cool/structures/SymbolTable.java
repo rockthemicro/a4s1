@@ -15,8 +15,73 @@ public class SymbolTable {
     public static void defineBasicClasses() {
         globals = new DefaultScope(null);
         semanticErrors = false;
-        
-        // TODO Populate global scope.
+
+        globals.add(new TypeSymbol("SELF_TYPE"));
+
+
+        // define Int class
+        var intSymbol = new ClassSymbol("Int", globals);
+        globals.add(intSymbol);
+
+
+        // define Bool class
+        var boolSymbol = new ClassSymbol("Bool", globals);
+        globals.add(boolSymbol);
+
+
+        // define String class
+        var stringSymbol = new ClassSymbol("String", globals);
+        globals.add(stringSymbol);
+
+        var lengthMethod = new MethodSymbol("length", stringSymbol);
+        lengthMethod.setType(intSymbol);
+        stringSymbol.add(lengthMethod);
+
+        var concatMethod = new MethodSymbol("concat", stringSymbol);
+        concatMethod.setType(stringSymbol);
+        stringSymbol.add(concatMethod);
+
+        var substrMethod = new MethodSymbol("substr", stringSymbol);
+        substrMethod.setType(stringSymbol);
+        stringSymbol.add(substrMethod);
+
+
+        // define Object class
+        var objectSymbol = new ClassSymbol("Object", globals);
+        globals.add(objectSymbol);
+
+        var abortMethod = new MethodSymbol("abort", objectSymbol);
+        abortMethod.setType(objectSymbol);
+        objectSymbol.add(abortMethod);
+
+        var type_nameMethod = new MethodSymbol("type_name", objectSymbol);
+        type_nameMethod.setType(stringSymbol);
+        objectSymbol.add(type_nameMethod);
+
+        var copyMethod = new MethodSymbol("copy", objectSymbol);
+        copyMethod.setType((TypeSymbol) globals.lookup("SELF_TYPE"));
+        objectSymbol.add(copyMethod);
+
+
+        // define IO class
+        var ioSymbol = new ClassSymbol("IO", globals);
+        globals.add(ioSymbol);
+
+        var out_stringMethod = new MethodSymbol("out_string", ioSymbol);
+        out_stringMethod.setType((TypeSymbol) globals.lookup("SELF_TYPE"));
+        ioSymbol.add(out_stringMethod);
+
+        var out_intMethod = new MethodSymbol("out_int", ioSymbol);
+        out_intMethod.setType((TypeSymbol) globals.lookup("SELF_TYPE"));
+        ioSymbol.add(out_intMethod);
+
+        var in_stringMethod = new MethodSymbol("in_string", ioSymbol);
+        in_stringMethod.setType(stringSymbol);
+        ioSymbol.add(in_stringMethod);
+
+        var in_intMethod = new MethodSymbol("in_int", ioSymbol);
+        in_intMethod.setType(intSymbol);
+        ioSymbol.add(in_intMethod);
     }
     
     /**

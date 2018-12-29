@@ -14,7 +14,7 @@ public class Test {
         
         var lexer = new HelloLexer(input);
         var tokenStream = new CommonTokenStream(lexer);
-       
+	
         /*
         tokenStream.fill();
         List<Token> tokens = tokenStream.getTokens();

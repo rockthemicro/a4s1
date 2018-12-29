@@ -76,7 +76,7 @@ ESAC : 'esac';
 
 BOOLEAN : 'true' | 'false';
 
-CLASS_NAME : [A-Z][a-zA-Z0-9]*;
+CLASS_NAME : [A-Z][a-zA-Z0-9_]*;
 
 ID : [a-z][a-zA-Z0-9_]*;
 NR : [0-9]+;

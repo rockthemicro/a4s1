@@ -1,5 +1,7 @@
 package cool.compiler;
 
+import cool.visitors.ASTVisitor;
+
 public class ASTExprConstNode extends ASTBaseNode {
 	
 	String value = null;
@@ -27,5 +29,10 @@ public class ASTExprConstNode extends ASTBaseNode {
 	
 	public void setStringType() {
 		this.type = Types.STRING;
+	}
+
+	@Override
+	public void accept(ASTVisitor v) {
+		v.visit(this);
 	}
 }

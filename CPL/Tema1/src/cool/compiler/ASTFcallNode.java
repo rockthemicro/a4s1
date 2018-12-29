@@ -1,5 +1,7 @@
 package cool.compiler;
 
+import cool.visitors.ASTVisitor;
+
 public class ASTFcallNode extends ASTBaseNode {
 
 	String id = null;
@@ -12,6 +14,15 @@ public class ASTFcallNode extends ASTBaseNode {
 		
 		if (params != null) {
 			params.print(depth);
+		}
+	}
+
+	@Override
+	public void accept(ASTVisitor v) {
+		v.visit(this);
+
+		if (params != null) {
+			params.accept(v);
 		}
 	}
 

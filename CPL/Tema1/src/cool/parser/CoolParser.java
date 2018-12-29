@@ -1909,12 +1909,18 @@ public class CoolParser extends Parser {
 		}
 	}
 	public static class Inheriter_classContext extends Class_headerContext {
+		public Token name;
+		public Token parent;
 		public TerminalNode CLASS() { return getToken(CoolParser.CLASS, 0); }
+		public TerminalNode INHERITS() { return getToken(CoolParser.INHERITS, 0); }
 		public List<TerminalNode> CLASS_NAME() { return getTokens(CoolParser.CLASS_NAME); }
 		public TerminalNode CLASS_NAME(int i) {
 			return getToken(CoolParser.CLASS_NAME, i);
 		}
-		public TerminalNode INHERITS() { return getToken(CoolParser.INHERITS, 0); }
+		public List<TerminalNode> SELF() { return getTokens(CoolParser.SELF); }
+		public TerminalNode SELF(int i) {
+			return getToken(CoolParser.SELF, i);
+		}
 		public Inheriter_classContext(Class_headerContext ctx) { copyFrom(ctx); }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
@@ -1931,8 +1937,10 @@ public class CoolParser extends Parser {
 		}
 	}
 	public static class Simple_classContext extends Class_headerContext {
+		public Token name;
 		public TerminalNode CLASS() { return getToken(CoolParser.CLASS, 0); }
 		public TerminalNode CLASS_NAME() { return getToken(CoolParser.CLASS_NAME, 0); }
+		public TerminalNode SELF() { return getToken(CoolParser.SELF, 0); }
 		public Simple_classContext(Class_headerContext ctx) { copyFrom(ctx); }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
@@ -1952,6 +1960,7 @@ public class CoolParser extends Parser {
 	public final Class_headerContext class_header() throws RecognitionException {
 		Class_headerContext _localctx = new Class_headerContext(_ctx, getState());
 		enterRule(_localctx, 24, RULE_class_header);
+		int _la;
 		try {
 			setState(220);
 			_errHandler.sync(this);
@@ -1963,11 +1972,29 @@ public class CoolParser extends Parser {
 				setState(214);
 				match(CLASS);
 				setState(215);
-				match(CLASS_NAME);
+				((Inheriter_classContext)_localctx).name = _input.LT(1);
+				_la = _input.LA(1);
+				if ( !(_la==SELF || _la==CLASS_NAME) ) {
+					((Inheriter_classContext)_localctx).name = (Token)_errHandler.recoverInline(this);
+				}
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
 				setState(216);
 				match(INHERITS);
 				setState(217);
-				match(CLASS_NAME);
+				((Inheriter_classContext)_localctx).parent = _input.LT(1);
+				_la = _input.LA(1);
+				if ( !(_la==SELF || _la==CLASS_NAME) ) {
+					((Inheriter_classContext)_localctx).parent = (Token)_errHandler.recoverInline(this);
+				}
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
 				}
 				break;
 			case 2:
@@ -1977,7 +2004,16 @@ public class CoolParser extends Parser {
 				setState(218);
 				match(CLASS);
 				setState(219);
-				match(CLASS_NAME);
+				((Simple_classContext)_localctx).name = _input.LT(1);
+				_la = _input.LA(1);
+				if ( !(_la==SELF || _la==CLASS_NAME) ) {
+					((Simple_classContext)_localctx).name = (Token)_errHandler.recoverInline(this);
+				}
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
 				}
 				break;
 			}
@@ -2263,9 +2299,9 @@ public class CoolParser extends Parser {
 		"\3\2\2\2\u00cf\27\3\2\2\2\u00d0\u00d1\5\26\f\2\u00d1\u00d2\7\7\2\2\u00d2"+
 		"\u00d4\3\2\2\2\u00d3\u00d0\3\2\2\2\u00d4\u00d7\3\2\2\2\u00d5\u00d3\3\2"+
 		"\2\2\u00d5\u00d6\3\2\2\2\u00d6\31\3\2\2\2\u00d7\u00d5\3\2\2\2\u00d8\u00d9"+
-		"\7\36\2\2\u00d9\u00da\7-\2\2\u00da\u00db\7\32\2\2\u00db\u00df\7-\2\2\u00dc"+
-		"\u00dd\7\36\2\2\u00dd\u00df\7-\2\2\u00de\u00d8\3\2\2\2\u00de\u00dc\3\2"+
-		"\2\2\u00df\33\3\2\2\2\u00e0\u00e1\5\32\16\2\u00e1\u00e2\7\f\2\2\u00e2"+
+		"\7\36\2\2\u00d9\u00da\t\2\2\2\u00da\u00db\7\32\2\2\u00db\u00df\t\2\2\2"+
+		"\u00dc\u00dd\7\36\2\2\u00dd\u00df\t\2\2\2\u00de\u00d8\3\2\2\2\u00de\u00dc"+
+		"\3\2\2\2\u00df\33\3\2\2\2\u00e0\u00e1\5\32\16\2\u00e1\u00e2\7\f\2\2\u00e2"+
 		"\u00e3\5\30\r\2\u00e3\u00e4\7\r\2\2\u00e4\u00e5\7\7\2\2\u00e5\35\3\2\2"+
 		"\2\u00e6\u00e8\5\34\17\2\u00e7\u00e6\3\2\2\2\u00e8\u00eb\3\2\2\2\u00e9"+
 		"\u00e7\3\2\2\2\u00e9\u00ea\3\2\2\2\u00ea\u00f9\3\2\2\2\u00eb\u00e9\3\2"+

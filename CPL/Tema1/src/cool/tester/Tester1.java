@@ -30,8 +30,9 @@ public class Tester1 {
             var inPath = file.getPath();
             var outPath = inPath.replace(".cl", ".out");
             var newOut = new PrintStream(outPath, "UTF-8");
-            System.setOut(newOut);
             System.setErr(newOut);
+            System.setOut(newOut);
+
             Compiler.main(new String[] { inPath });
             
             oldOut.printf("%-30s -> ", file.getName());

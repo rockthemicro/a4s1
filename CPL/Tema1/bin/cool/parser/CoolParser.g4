@@ -73,8 +73,8 @@ attr_or_meth
 class_body : (attr_or_meth EOI)*;
 
 class_header
-	: CLASS CLASS_NAME INHERITS CLASS_NAME	# inheriter_class
-	| CLASS CLASS_NAME						# simple_class
+	: CLASS name=(CLASS_NAME | SELF) INHERITS parent=(CLASS_NAME | SELF)	# inheriter_class
+	| CLASS name=(CLASS_NAME | SELF)										# simple_class
 	;
 
 class_node : class_header OPEN_AC class_body CLOSED_AC EOI;

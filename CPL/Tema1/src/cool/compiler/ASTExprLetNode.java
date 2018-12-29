@@ -1,5 +1,7 @@
 package cool.compiler;
 
+import cool.visitors.ASTVisitor;
+
 import java.util.ArrayList;
 
 public class ASTExprLetNode extends ASTBaseNode {
@@ -17,6 +19,16 @@ public class ASTExprLetNode extends ASTBaseNode {
 		}
 		
 		expr.print(depth + 1);
+	}
+
+	@Override
+	public void accept(ASTVisitor v) {
+		v.visit(this);
+
+		for (var let : letNodes) {
+			let.accept(v);
+		}
+		expr.accept(v);
 	}
 
 }

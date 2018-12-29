@@ -1,11 +1,14 @@
 package cool.compiler;
 
+import cool.visitors.ASTVisitor;
+
 public class ASTLetNode extends ASTBaseNode {
 
 	String id = null;
 	String type = null;
 	ASTBaseNode expr = null;
-	
+
+	@SuppressWarnings("Duplicates")
 	@Override
 	public void print(int depth) {
 		super.printSpaces(depth);
@@ -19,6 +22,15 @@ public class ASTLetNode extends ASTBaseNode {
 		
 		if (expr != null) {
 			expr.print(depth + 1);
+		}
+	}
+
+	@Override
+	public void accept(ASTVisitor v) {
+		v.visit(this);
+
+		if (expr != null) {
+			expr.accept(v);
 		}
 	}
 

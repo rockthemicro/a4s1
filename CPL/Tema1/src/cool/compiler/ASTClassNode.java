@@ -1,9 +1,13 @@
 package cool.compiler;
 
+import cool.structures.ClassSymbol;
+import cool.visitors.ASTVisitor;
+
 public class ASTClassNode extends ASTBaseNode {
-	String name = null;
-	String inherits = null;
-	ASTBaseNode body = null;
+	public String name = null;
+	public String inherits = null;
+	public ASTBaseNode body = null;
+	public ClassSymbol classSymbol = null;
 
 	public void print(int depth) {
 		printSpaces(depth);
@@ -19,6 +23,15 @@ public class ASTClassNode extends ASTBaseNode {
 		
 		if (body != null) {
 			body.print(depth + 1);
+		}
+	}
+
+	@Override
+	public void accept(ASTVisitor v) {
+		v.visit(this);
+
+		if (body != null) {
+			body.accept(v);
 		}
 	}
 

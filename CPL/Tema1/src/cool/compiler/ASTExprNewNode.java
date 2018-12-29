@@ -1,5 +1,7 @@
 package cool.compiler;
 
+import cool.visitors.ASTVisitor;
+
 public class ASTExprNewNode extends ASTBaseNode {
 
 	String type = null;
@@ -11,6 +13,11 @@ public class ASTExprNewNode extends ASTBaseNode {
 		
 		super.printSpaces(depth + 1);
 		System.out.println(type);
+	}
+
+	@Override
+	public void accept(ASTVisitor v) {
+		v.visit(this);
 	}
 
 }

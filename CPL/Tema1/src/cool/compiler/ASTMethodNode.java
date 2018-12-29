@@ -1,11 +1,18 @@
 package cool.compiler;
 
+import cool.structures.ClassSymbol;
+import cool.structures.MethodSymbol;
+import cool.visitors.ASTVisitor;
+
 public class ASTMethodNode extends ASTBaseNode {
 	
-	String id = null;
-	String retType = null;
-	ASTBaseNode params = null;
-	ASTBaseNode body = null;
+	public String id = null;
+	public String retType = null;
+	public ASTMethodParamsNode params = null;
+	public ASTManyExprNode body = null;
+
+	public ClassSymbol classSymbol = null;
+	public MethodSymbol methodSymbol = null;
 	
 	@Override
 	public void print(int depth) {
@@ -24,6 +31,19 @@ public class ASTMethodNode extends ASTBaseNode {
 		
 		if (body != null) {
 			body.print(depth + 1);
+		}
+	}
+
+	@Override
+	public void accept(ASTVisitor v) {
+		v.visit(this);
+
+		if (params != null) {
+			params.accept(v);
+		}
+
+		if (body != null) {
+			body.accept(v);
 		}
 	}
 
