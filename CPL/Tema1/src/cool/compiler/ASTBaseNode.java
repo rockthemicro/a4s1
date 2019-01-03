@@ -1,10 +1,12 @@
 package cool.compiler;
 
+import cool.structures.Scope;
 import cool.visitors.ASTVisitor;
 import org.antlr.v4.runtime.ParserRuleContext;
 
 public abstract class ASTBaseNode {
 	public ParserRuleContext ctx = null;
+	public Scope currentScope = null;
 
 	public abstract void accept(ASTVisitor v);
 

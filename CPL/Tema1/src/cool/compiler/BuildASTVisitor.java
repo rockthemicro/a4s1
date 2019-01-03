@@ -302,8 +302,14 @@ public class BuildASTVisitor extends CoolParserBaseVisitor<ASTBaseNode> {
 	public ASTBaseNode visitExpr_let(Expr_letContext ctx) {
 		ASTExprLetNode node = new ASTExprLetNode();
         node.ctx = ctx;
+        int i = 0;
+
 		for (var child : ctx.let_bind()) {
-			node.letNodes.add((ASTLetNode)visit(child));
+			var letNode = (ASTLetNode)visit(child);
+			letNode.parent = node;
+			letNode.idx = i++;
+
+			node.letNodes.add(letNode);
 		}
 		node.expr = visit(ctx.expr());
 		

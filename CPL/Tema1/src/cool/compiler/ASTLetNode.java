@@ -1,12 +1,16 @@
 package cool.compiler;
 
+import cool.structures.Scope;
 import cool.visitors.ASTVisitor;
 
 public class ASTLetNode extends ASTBaseNode {
 
-	String id = null;
-	String type = null;
-	ASTBaseNode expr = null;
+	public String id = null;
+	public String type = null;
+	public ASTBaseNode expr = null;
+	public Scope exprScope = null;
+	public ASTExprLetNode parent = null;
+	public int idx = 0;
 
 	@SuppressWarnings("Duplicates")
 	@Override
@@ -29,9 +33,11 @@ public class ASTLetNode extends ASTBaseNode {
 	public void accept(ASTVisitor v) {
 		v.visit(this);
 
+		/*
 		if (expr != null) {
 			expr.accept(v);
 		}
+		*/
 	}
 
 }

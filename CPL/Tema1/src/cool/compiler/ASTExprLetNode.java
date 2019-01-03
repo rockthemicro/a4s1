@@ -6,9 +6,9 @@ import java.util.ArrayList;
 
 public class ASTExprLetNode extends ASTBaseNode {
 
-	ArrayList<ASTLetNode> letNodes = new ArrayList<>();
-	ASTBaseNode expr = null;
-	
+	public ArrayList<ASTLetNode> letNodes = new ArrayList<>();
+	public ASTBaseNode expr = null;
+
 	@Override
 	public void print(int depth) {
 		super.printSpaces(depth);
@@ -25,10 +25,12 @@ public class ASTExprLetNode extends ASTBaseNode {
 	public void accept(ASTVisitor v) {
 		v.visit(this);
 
+		/*
 		for (var let : letNodes) {
 			let.accept(v);
 		}
 		expr.accept(v);
+		*/
 	}
 
 }

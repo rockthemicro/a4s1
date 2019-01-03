@@ -37,7 +37,7 @@ public class ASTMethodNode extends ASTBaseNode {
 	@Override
 	public void accept(ASTVisitor v) {
 		v.visit(this);
-
+		/*
 		if (params != null) {
 			params.accept(v);
 		}
@@ -45,6 +45,7 @@ public class ASTMethodNode extends ASTBaseNode {
 		if (body != null) {
 			body.accept(v);
 		}
+		*/
 	}
 
 }

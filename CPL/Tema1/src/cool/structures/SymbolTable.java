@@ -16,21 +16,24 @@ public class SymbolTable {
         globals = new DefaultScope(null);
         semanticErrors = false;
 
-        globals.add(new TypeSymbol("SELF_TYPE"));
+        globals.add(new ClassSymbol("SELF_TYPE", globals));
 
+        // define Object class
+        var objectSymbol = new ClassSymbol("Object", globals);
+        globals.add(objectSymbol);
 
         // define Int class
-        var intSymbol = new ClassSymbol("Int", globals);
+        var intSymbol = new ClassSymbol("Int", objectSymbol);
         globals.add(intSymbol);
 
 
         // define Bool class
-        var boolSymbol = new ClassSymbol("Bool", globals);
+        var boolSymbol = new ClassSymbol("Bool", objectSymbol);
         globals.add(boolSymbol);
 
 
         // define String class
-        var stringSymbol = new ClassSymbol("String", globals);
+        var stringSymbol = new ClassSymbol("String", objectSymbol);
         globals.add(stringSymbol);
 
         var lengthMethod = new MethodSymbol("length", stringSymbol);
@@ -46,10 +49,7 @@ public class SymbolTable {
         stringSymbol.add(substrMethod);
 
 
-        // define Object class
-        var objectSymbol = new ClassSymbol("Object", globals);
-        globals.add(objectSymbol);
-
+        // define object methods
         var abortMethod = new MethodSymbol("abort", objectSymbol);
         abortMethod.setType(objectSymbol);
         objectSymbol.add(abortMethod);
@@ -64,7 +64,7 @@ public class SymbolTable {
 
 
         // define IO class
-        var ioSymbol = new ClassSymbol("IO", globals);
+        var ioSymbol = new ClassSymbol("IO", objectSymbol);
         globals.add(ioSymbol);
 
         var out_stringMethod = new MethodSymbol("out_string", ioSymbol);

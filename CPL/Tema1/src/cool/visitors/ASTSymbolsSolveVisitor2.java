@@ -1,5 +1,6 @@
 package cool.visitors;
 
+import cool.compiler.ASTExprIdNode;
 import cool.compiler.ASTMethodParamsNode;
 import cool.parser.CoolParser;
 import cool.structures.SymbolTable;
@@ -51,5 +52,17 @@ public class ASTSymbolsSolveVisitor2 extends ASTNopVisitor {
                         " to " + node.types.get(i));
             }
         }
+
+        super.visit(node);
+    }
+
+    @Override
+    public void visit(ASTExprIdNode node) {
+        if (node.id.equals("self") == false && node.currentScope.lookup(node.id) == null) {
+            SymbolTable.error(node.ctx, ((CoolParser.Expr_idContext) node.ctx).ID().getSymbol(),
+                    "Undefined identifier " + node.id);
+        }
+
+        super.visit(node);
     }
 }

@@ -4,9 +4,9 @@ import cool.visitors.ASTVisitor;
 
 public class ASTExprCompNode extends ASTBaseNode {
 	
-	ASTBaseNode expr1 = null;
-	ASTBaseNode expr2 = null;
-	String comparator = null;
+	public ASTBaseNode expr1 = null;
+	public ASTBaseNode expr2 = null;
+	public String comparator = null;
 	
 	@Override
 	public void print(int depth) {
@@ -21,8 +21,10 @@ public class ASTExprCompNode extends ASTBaseNode {
 	public void accept(ASTVisitor v) {
 		v.visit(this);
 
+		/*
 		expr1.accept(v);
 		expr2.accept(v);
+		*/
 	}
 
 }

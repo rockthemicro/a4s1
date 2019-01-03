@@ -1,20 +1,15 @@
 package cool.visitors;
 
-import cool.compiler.ASTAttributeNode;
-import cool.compiler.ASTClassNode;
-import cool.compiler.ASTMethodNode;
-import cool.compiler.ASTMethodParamsNode;
+import cool.compiler.*;
 import cool.parser.CoolParser;
-import cool.structures.ClassSymbol;
-import cool.structures.IdSymbol;
-import cool.structures.MethodSymbol;
-import cool.structures.SymbolTable;
+import cool.structures.*;
 
 @SuppressWarnings("Duplicates")
 public class ASTSymbolsDefineVisitor extends ASTNopVisitor {
 
-    ClassSymbol currClassScope = null;
+    ClassSymbol currClassSymbol = null;
     MethodSymbol currMethodSymbol = null;
+    Scope currentScope = null;
 
     @Override
     public void visit(ASTClassNode node) {
@@ -52,15 +47,21 @@ public class ASTSymbolsDefineVisitor extends ASTNopVisitor {
             return;
         }
 
-        var classSymbol = new ClassSymbol(className, SymbolTable.globals);
+        var classSymbol = new ClassSymbol(className, (ClassSymbol) SymbolTable.globals.lookup("Object"));
         classSymbol.astClassNode = node;
         SymbolTable.globals.add(classSymbol);
 
         // asta va fi folosit ulterior in definirea scopeului parinte al metodelor
-        currClassScope = classSymbol;
+        currClassSymbol = classSymbol;
+
+        // pentru simularea intrarii si iesirii din scopeuri
+        currentScope = classSymbol;
 
         // atasam scope-symbolul classSymbol nodului curent
         node.classSymbol = classSymbol;
+        node.currentScope = classSymbol;
+
+        super.visit(node);
     }
 
     @Override
@@ -72,31 +73,31 @@ public class ASTSymbolsDefineVisitor extends ASTNopVisitor {
                 var ctx = (CoolParser.Attr_no_asgnContext) node.ctx;
 
                 SymbolTable.error(node.ctx, ctx.ID().getSymbol(),
-                        "Class " + currClassScope.getName() + " has attribute with illegal name self");
+                        "Class " + currClassSymbol.getName() + " has attribute with illegal name self");
 
             } else {
                 var ctx = (CoolParser.Attr_asgnContext) node.ctx;
 
                 SymbolTable.error(node.ctx, ctx.ID().getSymbol(),
-                        "Class " + currClassScope.getName() + " has attribute with illegal name self");
+                        "Class " + currClassSymbol.getName() + " has attribute with illegal name self");
             }
 
             return;
         }
 
         // nu permitem redefinirea unui atribut
-        if (currClassScope.exists(node.id)) {
+        if (currClassSymbol.attrExists(node.id)) {
             if (node.ctx instanceof CoolParser.Attr_no_asgnContext) {
                 var ctx = (CoolParser.Attr_no_asgnContext) node.ctx;
 
                 SymbolTable.error(node.ctx, ctx.ID().getSymbol(),
-                        "Class " + currClassScope.getName() + " redefines attribute " + node.id);
+                        "Class " + currClassSymbol.getName() + " redefines attribute " + node.id);
 
             } else {
                 var ctx = (CoolParser.Attr_asgnContext) node.ctx;
 
                 SymbolTable.error(node.ctx, ctx.ID().getSymbol(),
-                        "Class " + currClassScope.getName() + " redefines attribute " + node.id);
+                        "Class " + currClassSymbol.getName() + " redefines attribute " + node.id);
             }
 
             return;
@@ -104,32 +105,199 @@ public class ASTSymbolsDefineVisitor extends ASTNopVisitor {
 
         var idSymbol = new IdSymbol(node.id);
 
-        currClassScope.add(idSymbol);
+        currClassSymbol.add(idSymbol);
+
+        node.currentScope = currClassSymbol;
         node.idSymbol = idSymbol;
-        node.classSymbol = currClassScope;
+        node.classSymbol = currClassSymbol;
+
+        super.visit(node);
+
     }
 
     @Override
     public void visit(ASTMethodNode node) {
         node.params.methodNode = node;
 
-        if (currClassScope.exists(node.id)) {
+        if (currClassSymbol.methodExists(node.id)) {
             var ctx = (CoolParser.MethodContext) node.ctx;
 
             SymbolTable.error(node.ctx, ctx.ID().getSymbol(),
-                    "Class " + currClassScope.getName() + " redefines method " + node.id);
+                    "Class " + currClassSymbol.getName() + " redefines method " + node.id);
 
             return;
         }
 
-        var methodSymbol = new MethodSymbol(node.id, currClassScope);
+        var methodSymbol = new MethodSymbol(node.id, currClassSymbol);
         methodSymbol.astMethodNode = node;
 
-        currClassScope.add(methodSymbol);
+        currClassSymbol.add(methodSymbol);
         currMethodSymbol = methodSymbol;
 
-        node.classSymbol = currClassScope;
+        node.classSymbol = currClassSymbol;
         node.methodSymbol = methodSymbol;
+
+        currentScope = currMethodSymbol;
+        node.currentScope = currMethodSymbol;
+        super.visit(node);
     }
 
+    @Override
+    public void visit(ASTMethodParamsNode node) {
+        node.currentScope = currentScope;
+    }
+
+    @Override
+    public void visit(ASTExprLetNode node) {
+        Scope oldCurrentScope = currentScope;
+
+
+        var letScope = new DefaultScope(currentScope);
+        node.currentScope = letScope;
+        currentScope = letScope;
+
+        super.visit(node);
+
+        currentScope = oldCurrentScope;
+    }
+
+    @Override
+    public void visit(ASTLetNode node) {
+        // setam drept currentScope o copie a parintelui Scopeului curent; facem acest lucru deoarece
+        // ne dorim ca, pe masura ce definim variabile locale in let, DOAR urmatoarele variabile ce sunt definite
+        // sa aiba acces la ce am definit pana acum
+        node.currentScope = new DefaultScope(currentScope.getParent());
+        node.exprScope = currentScope;
+
+        var oldCurrentScope = currentScope;
+        currentScope = node.currentScope;
+
+        super.visit(node);
+
+        currentScope = oldCurrentScope;
+    }
+
+    @Override
+    public void visit(ASTExprCaseNode node) {
+        node.currentScope = currentScope;
+        node.expr.accept(this);
+
+        for (int i = 0; i < node.ids.size(); i++) {
+            node.scopes.add(new DefaultScope(currentScope));
+            var oldCurrScope = currentScope;
+
+            currentScope = node.scopes.get(i);
+            node.exprs.get(i).accept(this);
+            currentScope = oldCurrScope;
+        }
+    }
+
+    @Override
+    public void visit(ASTClassBodyNode node) {
+        node.currentScope = currentScope;
+        super.visit(node);
+    }
+
+    @Override
+    public void visit(ASTExprArithmNode node) {
+        node.currentScope = currentScope;
+        super.visit(node);
+    }
+
+    @Override
+    public void visit(ASTExprAssignNode node) {
+        node.currentScope = currentScope;
+        super.visit(node);
+    }
+
+    @Override
+    public void visit(ASTExprBlockNode node) {
+        node.currentScope = currentScope;
+        super.visit(node);
+    }
+
+    @Override
+    public void visit(ASTExprCompNode node) {
+        node.currentScope = currentScope;
+        super.visit(node);
+    }
+
+    @Override
+    public void visit(ASTExprConstNode node) {
+        node.currentScope = currentScope;
+        super.visit(node);
+    }
+
+    @Override
+    public void visit(ASTExprExprFcallNode node) {
+        node.currentScope = currentScope;
+        super.visit(node);
+    }
+
+    @Override
+    public void visit(ASTExprFcallNode node) {
+        node.currentScope = currentScope;
+        super.visit(node);
+    }
+
+    @Override
+    public void visit(ASTExprIdNode node) {
+        node.currentScope = currentScope;
+        super.visit(node);
+    }
+
+    @Override
+    public void visit(ASTExprIfNode node) {
+        node.currentScope = currentScope;
+        super.visit(node);
+    }
+
+    @Override
+    public void visit(ASTExprNegNode node) {
+        node.currentScope = currentScope;
+        super.visit(node);
+    }
+
+    @Override
+    public void visit(ASTExprNewNode node) {
+        node.currentScope = currentScope;
+        super.visit(node);
+    }
+
+    @Override
+    public void visit(ASTExprNotNode node) {
+        node.currentScope = currentScope;
+        super.visit(node);
+    }
+
+    @Override
+    public void visit(ASTExprVoidNode node) {
+        node.currentScope = currentScope;
+        super.visit(node);
+    }
+
+    @Override
+    public void visit(ASTExprWhileNode node) {
+        node.currentScope = currentScope;
+        super.visit(node);
+    }
+
+    @Override
+    public void visit(ASTFcallNode node) {
+        node.currentScope = currentScope;
+        super.visit(node);
+    }
+
+    @Override
+    public void visit(ASTManyExprNode node) {
+        node.currentScope = currentScope;
+        super.visit(node);
+    }
+
+    @Override
+    public void visit(ASTProgramNode node) {
+        node.currentScope = SymbolTable.globals;
+        super.visit(node);
+    }
 }
+

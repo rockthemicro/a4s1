@@ -3,10 +3,7 @@ package cool.compiler;
 import java.io.File;
 import java.io.IOException;
 
-import cool.visitors.ASTNopVisitor;
-import cool.visitors.ASTSymbolsDefineVisitor;
-import cool.visitors.ASTSymbolsSolveVisitor;
-import cool.visitors.ASTSymbolsSolveVisitor2;
+import cool.visitors.*;
 import org.antlr.v4.runtime.BaseErrorListener;
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
@@ -157,7 +154,7 @@ public class Compiler {
         // Populate global scope.
         SymbolTable.defineBasicClasses();
         
-        // Semantic analysis
+        // Semantic analysis - rezolvarea simbolurilor
         var symbolsDefineVisitor = new ASTSymbolsDefineVisitor();
         ast.accept(symbolsDefineVisitor);
 
@@ -167,18 +164,20 @@ public class Compiler {
         var symbolsSolveVisitor2 = new ASTSymbolsSolveVisitor2();
         ast.accept(symbolsSolveVisitor2);
 
-        // TODO
-        // modifica visitorul default si acceptul: o sa muti tot codul din metodele accept in
-        // visitorul default, mai putin v.visit(this); apoi, toti visitorii care mostenesc visitorul default
-        // isi vor face treaba la nivel curent, vor simula intrarea intr-un scope nou, apoi vor apela
-        // super.visit(node) pentru a merge recursiv, si vor simula iesirea din scope
+        if (SymbolTable.hasSemanticErrors()) {
+            System.err.println("Compilation halted");
+            return;
+        }
 
+        // Semantic analysis - verificarea tipurilor
+        var astTypeCheckingVisitor = new ASTTypeCheckingVisitor();
+        ast.accept(astTypeCheckingVisitor);
 
         if (SymbolTable.hasSemanticErrors()) {
             System.err.println("Compilation halted");
             return;
         }
-        
+
         // Print parse tree for debugging
         /*
         var listener = new CoolParserBaseListener() {

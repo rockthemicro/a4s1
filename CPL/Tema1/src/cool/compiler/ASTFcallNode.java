@@ -4,8 +4,8 @@ import cool.visitors.ASTVisitor;
 
 public class ASTFcallNode extends ASTBaseNode {
 
-	String id = null;
-	ASTBaseNode params = null;
+	public String id = null;
+	public ASTBaseNode params = null;
 	
 	@Override
 	public void print(int depth) {
@@ -21,9 +21,11 @@ public class ASTFcallNode extends ASTBaseNode {
 	public void accept(ASTVisitor v) {
 		v.visit(this);
 
+		/*
 		if (params != null) {
 			params.accept(v);
 		}
+		*/
 	}
 
 }

@@ -1,7 +1,5 @@
 package cool.compiler;
 
-import cool.structures.ClassSymbol;
-import cool.structures.MethodSymbol;
 import cool.visitors.ASTVisitor;
 import org.antlr.v4.runtime.Token;
 
@@ -15,6 +13,7 @@ public class ASTMethodParamsNode extends ASTBaseNode {
     public ArrayList<String> types = new ArrayList<>();
     public ArrayList<Token> typeTokens = new ArrayList<>();
 
+    // parent
 	public ASTMethodNode methodNode = null;
 
 	@Override

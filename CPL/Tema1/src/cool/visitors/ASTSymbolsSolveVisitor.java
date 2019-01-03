@@ -1,9 +1,6 @@
 package cool.visitors;
 
-import cool.compiler.ASTAttributeNode;
-import cool.compiler.ASTClassNode;
-import cool.compiler.ASTMethodNode;
-import cool.compiler.ASTMethodParamsNode;
+import cool.compiler.*;
 import cool.parser.CoolParser;
 import cool.structures.*;
 import org.antlr.v4.runtime.ParserRuleContext;
@@ -92,6 +89,8 @@ public class ASTSymbolsSolveVisitor extends ASTNopVisitor {
             }
 
         }
+
+        super.visit(node);
     }
 
     @Override
@@ -100,7 +99,7 @@ public class ASTSymbolsSolveVisitor extends ASTNopVisitor {
             return;
 
         // nu permitem redefinirea unui atribut mostenit
-        if (node.classSymbol.getClassParent() != null && node.classSymbol.getClassParent().exists(node.id)) {
+        if (node.classSymbol.getClassParent() != null && node.classSymbol.getClassParent().lookup(node.id) != null) {
             if (node.ctx instanceof CoolParser.Attr_no_asgnContext) {
                 var ctx = (CoolParser.Attr_no_asgnContext) node.ctx;
 
@@ -135,6 +134,8 @@ public class ASTSymbolsSolveVisitor extends ASTNopVisitor {
         }
 
         node.idSymbol.setType((TypeSymbol) SymbolTable.globals.lookup(node.type));
+
+        super.visit(node);
     }
 
     @Override
@@ -153,6 +154,7 @@ public class ASTSymbolsSolveVisitor extends ASTNopVisitor {
             node.methodSymbol.setType(returnType);
         }
 
+        super.visit(node);
     }
 
     @Override
@@ -211,5 +213,66 @@ public class ASTSymbolsSolveVisitor extends ASTNopVisitor {
                 idSymbol.setType((ClassSymbol) classSymbol);
             }
         }
+
+        super.visit(node);
     }
+
+    @Override
+    public void visit(ASTLetNode node) {
+        if (SymbolTable.globals.lookup(node.type) == null) {
+            SymbolTable.error(node.ctx, ((CoolParser.Let_bindContext) node.ctx).type().CLASS_NAME().getSymbol(),
+                    "Let variable " + node.id + " has undefined type " + node.type);
+
+            return;
+        }
+
+        if (node.id.equals("self")) {
+            SymbolTable.error(node.ctx, ((CoolParser.Let_bindContext) node.ctx).ID().getSymbol(),
+                    "Let variable has illegal name self");
+
+            return;
+        }
+
+        var idSymbol = new IdSymbol(node.id);
+        idSymbol.setType((TypeSymbol) SymbolTable.globals.lookup(node.type));
+
+        node.exprScope.add(idSymbol);
+
+        // necesar pentru ca, in momentul in care definim urmatoarele variabile, vrem ca
+        // acestea sa aiba acces la ce am definit noi
+        for (int i = node.idx + 1; i < node.parent.letNodes.size(); i++) {
+            node.parent.letNodes.get(i).currentScope.add(idSymbol);
+        }
+
+        super.visit(node);
+    }
+
+    @Override
+    public void visit(ASTExprCaseNode node) {
+        for (int i = 0; i < node.ids.size(); i++) {
+            var id = node.ids.get(i);
+            var type = node.types.get(i);
+
+            if (id.equals("self")) {
+                SymbolTable.error(node.ctx, ((CoolParser.Expr_caseContext) node.ctx).ID(i).getSymbol(),
+                        "Case variable has illegal name self");
+            }
+
+            if (type.equals("SELF_TYPE")) {
+                SymbolTable.error(node.ctx, ((CoolParser.Expr_caseContext) node.ctx).type(i).SELF().getSymbol(),
+                        "Case variable " + id + " has illegal type SELF_TYPE");
+
+            } else if (SymbolTable.globals.lookup(type) == null) {
+                SymbolTable.error(node.ctx, ((CoolParser.Expr_caseContext) node.ctx).type(i).CLASS_NAME().getSymbol(),
+                        "Case variable " + id + " has undefined type " + type);
+            }
+
+            var idSymbol = new IdSymbol(id);
+            idSymbol.setType((TypeSymbol) SymbolTable.globals.lookup(type));
+            node.scopes.get(i).add(idSymbol);
+        }
+
+        super.visit(node);
+    }
+
 }

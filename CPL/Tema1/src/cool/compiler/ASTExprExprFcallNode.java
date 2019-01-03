@@ -3,9 +3,9 @@ package cool.compiler;
 import cool.visitors.ASTVisitor;
 
 public class ASTExprExprFcallNode extends ASTBaseNode {
-	ASTBaseNode expr = null;
-	String type = null;
-	ASTBaseNode fcall = null;
+	public ASTBaseNode expr = null;
+	public String type = null;
+	public ASTBaseNode fcall = null;
 	
 	@Override
 	public void print(int depth) {
@@ -24,8 +24,10 @@ public class ASTExprExprFcallNode extends ASTBaseNode {
 	public void accept(ASTVisitor v) {
 		v.visit(this);
 
+		/*
 		expr.accept(v);
 		fcall.accept(v);
+		*/
 	}
 
 }

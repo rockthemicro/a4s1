@@ -29,10 +29,11 @@ public class ASTClassNode extends ASTBaseNode {
 	@Override
 	public void accept(ASTVisitor v) {
 		v.visit(this);
-
+		/*
 		if (body != null) {
 			body.accept(v);
 		}
+		*/
 	}
 
 }

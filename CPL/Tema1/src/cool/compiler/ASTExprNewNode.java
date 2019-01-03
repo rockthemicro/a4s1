@@ -4,7 +4,7 @@ import cool.visitors.ASTVisitor;
 
 public class ASTExprNewNode extends ASTBaseNode {
 
-	String type = null;
+	public String type = null;
 	
 	@Override
 	public void print(int depth) {

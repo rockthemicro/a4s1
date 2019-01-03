@@ -3,7 +3,7 @@ package cool.compiler;
 import cool.visitors.ASTVisitor;
 
 public class ASTExprBlockNode extends ASTBaseNode {
-	ASTManyExprNode child = new ASTManyExprNode();
+	public ASTManyExprNode child = new ASTManyExprNode();
 	
 	@Override
 	public void print(int depth) {
@@ -17,6 +17,6 @@ public class ASTExprBlockNode extends ASTBaseNode {
 	public void accept(ASTVisitor v) {
 		v.visit(this);
 
-		child.accept(v);
+		//child.accept(v);
 	}
 }

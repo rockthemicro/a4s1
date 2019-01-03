@@ -23,10 +23,12 @@ public class ASTProgramNode extends ASTBaseNode {
 	public void accept(ASTVisitor v) {
 		v.visit(this);
 
+		/*
 		for (var classNode : classes) {
 			if (classNode != null) {
 				classNode.accept(v);
 			}
 		}
+		*/
 	}
 }

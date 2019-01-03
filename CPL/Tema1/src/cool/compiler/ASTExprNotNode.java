@@ -4,7 +4,7 @@ import cool.visitors.ASTVisitor;
 
 public class ASTExprNotNode extends ASTBaseNode {
 
-	ASTBaseNode expr = null;
+	public ASTBaseNode expr = null;
 	
 	@Override
 	public void print(int depth) {
@@ -18,7 +18,7 @@ public class ASTExprNotNode extends ASTBaseNode {
 	public void accept(ASTVisitor v) {
 		v.visit(this);
 
-		expr.accept(v);
+		//expr.accept(v);
 	}
 
 }

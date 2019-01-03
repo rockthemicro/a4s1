@@ -4,8 +4,8 @@ import cool.visitors.ASTVisitor;
 
 public class ASTExprConstNode extends ASTBaseNode {
 	
-	String value = null;
-	Types type = null;
+	public String value = null;
+	public Types type = null;
 	
 	@Override
 	public void print(int depth) {
@@ -17,6 +17,19 @@ public class ASTExprConstNode extends ASTBaseNode {
 		NUMBER,
 		BOOLEAN,
 		STRING
+	}
+
+	public String getStringType() {
+		switch (this.type) {
+			case NUMBER:
+				return "Int";
+			case STRING:
+				return "String";
+			case BOOLEAN:
+				return "Bool";
+		}
+
+		return "Int";
 	}
 	
 	public void setNumberType() {

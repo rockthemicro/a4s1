@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class ASTManyExprNode extends ASTBaseNode {
 
-	ArrayList<ASTBaseNode> children = new ArrayList<>();
+	public ArrayList<ASTBaseNode> children = new ArrayList<>();
 	
 	@Override
 	public void print(int depth) {
@@ -23,8 +23,10 @@ public class ASTManyExprNode extends ASTBaseNode {
 	public void accept(ASTVisitor v) {
 		v.visit(this);
 
+		/*
 		for (var child : children) {
 			child.accept(v);
 		}
+		*/
 	}
 }

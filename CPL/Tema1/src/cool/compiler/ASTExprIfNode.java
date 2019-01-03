@@ -4,9 +4,9 @@ import cool.visitors.ASTVisitor;
 
 public class ASTExprIfNode extends ASTBaseNode {
 	
-	ASTBaseNode ifExpr = null;
-	ASTBaseNode thenExpr = null;
-	ASTBaseNode elseExpr = null;
+	public ASTBaseNode ifExpr = null;
+	public ASTBaseNode thenExpr = null;
+	public ASTBaseNode elseExpr = null;
 	
 	@Override
 	public void print(int depth) {
@@ -22,9 +22,11 @@ public class ASTExprIfNode extends ASTBaseNode {
 	public void accept(ASTVisitor v) {
 		v.visit(this);
 
+		/*
 		ifExpr.accept(v);
 		thenExpr.accept(v);
 		elseExpr.accept(v);
+		*/
 	}
 
 }

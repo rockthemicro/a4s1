@@ -1,0 +1,3 @@
+"18-type-dispatch.cl", line 4:18, Semantic error: Type Bool of assigned expression is incompatible with declared type C of identifier c
+"18-type-dispatch.cl", line 23:18, Semantic error: Type Int of assigned expression is incompatible with declared type C of identifier c
+Compilation halted

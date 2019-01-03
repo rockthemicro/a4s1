@@ -1,15 +1,17 @@
 package cool.compiler;
 
+import cool.structures.Scope;
 import cool.visitors.ASTVisitor;
 
 import java.util.ArrayList;
 
 public class ASTExprCaseNode extends ASTBaseNode {
 
-	ASTBaseNode expr = null;
-	ArrayList<String> ids = new ArrayList<>();
-	ArrayList<String> types = new ArrayList<>();
-	ArrayList<ASTBaseNode> exprs = new ArrayList<>();
+	public ASTBaseNode expr = null;
+	public ArrayList<String> ids = new ArrayList<>();
+	public ArrayList<String> types = new ArrayList<>();
+	public ArrayList<ASTBaseNode> exprs = new ArrayList<>();
+	public ArrayList<Scope> scopes = new ArrayList<Scope>();
 	
 	@Override
 	public void print(int depth) {
@@ -36,10 +38,12 @@ public class ASTExprCaseNode extends ASTBaseNode {
 	public void accept(ASTVisitor v) {
 		v.visit(this);
 
+		/*
 		expr.accept(v);
 		for (var exp : exprs) {
 			exp.accept(v);
 		}
+		*/
 	}
 
 }
