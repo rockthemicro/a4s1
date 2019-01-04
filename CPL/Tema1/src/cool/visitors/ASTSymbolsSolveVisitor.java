@@ -192,11 +192,15 @@ public class ASTSymbolsSolveVisitor extends ASTNopVisitor {
                 continue;
 
             // nu permitem parametri cu tipul SELF_TYPE
+
             if (type.equals("SELF_TYPE")) {
+                var oldStatus = SymbolTable.hasSemanticErrors();
+
                 SymbolTable.error(node.ctx, node.typeTokens.get(i),
                         "Method " + node.methodNode.methodSymbol.getName() + " of class " + node.methodNode.classSymbol.getName()
                                 + " has formal parameter " + id + " with illegal type SELF_TYPE");
 
+                SymbolTable.setSemanticErrors(oldStatus);
                 continue;
             }
 
@@ -210,7 +214,7 @@ public class ASTSymbolsSolveVisitor extends ASTNopVisitor {
                         type);
 
             } else {
-                idSymbol.setType((ClassSymbol) classSymbol);
+                idSymbol.setType((TypeSymbol) classSymbol);
             }
         }
 

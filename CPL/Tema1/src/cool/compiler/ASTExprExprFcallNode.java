@@ -5,7 +5,7 @@ import cool.visitors.ASTVisitor;
 public class ASTExprExprFcallNode extends ASTBaseNode {
 	public ASTBaseNode expr = null;
 	public String type = null;
-	public ASTBaseNode fcall = null;
+	public ASTFcallNode fcall = null;
 	
 	@Override
 	public void print(int depth) {

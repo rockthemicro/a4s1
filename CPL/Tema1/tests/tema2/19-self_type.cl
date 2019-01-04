@@ -33,7 +33,7 @@ class C inherits B {
                 a.f1();
                 a.g();
                 a.f1().g();
-            
+
                 b.f1();
                 b.g();
                 b.f1().g();

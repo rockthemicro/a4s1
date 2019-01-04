@@ -21,6 +21,9 @@ public class ClassSymbol extends TypeSymbol implements Scope {
 	}
 
     public boolean isChildOf(String type) {
+	    if (this.getName().equals("SELF_TYPE") && type.equals("SELF_TYPE"))
+	        return true;
+
 	    ClassSymbol parentClass = this;
 	    while (parentClass != null) {
             if (parentClass.getName().equals(type))

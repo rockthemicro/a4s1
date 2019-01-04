@@ -172,7 +172,7 @@ public class BuildASTVisitor extends CoolParserBaseVisitor<ASTBaseNode> {
 		node.id = ctx.ID().getText();
 		
 		if (ctx.f_call_args() != null) {
-			node.params = visit(ctx.f_call_args());
+			node.params = (ASTManyExprNode) visit(ctx.f_call_args());
 		}
 		
 		return node;
@@ -252,7 +252,7 @@ public class BuildASTVisitor extends CoolParserBaseVisitor<ASTBaseNode> {
 		if (ctx.type() != null) {
 			node.type = ctx.type().getText();
 		}
-		node.fcall = visit(ctx.f_call());
+		node.fcall = (ASTFcallNode) visit(ctx.f_call());
 		
 		return node;
 	}
@@ -261,7 +261,7 @@ public class BuildASTVisitor extends CoolParserBaseVisitor<ASTBaseNode> {
 	public ASTBaseNode visitExpr_fcall(Expr_fcallContext ctx) {
 		ASTExprFcallNode node = new ASTExprFcallNode();
         node.ctx = ctx;
-		node.fcall = visit(ctx.f_call());
+		node.fcall = (ASTFcallNode) visit(ctx.f_call());
 		
 		return node;
 	}

@@ -3,7 +3,7 @@ package cool.compiler;
 import cool.visitors.ASTVisitor;
 
 public class ASTExprFcallNode extends ASTBaseNode {
-	public ASTBaseNode fcall = null;
+	public ASTFcallNode fcall = null;
 	
 	@Override
 	public void print(int depth) {

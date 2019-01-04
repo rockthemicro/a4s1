@@ -1,11 +1,14 @@
 package cool.compiler;
 
+import cool.structures.MethodSymbol;
 import cool.visitors.ASTVisitor;
 
 public class ASTFcallNode extends ASTBaseNode {
 
 	public String id = null;
-	public ASTBaseNode params = null;
+	public ASTManyExprNode params = null;
+	public MethodSymbol methodSymbol = null;
+	public String staticClass = null;
 	
 	@Override
 	public void print(int depth) {
