@@ -8,10 +8,13 @@ class A {
 };
 
 class B inherits A {
+	b : SELF_TYPE <- new C;
 	g() : Int { 0 };
 };
 
 class C inherits B {
+	a : A <- new SELF_TYPE;
+	-- b : SELF_TYPE <- new C; nu merge?????
 
 	i() : Object {
 		let a : A <- new B,

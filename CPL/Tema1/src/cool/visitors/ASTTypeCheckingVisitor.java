@@ -166,7 +166,15 @@ public class ASTTypeCheckingVisitor extends ASTNopVisitor {
                                     " is incompatible with declared type " + node.type);
                 }
 
-            } else if (exprType.equals(node.type) == false
+            } else if (exprType.equals("SELF_TYPE")) {
+                var enclosingClass = getEnclosingClass(node.currentScope);
+                if (enclosingClass.isChildOf(node.type) == false) {
+                    SymbolTable.error(node.ctx, ((CoolParser.Let_bindContext) node.ctx).expr().start,
+                            "Type " + exprType + " of initialization expression of identifier " + node.id +
+                                    " is incompatible with declared type " + node.type);
+                }
+
+            }else if (exprType.equals(node.type) == false
                     && exprClass != null && exprClass.isChildOf(node.type) == false) {
 
                 SymbolTable.error(node.ctx, ((CoolParser.Let_bindContext) node.ctx).expr().start,
@@ -190,6 +198,14 @@ public class ASTTypeCheckingVisitor extends ASTNopVisitor {
 
                 var enclosingClass = getEnclosingClass(node.currentScope);
                 if (exprClass.isChildOf(enclosingClass.getName()) == false) {
+                    SymbolTable.error(node.ctx, ((CoolParser.Attr_asgnContext) node.ctx).expr().start,
+                            "Type " + exprType + " of initialization expression of attribute " + node.id +
+                                    " is incompatible with declared type " + node.type);
+                }
+
+            } else if (exprType.equals("SELF_TYPE")) {
+                var enclosingClass = getEnclosingClass(node.currentScope);
+                if (enclosingClass.isChildOf(node.type) == false) {
                     SymbolTable.error(node.ctx, ((CoolParser.Attr_asgnContext) node.ctx).expr().start,
                             "Type " + exprType + " of initialization expression of attribute " + node.id +
                                     " is incompatible with declared type " + node.type);

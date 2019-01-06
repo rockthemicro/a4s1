@@ -1,0 +1,2 @@
+"21-test1.cl", line 9:22, Semantic error: Type A of initialization expression of attribute b is incompatible with declared type SELF_TYPE
+Compilation halted

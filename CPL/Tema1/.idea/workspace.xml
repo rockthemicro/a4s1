@@ -2,30 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5e3fbbf-386c-41b8-bc3e-0f19253b1c53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/tema2/19-self_type.cl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/tema2/19-self_type.ref" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/tema2/20-basic-classes.cl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/tema2/20-basic-classes.ref" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema2/21-test1.cl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema2/21-test1.ref" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ideas" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/cool/compiler/ASTExprExprFcallNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/cool/compiler/ASTExprExprFcallNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/cool/compiler/ASTExprFcallNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/cool/compiler/ASTExprFcallNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/cool/compiler/ASTFcallNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/cool/compiler/ASTFcallNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/cool/compiler/BuildASTVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/cool/compiler/BuildASTVisitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/cool/structures/ClassSymbol.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/cool/structures/ClassSymbol.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/cool/structures/SymbolTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/cool/structures/SymbolTable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/cool/visitors/ASTNopVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/cool/visitors/ASTNopVisitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/cool/visitors/ASTSymbolsSolveVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/cool/visitors/ASTSymbolsSolveVisitor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/cool/visitors/ASTTypeCheckingVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/cool/visitors/ASTTypeCheckingVisitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cool/compiler/ASTExprExprFcallNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cool/compiler/ASTExprExprFcallNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cool/compiler/ASTExprFcallNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cool/compiler/ASTExprFcallNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cool/compiler/ASTFcallNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cool/compiler/ASTFcallNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cool/compiler/BuildASTVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cool/compiler/BuildASTVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cool/structures/ClassSymbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cool/structures/ClassSymbol.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cool/structures/SymbolTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cool/structures/SymbolTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cool/visitors/ASTSymbolsSolveVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cool/visitors/ASTSymbolsSolveVisitor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cool/visitors/ASTTypeCheckingVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cool/visitors/ASTTypeCheckingVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/tema2/18-type-dispatch.out" beforeDir="false" afterPath="$PROJECT_DIR$/tests/tema2/18-type-dispatch.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab1/.test2.cl.swp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab1/test2.cl" beforeDir="false" afterPath="$PROJECT_DIR$/../lab1/test2.cl" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,7 +21,56 @@
     <favorites_list name="Tema1" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/tema2/21-test1.cl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="103" selection-start-line="8" selection-start-column="103" selection-end-line="8" selection-end-column="103" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/cool/visitors/ASTTypeCheckingVisitor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="173" column="88" selection-start-line="173" selection-start-column="88" selection-end-line="173" selection-end-column="88" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#isOperand#0;class#ASTTypeCheckingVisitor#0" />
+                <element signature="method#getEnclosingClass#0;class#ASTTypeCheckingVisitor#0" />
+                <element signature="method#visit#0;class#ASTTypeCheckingVisitor#0" />
+                <element signature="method#visit#1;class#ASTTypeCheckingVisitor#0" />
+                <element signature="method#visit#2;class#ASTTypeCheckingVisitor#0" />
+                <element signature="method#visit#3;class#ASTTypeCheckingVisitor#0" />
+                <element signature="method#visit#6;class#ASTTypeCheckingVisitor#0" />
+                <element signature="method#visit#7;class#ASTTypeCheckingVisitor#0" />
+                <element signature="method#visit#8;class#ASTTypeCheckingVisitor#0" />
+                <element signature="method#visit#9;class#ASTTypeCheckingVisitor#0" />
+                <element signature="method#visit#10;class#ASTTypeCheckingVisitor#0" />
+                <element signature="method#visit#11;class#ASTTypeCheckingVisitor#0" />
+                <element signature="method#visit#12;class#ASTTypeCheckingVisitor#0" />
+                <element signature="method#visit#13;class#ASTTypeCheckingVisitor#0" />
+                <element signature="method#visit#14;class#ASTTypeCheckingVisitor#0" />
+                <element signature="method#visit#15;class#ASTTypeCheckingVisitor#0" />
+                <element signature="method#visit#16;class#ASTTypeCheckingVisitor#0" />
+                <element signature="method#visit#17;class#ASTTypeCheckingVisitor#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/tema2/21-test1.ref">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="21" selection-start-column="21" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -74,8 +106,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Ideas" />
-        <option value="$PROJECT_DIR$/src/cool/visitors/ASTVisitor.java" />
         <option value="$PROJECT_DIR$/tests/tema2/01-define-class.out" />
         <option value="$PROJECT_DIR$/src/cool/structures/IdSymbol.java" />
         <option value="$PROJECT_DIR$/src/cool/structures/Symbol.java" />
@@ -120,11 +150,13 @@
         <option value="$PROJECT_DIR$/src/cool/compiler/ASTFcallNode.java" />
         <option value="$PROJECT_DIR$/src/cool/visitors/ASTSymbolsSolveVisitor.java" />
         <option value="$PROJECT_DIR$/src/cool/structures/ClassSymbol.java" />
-        <option value="$PROJECT_DIR$/src/cool/visitors/ASTTypeCheckingVisitor.java" />
         <option value="$PROJECT_DIR$/tests/tema2/19-self_type.cl" />
         <option value="$PROJECT_DIR$/tests/tema2/20-basic-classes.ref" />
         <option value="$PROJECT_DIR$/tests/tema2/20-basic-classes.cl" />
         <option value="$PROJECT_DIR$/src/cool/structures/SymbolTable.java" />
+        <option value="$PROJECT_DIR$/tests/tema2/21-test1.ref" />
+        <option value="$PROJECT_DIR$/tests/tema2/21-test1.cl" />
+        <option value="$PROJECT_DIR$/src/cool/visitors/ASTTypeCheckingVisitor.java" />
       </list>
     </option>
   </component>
@@ -142,6 +174,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Default Changelist'; set:Default Changelist; class com.intellij.packageDependencies.ChangeListScope">
+          <expand>
+            <path>
+              <item name="Tema1" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Tema1" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -170,34 +214,6 @@
               <item name="Tema1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="cool" type="462c0819:PsiDirectoryNode" />
-              <item name="compiler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tema1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tema1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cool" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tema1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tema1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cool" type="462c0819:PsiDirectoryNode" />
-              <item name="structures" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tema1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tema1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cool" type="462c0819:PsiDirectoryNode" />
-              <item name="tester" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tema1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tema1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cool" type="462c0819:PsiDirectoryNode" />
               <item name="visitors" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -211,35 +227,10 @@
               <item name="tests" type="462c0819:PsiDirectoryNode" />
               <item name="tema2" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Tema1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tema1" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="tmp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tema1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tema1" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="tmp" type="462c0819:PsiDirectoryNode" />
-              <item name="tema2" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Scope 'Default Changelist'; set:Default Changelist; class com.intellij.packageDependencies.ChangeListScope">
-          <expand>
-            <path>
-              <item name="Tema1" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="Tema1" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -307,12 +298,13 @@
       <updated>1545236336505</updated>
       <workItem from="1545236340818" duration="7762000" />
       <workItem from="1545254605244" duration="70447000" />
-      <workItem from="1546000979008" duration="96951000" />
+      <workItem from="1546000979008" duration="98903000" />
+      <workItem from="1546776178489" duration="19000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175160000" />
+    <option name="totallyTimeSpent" value="177131000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -324,18 +316,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="937" y="171" width="917" height="789" extended-state="0" />
+    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49851632" visible="true" weight="0.40528128" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49851632" visible="true" weight="0.19756502" />
       <window_info id="Structure" order="1" sideWeight="0.5004975" side_tool="true" weight="0.18623266" />
       <window_info id="Designer" order="2" />
       <window_info id="Learn" order="3" />
       <window_info id="Favorites" order="4" sideWeight="0.5014837" side_tool="true" weight="0.18836713" />
-      <window_info anchor="bottom" id="ANTLR Preview" weight="0.32935324" />
-      <window_info anchor="bottom" id="Tool Output" weight="0.32935324" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.50151515" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3574514" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -343,11 +334,13 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32935324" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.2875622" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.28725702" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Dependency Viewer" order="12" weight="0.32937366" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32935324" />
       <window_info anchor="bottom" id="Duplicate detector" order="14" weight="0.32935324" />
+      <window_info anchor="bottom" id="Tool Output" order="15" weight="0.32935324" />
+      <window_info anchor="bottom" id="ANTLR Preview" order="16" weight="0.32935324" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -390,16 +383,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tests/tema2/14-type-block.ref">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/tema2/14-type-block.cl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="6" lean-forward="true" selection-start-column="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cool/compiler/ASTExprCaseNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -417,12 +400,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/tmp/tema2/16-type-attr.ref">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/tmp/tema2/16-type-attr.cl">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/tmp/tema2/16-type-attr.ref" />
+    <entry file="file://$PROJECT_DIR$/tests/tmp/tema2/16-type-attr.cl" />
     <entry file="file://$PROJECT_DIR$/tests/tema2/06-resolve-id.out">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -493,20 +472,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/tmp/tema2/17-type-method.cl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/tmp/tema2/17-type-method.ref">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/tmp/tema2/17-type-method.cl" />
+    <entry file="file://$PROJECT_DIR$/tests/tmp/tema2/17-type-method.ref" />
     <entry file="file://$PROJECT_DIR$/tests/tema2/17-type-method.ref">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -664,20 +631,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/tmp/tema2/20-basic-classes.ref">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/tmp/tema2/20-basic-classes.cl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="58" lean-forward="true" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/tmp/tema2/20-basic-classes.ref" />
+    <entry file="file://$PROJECT_DIR$/tests/tmp/tema2/20-basic-classes.cl" />
     <entry file="file://$PROJECT_DIR$/src/cool/structures/ClassSymbol.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
@@ -731,34 +686,6 @@
     <entry file="file://$PROJECT_DIR$/tests/tema2/20-basic-classes.out">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cool/visitors/ASTTypeCheckingVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="577">
-          <caret line="498" column="22" selection-start-line="498" selection-start-column="22" selection-end-line="498" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#135#166#0" expanded="true" />
-            <element signature="method#isOperand#0;class#ASTTypeCheckingVisitor#0" />
-            <element signature="method#getEnclosingClass#0;class#ASTTypeCheckingVisitor#0" />
-            <element signature="method#visit#0;class#ASTTypeCheckingVisitor#0" />
-            <element signature="method#visit#1;class#ASTTypeCheckingVisitor#0" />
-            <element signature="method#visit#2;class#ASTTypeCheckingVisitor#0" />
-            <element signature="method#visit#3;class#ASTTypeCheckingVisitor#0" />
-            <element signature="method#visit#4;class#ASTTypeCheckingVisitor#0" />
-            <element signature="method#visit#5;class#ASTTypeCheckingVisitor#0" />
-            <element signature="method#visit#6;class#ASTTypeCheckingVisitor#0" />
-            <element signature="method#visit#3;class#ASTTypeCheckingVisitor#0" />
-            <element signature="method#visit#4;class#ASTTypeCheckingVisitor#0" />
-            <element signature="method#visit#5;class#ASTTypeCheckingVisitor#0" />
-            <element signature="method#visit#10;class#ASTTypeCheckingVisitor#0" />
-            <element signature="method#visit#8;class#ASTTypeCheckingVisitor#0" />
-            <element signature="method#visit#9;class#ASTTypeCheckingVisitor#0" />
-            <element signature="method#visit#10;class#ASTTypeCheckingVisitor#0" />
-            <element signature="method#visit#11;class#ASTTypeCheckingVisitor#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cool/compiler/ASTManyExprNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -791,6 +718,48 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="547">
           <caret line="108" column="51" selection-start-line="108" selection-start-column="51" selection-end-line="108" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/tema2/21-test1.cl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="103" selection-start-line="8" selection-start-column="103" selection-end-line="8" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/tema2/21-test1.ref">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cool/visitors/ASTTypeCheckingVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="173" column="88" selection-start-line="173" selection-start-column="88" selection-end-line="173" selection-end-column="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#isOperand#0;class#ASTTypeCheckingVisitor#0" />
+            <element signature="method#getEnclosingClass#0;class#ASTTypeCheckingVisitor#0" />
+            <element signature="method#visit#0;class#ASTTypeCheckingVisitor#0" />
+            <element signature="method#visit#1;class#ASTTypeCheckingVisitor#0" />
+            <element signature="method#visit#2;class#ASTTypeCheckingVisitor#0" />
+            <element signature="method#visit#3;class#ASTTypeCheckingVisitor#0" />
+            <element signature="method#visit#6;class#ASTTypeCheckingVisitor#0" />
+            <element signature="method#visit#7;class#ASTTypeCheckingVisitor#0" />
+            <element signature="method#visit#8;class#ASTTypeCheckingVisitor#0" />
+            <element signature="method#visit#9;class#ASTTypeCheckingVisitor#0" />
+            <element signature="method#visit#10;class#ASTTypeCheckingVisitor#0" />
+            <element signature="method#visit#11;class#ASTTypeCheckingVisitor#0" />
+            <element signature="method#visit#12;class#ASTTypeCheckingVisitor#0" />
+            <element signature="method#visit#13;class#ASTTypeCheckingVisitor#0" />
+            <element signature="method#visit#14;class#ASTTypeCheckingVisitor#0" />
+            <element signature="method#visit#15;class#ASTTypeCheckingVisitor#0" />
+            <element signature="method#visit#16;class#ASTTypeCheckingVisitor#0" />
+            <element signature="method#visit#17;class#ASTTypeCheckingVisitor#0" />
+          </folding>
         </state>
       </provider>
     </entry>
