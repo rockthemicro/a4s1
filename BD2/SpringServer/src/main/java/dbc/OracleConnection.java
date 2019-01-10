@@ -220,4 +220,27 @@ public class OracleConnection {
 
         return ret;
     }
+
+    public ArrayList<String> obtine_poze(Integer id_produs) {
+        ArrayList<String> ret = new ArrayList<>();
+
+        try {
+            String call = "{call comenzi.obtine_poze(?, ?)}";
+            CallableStatement cstmt = this.connection.prepareCall(call);
+
+            cstmt.setInt("produs", id_produs);
+            cstmt.registerOutParameter("poze", OracleTypes.CURSOR);
+            cstmt.executeQuery();
+
+            ResultSet rs = (ResultSet) cstmt.getObject("poze");
+            while (rs.next()) {
+
+                ret.add(rs.getString("url_poza"));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return ret;
+    }
 }

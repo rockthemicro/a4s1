@@ -8,12 +8,26 @@ class ThirdPage extends Component {
 
         this.state = {
             buy: false,
-            vector: ['http://wallpapere.org/wp-content/uploads/2011/07/imagini-caini-albi.jpg',
-                'https://cateldecatifea.ro/wp-content/uploads/ce-nume-sa-pun-cainelui.jpg',
-                'https://bucuriacasei.ro/wp-content/uploads/2018/01/vand-golden-retriever.jpg',
-                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrzELnMYShiea4A-V0jPE0Z4UN4IrXXqfFH1iE2KFQl0ESkiDG']
+            vector: []
 
         }
+    }
+
+    componentDidMount() {
+        let url = 'http://localhost:8080/poze'
+
+        axios.get(url, {params: {id_produs: this.props.curr_elem.id}})
+            .then(response => {
+
+                this.setState({
+                    vector: response.data
+                })
+
+
+            })
+            .catch(() => {
+                console.log('Obtinerea pozelor a esuat!')
+            })
     }
 
     processBuy = () => {
@@ -26,7 +40,9 @@ class ThirdPage extends Component {
                 { !this.state.buy &&
                 <div>
                     <div className='titlu3' > {this.props.curr_elem.nume} </div>
-                    {this.state.vector.map((elem, k) => {return(<img key={k} alt="" width="200" height="200" src = {elem} />);})}
+                    <div style={{display: 'block', padding: '30px'}}>
+                        {this.state.vector.map((elem, k) => {return(<img style={{marginRight: '20px'}} key={k} alt="" width="200" height="200" src = {elem} />);})}
+                    </div>
                     <button onClick={this.processBuy}>CUMPARA</button>
                 </div>}
 
@@ -182,11 +198,11 @@ class FormContainer extends Component {
                         {
                             this.state.livrari.map((elem, k) => {
                                 let nume = ""
-                                if (elem.id_curier == 1) {
+                                if (elem.id_curier === 1) {
                                     nume = "DHL"
-                                } else if (elem.id_curier == 2) {
+                                } else if (elem.id_curier === 2) {
                                     nume = "Fan"
-                                } else if (elem.id_curier == 3) {
+                                } else if (elem.id_curier === 3) {
                                     nume = "UPC"
                                 }
                                 return (

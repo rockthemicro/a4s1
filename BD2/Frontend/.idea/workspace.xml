@@ -2,21 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c36a2ac4-4dc7-4316-a37e-bca592716ca5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/ThirdPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/ThirdPage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringServer/src/main/java/databaseObjects/Livrare.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringServer/src/main/java/databaseObjects/Localitate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SecondPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SecondPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ThirdPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ThirdPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/ThirdPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/ThirdPage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringServer/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringServer/src/main/java/dbc/OracleConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringServer/src/main/java/dbc/OracleConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringServer/src/main/java/restservice/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringServer/src/main/java/restservice/AppController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringServer/target/classes/dbc/OracleConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringServer/target/classes/dbc/OracleConnection.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringServer/target/classes/restservice/AppController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringServer/target/classes/restservice/AppController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../oracle_scripts/02_package.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../oracle_scripts/02_package.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../oracle_scripts/04_initial_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../oracle_scripts/04_initial_data.sql" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,8 +38,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/SecondPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
+            <state relative-caret-position="165">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -58,8 +50,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/ThirdPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="584">
-              <caret line="192" column="81" selection-start-line="192" selection-start-column="81" selection-end-line="192" selection-end-column="81" />
+            <state relative-caret-position="150">
+              <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -70,8 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/css/ThirdPage.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+            <state relative-caret-position="45">
+              <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -207,12 +199,12 @@
       <workItem from="1546808689724" duration="7244000" />
       <workItem from="1546885333694" duration="252000" />
       <workItem from="1546897732189" duration="1272000" />
-      <workItem from="1547055870410" duration="33241000" />
+      <workItem from="1547055870410" duration="34719000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42009000" />
+    <option name="totallyTimeSpent" value="43487000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -366,23 +358,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/ThirdPage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/SecondPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-796">
@@ -394,10 +369,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/SecondPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/ThirdPage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ThirdPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="192" column="81" selection-start-line="192" selection-start-column="81" selection-end-line="192" selection-end-column="81" />
+        <state relative-caret-position="150">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>

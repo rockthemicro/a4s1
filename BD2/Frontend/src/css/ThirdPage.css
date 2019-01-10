@@ -1,3 +1,9 @@
+.titlu3 {
+    padding: 15px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
 .FormTextBox {
     display: inline-block;
     width: 10%;

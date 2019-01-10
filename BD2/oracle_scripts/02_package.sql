@@ -65,6 +65,8 @@ create or replace package system.comenzi as
 	procedure obtine_laptopuri(laptopuri out sys_refcursor);
 	procedure obtine_telefoane(telefoane out sys_refcursor);
 	procedure obtine_monitoare(monitoare out sys_refcursor);
+
+	procedure obtine_poze(produs in NUMBER, poze out sys_refcursor);
 end comenzi;
 /
 
@@ -355,6 +357,15 @@ create or replace package body system.comenzi as
 			from system.produse
 			where id_categorie = categ_id;
 	END obtine_monitoare;
+
+	procedure obtine_poze(produs in NUMBER, poze out sys_refcursor)
+	is
+	BEGIN
+		open poze for
+			select url_poza
+			from system.poze_produse
+			where id_produs = produs;
+	END obtine_poze;
 
 end comenzi;
 /

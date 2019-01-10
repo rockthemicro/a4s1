@@ -8,6 +8,8 @@ import dbc.OracleConnection;
 import oracle.jdbc.OracleTypes;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
+
 @SuppressWarnings("Duplicates")
 @CrossOrigin
 @RestController
@@ -37,6 +39,21 @@ public class AppController {
         int i = 0;
         for (var produs : produse) {
             result[i] = produs;
+            i++;
+        }
+
+        return result;
+    }
+
+    @GetMapping("/poze")
+    public String[] obtine_poze(@RequestParam(value="id_produs") Integer id_produs) {
+        OracleConnection oc = OracleConnection.oc;
+        ArrayList<String> poze = oc.obtine_poze(id_produs);
+
+        var result = new String[poze.size()];
+        int i = 0;
+        for (var poza : poze) {
+            result[i] = poza;
             i++;
         }
 
