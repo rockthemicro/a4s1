@@ -59,6 +59,7 @@ create or replace package system.comenzi as
 		adresa_livrare VARCHAR2) return NUMBER;
 
 	procedure obtine_curieri(localitate in VARCHAR2, curieri out sys_refcursor);
+	procedure obtine_localitati(localitati out sys_refcursor);
 
 	procedure obtine_categorii(categorii out sys_refcursor);
 	procedure obtine_laptopuri(laptopuri out sys_refcursor);
@@ -293,6 +294,14 @@ create or replace package body system.comenzi as
 			from system.livrari
 			where id_localitate = (select id from system.localitati where nume = localitate);
 	END obtine_curieri;
+
+	procedure obtine_localitati(localitati out sys_refcursor)
+	is
+	BEGIN
+		open localitati for
+			select *
+			from system.localitati;
+	END obtine_localitati;
 
 	procedure obtine_categorii(categorii out sys_refcursor)
 	is

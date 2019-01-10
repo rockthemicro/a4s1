@@ -2,8 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5aee953-b23d-4711-8026-3d8b6ec03652" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Frontend/src/components/ThirdPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Frontend/src/css/ThirdPage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/databaseObjects/Livrare.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/databaseObjects/Localitate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/components/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/src/components/SecondPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/components/SecondPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dbc/OracleConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dbc/OracleConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/restservice/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restservice/AppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dbc/OracleConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dbc/OracleConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restservice/AppController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restservice/AppController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../oracle_scripts/02_package.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../oracle_scripts/02_package.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../oracle_scripts/04_initial_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../oracle_scripts/04_initial_data.sql" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,43 +31,30 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/dbc/OracleConnection.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="307">
-              <caret line="161" column="40" lean-forward="true" selection-start-line="161" selection-start-column="40" selection-end-line="161" selection-end-column="40" />
+              <caret line="213" column="33" selection-start-line="213" selection-start-column="33" selection-end-line="213" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#OracleConnection#0;class#OracleConnection#0" />
                 <element signature="method#openConnection#0;class#OracleConnection#0" />
                 <element signature="method#closeConnection#0;class#OracleConnection#0" />
+                <element signature="method#obtine_categorii#0;class#OracleConnection#0" />
                 <element signature="method#obtine_produse#0;class#OracleConnection#0" />
+                <element signature="method#adauga_tranzactie#0;class#OracleConnection#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/databaseObjects/Tranzactie.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="29" lean-forward="true" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/restservice/GreetingController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/restservice/AppController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="363">
+              <caret line="52" column="30" lean-forward="true" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#235#266#0" expanded="true" />
+                <element signature="method#efectueaza_tranzactie#0;class#AppController#0" />
+                <element signature="method#obtine_loc#0;class#AppController#0" />
               </folding>
             </state>
           </provider>
@@ -87,6 +87,8 @@
         <option value="$PROJECT_DIR$/src/main/java/databaseObjects/Categorie.java" />
         <option value="$PROJECT_DIR$/src/main/java/databaseObjects/Produs.java" />
         <option value="$PROJECT_DIR$/src/main/java/databaseObjects/Tranzactie.java" />
+        <option value="$PROJECT_DIR$/src/main/java/databaseObjects/Localitate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/databaseObjects/Livrare.java" />
         <option value="$PROJECT_DIR$/src/main/java/restservice/AppController.java" />
         <option value="$PROJECT_DIR$/src/main/java/dbc/OracleConnection.java" />
       </list>
@@ -149,6 +151,14 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="databaseObjects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dbc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-server" type="b2602c69:ProjectViewProjectNode" />
@@ -236,12 +246,12 @@
       <workItem from="1546810052901" duration="1083000" />
       <workItem from="1546885311454" duration="275000" />
       <workItem from="1546897720966" duration="1242000" />
-      <workItem from="1547055870410" duration="24393000" />
+      <workItem from="1547055870410" duration="29062000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37645000" />
+    <option name="totallyTimeSpent" value="42314000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -346,13 +356,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/restservice/AppController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/databaseObjects/Localitate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/databaseObjects/Tranzactie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="29" lean-forward="true" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/databaseObjects/Livrare.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -366,21 +387,29 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/dbc/OracleConnection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="307">
-          <caret line="161" column="40" lean-forward="true" selection-start-line="161" selection-start-column="40" selection-end-line="161" selection-end-column="40" />
+          <caret line="213" column="33" selection-start-line="213" selection-start-column="33" selection-end-line="213" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#OracleConnection#0;class#OracleConnection#0" />
             <element signature="method#openConnection#0;class#OracleConnection#0" />
             <element signature="method#closeConnection#0;class#OracleConnection#0" />
+            <element signature="method#obtine_categorii#0;class#OracleConnection#0" />
             <element signature="method#obtine_produse#0;class#OracleConnection#0" />
+            <element signature="method#adauga_tranzactie#0;class#OracleConnection#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/databaseObjects/Tranzactie.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/restservice/AppController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="29" lean-forward="true" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+        <state relative-caret-position="363">
+          <caret line="52" column="30" lean-forward="true" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#235#266#0" expanded="true" />
+            <element signature="method#efectueaza_tranzactie#0;class#AppController#0" />
+            <element signature="method#obtine_loc#0;class#AppController#0" />
+          </folding>
         </state>
       </provider>
     </entry>

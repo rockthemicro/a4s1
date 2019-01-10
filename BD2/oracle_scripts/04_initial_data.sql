@@ -30,13 +30,13 @@ VALUES (
 INSERT INTO system.localitati 
 VALUES (
     2,
-    'Argeş'
+    'Arges'
 );
 
 INSERT INTO system.localitati 
 VALUES (
     3,
-    'Bacău'
+    'Bacau'
 );
 
 INSERT INTO system.localitati 
@@ -48,49 +48,49 @@ VALUES (
 INSERT INTO system.localitati 
 VALUES (
     5,
-    'Bistriţa-Năsăud'
+    'Bistrita-Nasaud'
 );
 
 INSERT INTO system.localitati 
 VALUES (
     6,
-    'Botoşani'
+    'Botosani'
 );
 
 INSERT INTO system.localitati 
 VALUES (
     7,
-    'Brăila'
+    'Braila'
 );
 
 INSERT INTO system.localitati 
 VALUES (
     8,
-    'Braşov'
+    'Brasov'
 );
 
 INSERT INTO system.localitati 
 VALUES (
     9,
-    'Bucureşti'
+    'Bucuresti'
 );
 
 INSERT INTO system.localitati 
 VALUES (
     10,
-    'Buzău'
+    'Buzau'
 );
 
 INSERT INTO system.localitati 
 VALUES (
     11,
-    'Călăraşi'
+    'Calarasi'
 );
 
 INSERT INTO system.localitati 
 VALUES (
     12,
-    'Caraş-Severin'
+    'Caras-Severin'
 );
 
 INSERT INTO system.localitati 
@@ -102,7 +102,7 @@ VALUES (
 INSERT INTO system.localitati 
 VALUES (
     14,
-    'Constanţa'
+    'Constanta'
 );
 
 INSERT INTO system.localitati 
@@ -114,7 +114,7 @@ VALUES (
 INSERT INTO system.localitati 
 VALUES (
     16,
-    'Dâmboviţa'
+    'Dambovita'
 );
 
 INSERT INTO system.localitati 
@@ -126,7 +126,7 @@ VALUES (
 INSERT INTO system.localitati 
 VALUES (
     18,
-    'Galaţi'
+    'Galati'
 );
 
 INSERT INTO system.localitati 
@@ -156,13 +156,13 @@ VALUES (
 INSERT INTO system.localitati 
 VALUES (
     23,
-    'Ialomiţa'
+    'Ialomita'
 );
 
 INSERT INTO system.localitati 
 VALUES (
     24,
-    'Iaşi'
+    'Iasi'
 );
 
 INSERT INTO system.localitati 
@@ -174,25 +174,25 @@ VALUES (
 INSERT INTO system.localitati 
 VALUES (
     26,
-    'Maramureş'
+    'Maramures'
 );
 
 INSERT INTO system.localitati 
 VALUES (
     27,
-    'Mehedinţi'
+    'Mehedinsi'
 );
 
 INSERT INTO system.localitati 
 VALUES (
     28,
-    'Mureş'
+    'Mures'
 );
 
 INSERT INTO system.localitati 
 VALUES (
     29,
-    'Neamţ'
+    'Neamt'
 );
 
 INSERT INTO system.localitati 
@@ -210,7 +210,7 @@ VALUES (
 INSERT INTO system.localitati 
 VALUES (
     32,
-    'Sălaj'
+    'Salaj'
 );
 
 INSERT INTO system.localitati 
@@ -240,7 +240,7 @@ VALUES (
 INSERT INTO system.localitati 
 VALUES (
     37,
-    'Timiş'
+    'Timis'
 );
 
 INSERT INTO system.localitati 
@@ -252,7 +252,7 @@ VALUES (
 INSERT INTO system.localitati 
 VALUES (
     39,
-    'Vâlcea'
+    'Valcea'
 );
 
 INSERT INTO system.localitati 

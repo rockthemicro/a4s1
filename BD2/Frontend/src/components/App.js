@@ -9,6 +9,7 @@ import Second from './test_components/Second.js'
 */
 import Welcome from './Welcome.js'
 import SecondPage from './SecondPage.js'
+import ThirdPage from './ThirdPage.js'
 
 class App extends Component {
     constructor (props) {
@@ -18,6 +19,8 @@ class App extends Component {
             vector: ['Laptopuri',  'Monitoare', 'Telefoane', 'Carti', 'Caiete'],
             page: 1
         };
+
+        this.changeToThirdPage = this.changeToThirdPage.bind(this)
     };
 
 
@@ -83,6 +86,15 @@ class App extends Component {
         */
     }
 
+    changeToThirdPage(elem) {
+        return () => {
+            this.setState({
+                page: 3,
+                current_elem: elem
+            })
+        }
+    }
+
     render() {
         return (
 
@@ -105,7 +117,8 @@ class App extends Component {
 
                         <div className="right-half">
                             {this.state.page === 1 && <Welcome/>}
-                            {this.state.page === 2 && <SecondPage value={this.state.value}/>}
+                            {this.state.page === 2 && <SecondPage changePage={this.changeToThirdPage} value={this.state.value}/>}
+                            {this.state.page === 3 && <ThirdPage  curr_elem={this.state.current_elem}/>}
                         </div>
                     </section>
                 </div>

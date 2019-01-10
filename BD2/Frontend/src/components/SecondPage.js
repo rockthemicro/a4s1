@@ -17,7 +17,6 @@ class SecondPage extends Component {
         axios.get(url, {params: {categorie: this.props.value}})
             .then(response => {
 
-                debugger
                 this.setState({
                     vector: response.data
                 })
@@ -35,7 +34,6 @@ class SecondPage extends Component {
         axios.get(url, {params: {categorie: nextProps.value}})
             .then(response => {
 
-                debugger
                 this.setState({
                     vector: response.data
                 })
@@ -47,16 +45,15 @@ class SecondPage extends Component {
             })
     }
 
-
     render() {
         return (
             <div>
                 {this.state.vector.map(
-                    (elem) => {
+                    (elem, k) => {
 
                         return (
-                            <div className='clearfix'>
-                                <img alt = "" src={elem.url_poza_profil} height="200" width="200" className='image'/>
+                            <div key={k} className='clearfix'>
+                                <img alt = "" src={elem.url_poza_profil} onClick={this.props.changePage(elem)} height="200" width="200" className='image'/>
                                 <div className='titlu'>{elem.nume} </div>
                                 <div className='text'>{elem.description}</div>
                             </div>

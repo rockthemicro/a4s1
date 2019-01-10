@@ -1,8 +1,6 @@
 package dbc;
 
-import databaseObjects.Categorie;
-import databaseObjects.Produs;
-import databaseObjects.Tranzactie;
+import databaseObjects.*;
 import oracle.jdbc.OracleTypes;
 
 import java.sql.*;
@@ -169,5 +167,57 @@ public class OracleConnection {
         }
 
         return newId;
+    }
+
+    public ArrayList<Localitate> obtine_localitati() {
+        ArrayList<Localitate> ret = new ArrayList<>();
+
+        try {
+            String call = "{call comenzi.obtine_localitati(?)}";
+            CallableStatement cstmt = this.connection.prepareCall(call);
+            cstmt.registerOutParameter("localitati", OracleTypes.CURSOR);
+            cstmt.executeQuery();
+
+            ResultSet rs = (ResultSet) cstmt.getObject("localitati");
+            while (rs.next()) {
+                Localitate localitate = new Localitate();
+                localitate.id = rs.getInt("id");
+                localitate.nume = rs.getString("nume");
+
+
+                ret.add(localitate);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return ret;
+    }
+
+    public ArrayList<Livrare> obtine_livrari(String localitate) {
+        ArrayList<Livrare> ret = new ArrayList<>();
+        try {
+            String call = "{call comenzi.obtine_curieri(?, ?)}";
+            CallableStatement cstmt = this.connection.prepareCall(call);
+            cstmt.setString("localitate", localitate);
+            cstmt.registerOutParameter("curieri", OracleTypes.CURSOR);
+            cstmt.executeQuery();
+
+            ResultSet rs = (ResultSet) cstmt.getObject("curieri");
+            while (rs.next()) {
+                Livrare livrare = new Livrare();
+                livrare.id = rs.getInt("id");
+                livrare.id_curier = rs.getInt("id_curier");
+                livrare.id_localitate = rs.getInt("id_localitate");
+                livrare.taxa = rs.getInt("taxa");
+
+                ret.add(livrare);
+            }
+
+            } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return ret;
     }
 }
