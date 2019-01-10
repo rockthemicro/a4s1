@@ -2,6 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d181381-69aa-4d9d-a99f-c97c508022f9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../BD2/Frontend/src/components/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BD2/Frontend/src/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BD2/Frontend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BD2/Frontend/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BD2/Frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../BD2/Frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BD2/Frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../BD2/Frontend/src/css/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BD2/Frontend/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BD2/Frontend/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../BD2/Frontend/src/App.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BD2/Frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../BD2/Frontend/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BD2/SpringServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BD2/SpringServer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BD2/start_db.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../BD2/start_db.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,51 +24,17 @@
     <favorites_list name="IA" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.63504153">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/tema2/tema.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-25">
-                  <caret line="429" lean-forward="true" selection-start-line="429" selection-end-line="429" />
-                  <folding>
-                    <element signature="e#104#948#0" />
-                    <element signature="e#498#1581#0" />
-                    <element signature="e#2428#2677#0" />
-                    <element signature="e#2736#4132#0" />
-                    <element signature="e#2910#3184#0" />
-                    <element signature="e#3203#3522#0" />
-                    <element signature="e#3674#3685#0" />
-                    <element signature="e#3730#4042#0" />
-                    <element signature="e#3666#3677#0" />
-                    <element signature="e#5156#5499#0" />
-                    <element signature="e#8311#8784#0" />
-                    <element signature="e#8294#8333#0" />
-                    <element signature="e#9605#9634#0" />
-                    <element signature="e#11657#12760#0" />
-                    <element signature="e#12793#13547#0" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/tema2/bn1">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
-                  <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lab12 - NLP/Lab12-NLP-Skel.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="320" column="29" selection-start-line="320" selection-start-column="29" selection-end-line="320" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -113,6 +89,7 @@
         <option value="$PROJECT_DIR$/lab10/Lab10_GraphPlan.py" />
         <option value="$PROJECT_DIR$/lab9/Lab09-VariableElimination-solved.py" />
         <option value="$PROJECT_DIR$/tema2/tema.py" />
+        <option value="$PROJECT_DIR$/lab12 - NLP/Lab12-NLP-Skel.py" />
       </list>
     </option>
   </component>
@@ -140,7 +117,7 @@
             <path>
               <item name="IA" type="b2602c69:ProjectViewProjectNode" />
               <item name="IA" type="462c0819:PsiDirectoryNode" />
-              <item name="lab9" type="462c0819:PsiDirectoryNode" />
+              <item name="lab12 - NLP" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="IA" type="b2602c69:ProjectViewProjectNode" />
@@ -176,7 +153,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.tema">
+  <component name="RunManager" selected="Python.Lab12-NLP-Skel">
     <configuration name="Lab09-VariableElimination-solved" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="IA" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -190,6 +167,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab9/Lab09-VariableElimination-solved.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Lab12-NLP-Skel" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="IA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab12 - NLP" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab12 - NLP/Lab12-NLP-Skel.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -222,9 +220,11 @@
     <list>
       <item itemvalue="Python.tema" />
       <item itemvalue="Python.Lab09-VariableElimination-solved" />
+      <item itemvalue="Python.Lab12-NLP-Skel" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Lab12-NLP-Skel" />
         <item itemvalue="Python.tema" />
         <item itemvalue="Python.Lab09-VariableElimination-solved" />
       </list>
@@ -254,7 +254,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.50085473" side_tool="true" weight="0.2431694" />
       <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49785408" visible="true" weight="0.21092896" />
@@ -265,7 +264,7 @@
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.32937366" />
       <window_info anchor="bottom" id="Version Control" order="5" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.24514039" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.31965443" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.36177105" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -293,6 +292,11 @@
           <url>file://$PROJECT_DIR$/lab10/Lab10_GraphPlan.py</url>
           <line>264</line>
           <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/lab12 - NLP/Lab12-NLP-Skel.py</url>
+          <line>395</line>
+          <option name="timeStamp" value="52" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -426,13 +430,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tema2/bn1">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lab9/Lab09-VariableElimination-solved.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -440,27 +437,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tema2/bn1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tema2/tema.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-25">
-          <caret line="429" lean-forward="true" selection-start-line="429" selection-end-line="429" />
+        <state relative-caret-position="15">
+          <caret line="429" selection-start-line="429" selection-end-line="429" />
           <folding>
-            <element signature="e#104#948#0" />
-            <element signature="e#498#1581#0" />
-            <element signature="e#2428#2677#0" />
             <element signature="e#2736#4132#0" />
-            <element signature="e#2910#3184#0" />
-            <element signature="e#3203#3522#0" />
-            <element signature="e#3674#3685#0" />
-            <element signature="e#3730#4042#0" />
-            <element signature="e#3666#3677#0" />
-            <element signature="e#5156#5499#0" />
-            <element signature="e#8311#8784#0" />
-            <element signature="e#8294#8333#0" />
-            <element signature="e#9605#9634#0" />
-            <element signature="e#11657#12760#0" />
-            <element signature="e#12793#13547#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab12 - NLP/Lab12-NLP-Skel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="320" column="29" selection-start-line="320" selection-start-column="29" selection-end-line="320" selection-end-column="29" />
         </state>
       </provider>
     </entry>

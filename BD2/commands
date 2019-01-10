@@ -1,0 +1,2 @@
+afiseaza toate functiile/procedurile din pachetul comenzi (headerul doar; daca voiam si corpul, trebuia la type PACKAGE BODY)
+select * from all_source where name = 'COMENZI' and type = 'PACKAGE';

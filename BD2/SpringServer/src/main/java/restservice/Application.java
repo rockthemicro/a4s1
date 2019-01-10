@@ -1,5 +1,6 @@
 package restservice;
 
+import dbc.OracleConnection;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -7,11 +8,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Application {
 
     public static void main(String[] args) {
-        try {
-            Class.forName("oracle.jdbc.driver.OracleDriver");
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
+        OracleConnection oc = new OracleConnection("localhost", 1521, "xe", "system", "caca");
+        oc.openConnection();
 
         SpringApplication.run(Application.class, args);
     }

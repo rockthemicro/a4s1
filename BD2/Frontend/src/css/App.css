@@ -1,0 +1,68 @@
+
+.title {
+  color: cadetblue;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 25px;
+}
+
+/* Pen-specific styles */
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+h1 {
+  font-size: 1.75rem;
+  margin: 0 0 0.75rem 0;
+}
+
+.button_categorie {
+  background-color: bisque;
+  color: cadetblue;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  height: 30px;
+  width: 150px;
+}
+
+.button_categorie:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* Pattern styles */
+.container {
+  color: #fff;
+  text-align: center;
+  display: table;
+  width: 100%;
+  margin-top: 25px;
+  height: 100%;
+  overflow: auto;
+}
+
+.left-half {
+  background-color: #ff9e2c;
+  position: absolute;
+  left: 0px;
+  width: 25%;
+  height: 100%;
+  overflow: auto;
+}
+
+.right-half {
+  background-color: #b6701e;
+  position: absolute;
+  right: 0px;
+  width: 75%;
+  height: 100%;
+  overflow: auto;
+}
+
+.article_class {
+  position: relative;
+  top: 20%;
+}
