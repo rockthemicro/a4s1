@@ -2,36 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c36a2ac4-4dc7-4316-a37e-bca592716ca5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SecondPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Welcome.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/test_components/BeforeFirst.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/test_components/First.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/test_components/Second.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/SecondPage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringServer/src/main/java/databaseObjects/Categorie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringServer/src/main/java/databaseObjects/Produs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringServer/src/main/java/databaseObjects/Tranzactie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringServer/src/main/java/dbc/OracleConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringServer/src/main/java/restservice/AppController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringServer/src/main/java/restservice/Mesaj.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringServer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringServer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringServer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringServer/src/main/java/restservice/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringServer/src/main/java/restservice/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringServer/src/main/java/restservice/GreetingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringServer/src/main/java/restservice/GreetingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringServer/target/classes/restservice/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringServer/target/classes/restservice/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringServer/target/classes/restservice/Greeting.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringServer/target/classes/restservice/Greeting.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringServer/target/classes/restservice/GreetingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringServer/target/classes/restservice/GreetingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringServer/target/test-classes/restservice/GreetingControllerTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringServer/target/test-classes/restservice/GreetingControllerTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../start_db.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../start_db.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../IA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../IA/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringServer/src/main/java/dbc/OracleConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringServer/src/main/java/dbc/OracleConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringServer/target/classes/dbc/OracleConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringServer/target/classes/dbc/OracleConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringServer/target/classes/restservice/AppController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringServer/target/classes/restservice/AppController.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -207,12 +181,12 @@
       <workItem from="1546808689724" duration="7244000" />
       <workItem from="1546885333694" duration="252000" />
       <workItem from="1546897732189" duration="1272000" />
-      <workItem from="1547055870410" duration="23726000" />
+      <workItem from="1547055870410" duration="24337000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32494000" />
+    <option name="totallyTimeSpent" value="33105000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

@@ -91,11 +91,11 @@ create or replace package body system.comenzi as
 		max_id NUMBER;
 		max_id_laptop NUMBER;
 	BEGIN
-		select max(id)
+		select count(id)
 		into max_id
 		from system.produse;
 
-		select max(id)
+		select count(id)
 		into max_id_laptop
 		from system.laptopuri;
 
@@ -155,11 +155,11 @@ create or replace package body system.comenzi as
 		max_id_telefon NUMBER;
 
 	BEGIN
-		select max(id)
+		select count(id)
 		into max_id
 		from system.produse;
 
-		select max(id)
+		select count(id)
 		into max_id_telefon
 		from system.telefoane;
 
@@ -216,11 +216,11 @@ create or replace package body system.comenzi as
 		max_id_monitor NUMBER;
 
 	BEGIN
-		select max(id)
+		select count(id)
 		into max_id
 		from system.produse;
 
-		select max(id)
+		select count(id)
 		into max_id_monitor
 		from system.monitoare;
 
@@ -265,7 +265,7 @@ create or replace package body system.comenzi as
 	is
 		id_max NUMBER;
 	BEGIN
-		select max(id)
+		select count(id)
 		into id_max
 		from system.tranzactii;
 

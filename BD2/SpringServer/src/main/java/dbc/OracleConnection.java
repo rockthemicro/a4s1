@@ -148,8 +148,26 @@ public class OracleConnection {
     }
 
     public Integer adauga_tranzactie(Tranzactie tranzactie) {
-        
+        Integer newId = -1;
+        try {
+            String call = "{? = call comenzi.adauga_tranzactie(?, ?, ?, ?, ?, ?, ?)}";
+            CallableStatement cstmt = this.connection.prepareCall(call);
 
-        return 0;
+            cstmt.registerOutParameter(1, oracle.jdbc.OracleTypes.NUMBER);
+            cstmt.setInt(2, tranzactie.id_curier);
+            cstmt.setInt(3, tranzactie.id_localitate);
+            cstmt.setInt(4, tranzactie.id_produs);
+            cstmt.setString(5, tranzactie.client_nume);
+            cstmt.setString(6, tranzactie.client_prenume);
+            cstmt.setString(7, tranzactie.client_telefon);
+            cstmt.setString(8, tranzactie.adresa_livrare);
+            cstmt.executeQuery();
+
+            newId = cstmt.getInt(1);
+        } catch(SQLException e) {
+            e.printStackTrace();
+        }
+
+        return newId;
     }
 }

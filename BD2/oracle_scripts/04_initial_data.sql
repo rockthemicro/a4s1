@@ -1,3 +1,912 @@
+INSERT INTO system.curieri
+VALUES (
+	1,
+	'DHL'
+);
+
+INSERT INTO system.curieri
+VALUES (
+	2,
+	'Fan'
+);
+
+INSERT INTO system.curieri
+VALUES (
+	3,
+	'UPC'
+);
+
+
+
+
+
+
+INSERT INTO system.localitati 
+VALUES (
+    1,
+    'Arad'
+);
+
+INSERT INTO system.localitati 
+VALUES (
+    2,
+    'Argeş'
+);
+
+INSERT INTO system.localitati 
+VALUES (
+    3,
+    'Bacău'
+);
+
+INSERT INTO system.localitati 
+VALUES (
+    4,
+    'Bihor'
+);
+
+INSERT INTO system.localitati 
+VALUES (
+    5,
+    'Bistriţa-Năsăud'
+);
+
+INSERT INTO system.localitati 
+VALUES (
+    6,
+    'Botoşani'
+);
+
+INSERT INTO system.localitati 
+VALUES (
+    7,
+    'Brăila'
+);
+
+INSERT INTO system.localitati 
+VALUES (
+    8,
+    'Braşov'
+);
+
+INSERT INTO system.localitati 
+VALUES (
+    9,
+    'Bucureşti'
+);
+
+INSERT INTO system.localitati 
+VALUES (
+    10,
+    'Buzău'
+);
+
+INSERT INTO system.localitati 
+VALUES (
+    11,
+    'Călăraşi'
+);
+
+INSERT INTO system.localitati 
+VALUES (
+    12,
+    'Caraş-Severin'
+);
+
+INSERT INTO system.localitati 
+VALUES (
+    13,
+    'Cluj'
+);
+
+INSERT INTO system.localitati 
+VALUES (
+    14,
+    'Constanţa'
+);
+
+INSERT INTO system.localitati 
+VALUES (
+    15,
+    'Covasna'
+);
+
+INSERT INTO system.localitati 
+VALUES (
+    16,
+    'Dâmboviţa'
+);
+
+INSERT INTO system.localitati 
+VALUES (
+    17,
+    'Dolj'
+);
+
+INSERT INTO system.localitati 
+VALUES (
+    18,
+    'Galaţi'
+);
+
+INSERT INTO system.localitati 
+VALUES (
+    19,
+    'Giurgiu'
+);
+
+INSERT INTO system.localitati 
+VALUES (
+    20,
+    'Gorj'
+);
+
+INSERT INTO system.localitati 
+VALUES (
+    21,
+    'Harghita'
+);
+
+INSERT INTO system.localitati 
+VALUES (
+    22,
+    'Hunedoara'
+);
+
+INSERT INTO system.localitati 
+VALUES (
+    23,
+    'Ialomiţa'
+);
+
+INSERT INTO system.localitati 
+VALUES (
+    24,
+    'Iaşi'
+);
+
+INSERT INTO system.localitati 
+VALUES (
+    25,
+    'Ilfov'
+);
+
+INSERT INTO system.localitati 
+VALUES (
+    26,
+    'Maramureş'
+);
+
+INSERT INTO system.localitati 
+VALUES (
+    27,
+    'Mehedinţi'
+);
+
+INSERT INTO system.localitati 
+VALUES (
+    28,
+    'Mureş'
+);
+
+INSERT INTO system.localitati 
+VALUES (
+    29,
+    'Neamţ'
+);
+
+INSERT INTO system.localitati 
+VALUES (
+    30,
+    'Olt'
+);
+
+INSERT INTO system.localitati 
+VALUES (
+    31,
+    'Prahova'
+);
+
+INSERT INTO system.localitati 
+VALUES (
+    32,
+    'Sălaj'
+);
+
+INSERT INTO system.localitati 
+VALUES (
+    33,
+    'Satu Mare'
+);
+
+INSERT INTO system.localitati 
+VALUES (
+    34,
+    'Sibiu'
+);
+
+INSERT INTO system.localitati 
+VALUES (
+    35,
+    'Suceava'
+);
+
+INSERT INTO system.localitati 
+VALUES (
+    36,
+    'Teleorman'
+);
+
+INSERT INTO system.localitati 
+VALUES (
+    37,
+    'Timiş'
+);
+
+INSERT INTO system.localitati 
+VALUES (
+    38,
+    'Tulcea'
+);
+
+INSERT INTO system.localitati 
+VALUES (
+    39,
+    'Vâlcea'
+);
+
+INSERT INTO system.localitati 
+VALUES (
+    40,
+    'Vaslui'
+);
+
+INSERT INTO system.localitati 
+VALUES (
+    41,
+    'Vrancea'
+);
+
+INSERT INTO system.localitati 
+VALUES (
+    42,
+    'Alba'
+);
+
+
+
+
+
+
+INSERT INTO system.livrari
+VALUES (
+    1,
+    1,
+    1,
+    52
+);
+
+INSERT INTO system.livrari
+VALUES (
+    2,
+    3,
+    1,
+    72
+);
+
+INSERT INTO system.livrari
+VALUES (
+    3,
+    3,
+    2,
+    95
+);
+
+INSERT INTO system.livrari
+VALUES (
+    4,
+    1,
+    3,
+    75
+);
+
+INSERT INTO system.livrari
+VALUES (
+    5,
+    2,
+    3,
+    84
+);
+
+INSERT INTO system.livrari
+VALUES (
+    6,
+    1,
+    4,
+    74
+);
+
+INSERT INTO system.livrari
+VALUES (
+    7,
+    1,
+    5,
+    73
+);
+
+INSERT INTO system.livrari
+VALUES (
+    8,
+    3,
+    5,
+    56
+);
+
+INSERT INTO system.livrari
+VALUES (
+    9,
+    1,
+    6,
+    78
+);
+
+INSERT INTO system.livrari
+VALUES (
+    10,
+    3,
+    6,
+    71
+);
+
+INSERT INTO system.livrari
+VALUES (
+    11,
+    2,
+    7,
+    97
+);
+
+INSERT INTO system.livrari
+VALUES (
+    12,
+    3,
+    7,
+    50
+);
+
+INSERT INTO system.livrari
+VALUES (
+    13,
+    2,
+    8,
+    86
+);
+
+INSERT INTO system.livrari
+VALUES (
+    14,
+    2,
+    9,
+    59
+);
+
+INSERT INTO system.livrari
+VALUES (
+    15,
+    1,
+    10,
+    69
+);
+
+INSERT INTO system.livrari
+VALUES (
+    16,
+    1,
+    11,
+    65
+);
+
+INSERT INTO system.livrari
+VALUES (
+    17,
+    3,
+    11,
+    96
+);
+
+INSERT INTO system.livrari
+VALUES (
+    18,
+    1,
+    12,
+    89
+);
+
+INSERT INTO system.livrari
+VALUES (
+    19,
+    2,
+    12,
+    97
+);
+
+INSERT INTO system.livrari
+VALUES (
+    20,
+    3,
+    12,
+    70
+);
+
+INSERT INTO system.livrari
+VALUES (
+    21,
+    1,
+    13,
+    71
+);
+
+INSERT INTO system.livrari
+VALUES (
+    22,
+    1,
+    14,
+    85
+);
+
+INSERT INTO system.livrari
+VALUES (
+    23,
+    3,
+    14,
+    98
+);
+
+INSERT INTO system.livrari
+VALUES (
+    24,
+    1,
+    15,
+    58
+);
+
+INSERT INTO system.livrari
+VALUES (
+    25,
+    2,
+    15,
+    70
+);
+
+INSERT INTO system.livrari
+VALUES (
+    26,
+    3,
+    15,
+    64
+);
+
+INSERT INTO system.livrari
+VALUES (
+    27,
+    1,
+    16,
+    65
+);
+
+INSERT INTO system.livrari
+VALUES (
+    28,
+    2,
+    16,
+    57
+);
+
+INSERT INTO system.livrari
+VALUES (
+    29,
+    3,
+    16,
+    88
+);
+
+INSERT INTO system.livrari
+VALUES (
+    30,
+    1,
+    17,
+    51
+);
+
+INSERT INTO system.livrari
+VALUES (
+    31,
+    2,
+    17,
+    95
+);
+
+INSERT INTO system.livrari
+VALUES (
+    32,
+    3,
+    17,
+    71
+);
+
+INSERT INTO system.livrari
+VALUES (
+    33,
+    1,
+    18,
+    67
+);
+
+INSERT INTO system.livrari
+VALUES (
+    34,
+    2,
+    18,
+    89
+);
+
+INSERT INTO system.livrari
+VALUES (
+    35,
+    2,
+    19,
+    70
+);
+
+INSERT INTO system.livrari
+VALUES (
+    36,
+    3,
+    19,
+    73
+);
+
+INSERT INTO system.livrari
+VALUES (
+    37,
+    3,
+    20,
+    86
+);
+
+INSERT INTO system.livrari
+VALUES (
+    38,
+    1,
+    21,
+    95
+);
+
+INSERT INTO system.livrari
+VALUES (
+    39,
+    1,
+    22,
+    98
+);
+
+INSERT INTO system.livrari
+VALUES (
+    40,
+    2,
+    22,
+    86
+);
+
+INSERT INTO system.livrari
+VALUES (
+    41,
+    3,
+    22,
+    60
+);
+
+INSERT INTO system.livrari
+VALUES (
+    42,
+    1,
+    23,
+    84
+);
+
+INSERT INTO system.livrari
+VALUES (
+    43,
+    2,
+    23,
+    63
+);
+
+INSERT INTO system.livrari
+VALUES (
+    44,
+    3,
+    23,
+    70
+);
+
+INSERT INTO system.livrari
+VALUES (
+    45,
+    3,
+    24,
+    67
+);
+
+INSERT INTO system.livrari
+VALUES (
+    46,
+    1,
+    25,
+    94
+);
+
+INSERT INTO system.livrari
+VALUES (
+    47,
+    3,
+    25,
+    62
+);
+
+INSERT INTO system.livrari
+VALUES (
+    48,
+    2,
+    26,
+    60
+);
+
+INSERT INTO system.livrari
+VALUES (
+    49,
+    3,
+    26,
+    85
+);
+
+INSERT INTO system.livrari
+VALUES (
+    50,
+    2,
+    27,
+    70
+);
+
+INSERT INTO system.livrari
+VALUES (
+    51,
+    1,
+    28,
+    85
+);
+
+INSERT INTO system.livrari
+VALUES (
+    52,
+    2,
+    28,
+    85
+);
+
+INSERT INTO system.livrari
+VALUES (
+    53,
+    1,
+    29,
+    91
+);
+
+INSERT INTO system.livrari
+VALUES (
+    54,
+    3,
+    29,
+    66
+);
+
+INSERT INTO system.livrari
+VALUES (
+    55,
+    1,
+    30,
+    97
+);
+
+INSERT INTO system.livrari
+VALUES (
+    56,
+    1,
+    31,
+    61
+);
+
+INSERT INTO system.livrari
+VALUES (
+    57,
+    3,
+    31,
+    59
+);
+
+INSERT INTO system.livrari
+VALUES (
+    58,
+    1,
+    32,
+    97
+);
+
+INSERT INTO system.livrari
+VALUES (
+    59,
+    2,
+    32,
+    54
+);
+
+INSERT INTO system.livrari
+VALUES (
+    60,
+    3,
+    32,
+    95
+);
+
+INSERT INTO system.livrari
+VALUES (
+    61,
+    1,
+    33,
+    54
+);
+
+INSERT INTO system.livrari
+VALUES (
+    62,
+    2,
+    33,
+    97
+);
+
+INSERT INTO system.livrari
+VALUES (
+    63,
+    2,
+    34,
+    71
+);
+
+INSERT INTO system.livrari
+VALUES (
+    64,
+    3,
+    34,
+    64
+);
+
+INSERT INTO system.livrari
+VALUES (
+    65,
+    1,
+    35,
+    59
+);
+
+INSERT INTO system.livrari
+VALUES (
+    66,
+    2,
+    35,
+    85
+);
+
+INSERT INTO system.livrari
+VALUES (
+    67,
+    1,
+    36,
+    85
+);
+
+INSERT INTO system.livrari
+VALUES (
+    68,
+    3,
+    36,
+    69
+);
+
+INSERT INTO system.livrari
+VALUES (
+    69,
+    3,
+    37,
+    95
+);
+
+INSERT INTO system.livrari
+VALUES (
+    70,
+    1,
+    38,
+    99
+);
+
+INSERT INTO system.livrari
+VALUES (
+    71,
+    2,
+    38,
+    99
+);
+
+INSERT INTO system.livrari
+VALUES (
+    72,
+    2,
+    39,
+    96
+);
+
+INSERT INTO system.livrari
+VALUES (
+    73,
+    3,
+    39,
+    54
+);
+
+INSERT INTO system.livrari
+VALUES (
+    74,
+    1,
+    40,
+    81
+);
+
+INSERT INTO system.livrari
+VALUES (
+    75,
+    2,
+    40,
+    92
+);
+
+INSERT INTO system.livrari
+VALUES (
+    76,
+    3,
+    40,
+    54
+);
+
+INSERT INTO system.livrari
+VALUES (
+    77,
+    3,
+    41,
+    60
+);
+
+INSERT INTO system.livrari
+VALUES (
+    78,
+    2,
+    42,
+    50
+);
+
+
+
+
+
+
 
 
 
