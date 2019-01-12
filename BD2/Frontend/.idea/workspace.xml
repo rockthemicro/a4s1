@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c36a2ac4-4dc7-4316-a37e-bca592716ca5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/ThirdPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ThirdPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/ThirdPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/ThirdPage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringServer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringServer/src/main/java/dbc/OracleConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringServer/src/main/java/dbc/OracleConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringServer/src/main/java/restservice/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringServer/src/main/java/restservice/AppController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringServer/target/classes/dbc/OracleConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringServer/target/classes/dbc/OracleConnection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringServer/target/classes/restservice/AppController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringServer/target/classes/restservice/AppController.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -199,12 +193,12 @@
       <workItem from="1546808689724" duration="7244000" />
       <workItem from="1546885333694" duration="252000" />
       <workItem from="1546897732189" duration="1272000" />
-      <workItem from="1547055870410" duration="34719000" />
+      <workItem from="1547055870410" duration="36700000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43487000" />
+    <option name="totallyTimeSpent" value="45468000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -217,7 +211,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49839228" visible="true" weight="0.257886" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />

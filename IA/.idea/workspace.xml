@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d181381-69aa-4d9d-a99f-c97c508022f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../BD2/Frontend/src/components/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BD2/Frontend/src/routes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tema3/dataset_tema3.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tema3/tema3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tema3/test.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BD2/Frontend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BD2/Frontend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BD2/Frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../BD2/Frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BD2/Frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../BD2/Frontend/src/css/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BD2/Frontend/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BD2/Frontend/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../BD2/Frontend/src/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BD2/Frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../BD2/Frontend/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BD2/SpringServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BD2/SpringServer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BD2/start_db.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../BD2/start_db.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BD2/oracle_scripts/.02_package.sql.swp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/IA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/IA.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,10 +24,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lab12 - NLP/Lab12-NLP-Skel.py">
+        <entry file="file://$PROJECT_DIR$/tema3/tema3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="320" column="29" selection-start-line="320" selection-start-column="29" selection-end-line="320" selection-end-column="29" />
+            <state relative-caret-position="296">
+              <caret line="59" column="13" lean-forward="true" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tema3/dataset_tema3.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="149">
+              <caret line="231" column="67" lean-forward="true" selection-start-line="231" selection-start-column="67" selection-end-line="231" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tema3/test.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -45,8 +64,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>duration,</find>
-      <find>is not None</find>
       <find>activities.append</find>
       <find>instances_position</find>
       <find>domains</find>
@@ -72,6 +89,11 @@
       <find>extend_graph</find>
       <find>parents</find>
       <find>copy</find>
+      <find>ryone went away co</find>
+      <find>she refused to be</find>
+      <find>the administration of union territory</find>
+      <find>Malaika slams</find>
+      <find>air india's curr</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -90,6 +112,8 @@
         <option value="$PROJECT_DIR$/lab9/Lab09-VariableElimination-solved.py" />
         <option value="$PROJECT_DIR$/tema2/tema.py" />
         <option value="$PROJECT_DIR$/lab12 - NLP/Lab12-NLP-Skel.py" />
+        <option value="$PROJECT_DIR$/tema3/test.csv" />
+        <option value="$PROJECT_DIR$/tema3/tema3.py" />
       </list>
     </option>
   </component>
@@ -107,6 +131,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -117,18 +142,12 @@
             <path>
               <item name="IA" type="b2602c69:ProjectViewProjectNode" />
               <item name="IA" type="462c0819:PsiDirectoryNode" />
-              <item name="lab12 - NLP" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IA" type="462c0819:PsiDirectoryNode" />
-              <item name="tema2" type="462c0819:PsiDirectoryNode" />
+              <item name="tema3" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -137,6 +156,9 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tema3" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/tema1" />
     </key>
@@ -153,8 +175,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Lab12-NLP-Skel">
-    <configuration name="Lab09-VariableElimination-solved" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager">
+    <configuration name="tema3" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="IA" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -162,11 +184,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab9" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tema3" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab9/Lab09-VariableElimination-solved.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tema3/tema3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -175,58 +197,9 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Lab12-NLP-Skel" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="IA" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab12 - NLP" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab12 - NLP/Lab12-NLP-Skel.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="tema" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="IA" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tema2" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tema2/tema.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <list>
-      <item itemvalue="Python.tema" />
-      <item itemvalue="Python.Lab09-VariableElimination-solved" />
-      <item itemvalue="Python.Lab12-NLP-Skel" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Lab12-NLP-Skel" />
-        <item itemvalue="Python.tema" />
-        <item itemvalue="Python.Lab09-VariableElimination-solved" />
+        <item itemvalue="Python.tema3" />
       </list>
     </recent_temporary>
   </component>
@@ -254,18 +227,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.50085473" side_tool="true" weight="0.2431694" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49785408" visible="true" weight="0.21092896" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49785408" visible="true" weight="0.14644809" />
       <window_info id="Structure" order="2" sideWeight="0.50214595" side_tool="true" weight="0.21092896" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.40172786" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.40064794" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="2" weight="0.32864866" />
+      <window_info anchor="bottom" id="Python Console" order="2" weight="0.3281493" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.32937366" />
       <window_info anchor="bottom" id="Version Control" order="5" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.31965443" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.36177105" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.3088553" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.47084233" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" weight="0.32972974" />
@@ -297,6 +271,11 @@
           <url>file://$PROJECT_DIR$/lab12 - NLP/Lab12-NLP-Skel.py</url>
           <line>395</line>
           <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tema3/tema3.py</url>
+          <line>184</line>
+          <option name="timeStamp" value="63" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -458,6 +437,40 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
           <caret line="320" column="29" selection-start-line="320" selection-start-column="29" selection-end-line="320" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/bin/pip2.7">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/nltk/tokenize/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tema3/test.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tema3/dataset_tema3.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="231" column="67" lean-forward="true" selection-start-line="231" selection-start-column="67" selection-end-line="231" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tema3/tema3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="59" column="13" lean-forward="true" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
