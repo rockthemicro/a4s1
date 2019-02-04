@@ -5,6 +5,7 @@ import cool.compiler.ASTClassNode;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class ClassSymbol extends TypeSymbol implements Scope {
 
@@ -153,4 +154,20 @@ public class ClassSymbol extends TypeSymbol implements Scope {
         }
     }
 
+    public Set<String> getMethods() {
+	    return this.methodSymbols.keySet();
+    }
+
+    public ArrayList<ClassSymbol> getAllClassParents() {
+	    ArrayList<ClassSymbol> result = new ArrayList<>();
+	    result.add(this);
+	    ClassSymbol classParent = this.getClassParent();
+
+	    while (classParent != null) {
+	        result.add(0, classParent);
+	        classParent = classParent.getClassParent();
+        }
+
+	    return result;
+    }
 }

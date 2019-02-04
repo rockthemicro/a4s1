@@ -3,6 +3,7 @@ package cool.compiler;
 import java.io.File;
 import java.io.IOException;
 
+import cool.structures.ClassSymbol;
 import cool.visitors.*;
 import org.antlr.v4.runtime.BaseErrorListener;
 import org.antlr.v4.runtime.CharStreams;
@@ -17,6 +18,7 @@ import cool.lexer.CoolLexer;
 import cool.parser.CoolParser;
 import cool.parser.CoolParser.ProgramContext;
 import cool.structures.SymbolTable;
+import org.stringtemplate.v4.STGroupFile;
 
 
 public class Compiler {
@@ -103,7 +105,6 @@ public class Compiler {
                         newMsg += "Syntax error: " + msg;
                     	System.err.println(newMsg);
                     }
-                    //newMsg += "Lexical error: " + token.getText();
                 }
             };
             parser.removeErrorListeners();
@@ -178,44 +179,20 @@ public class Compiler {
             return;
         }
 
-        // Print parse tree for debugging
-        /*
-        var listener = new CoolParserBaseListener() {
-        	int depth = 0;
-        	int cnt = 0;
-        	
-        	void printSpaces(int n) {
-        		for (int i = 0; i < n; i++) {
-        			System.out.print("  ");
-        		}
-        	}
-        	
-        	@Override
-        	public void enterEveryRule(ParserRuleContext ctx) {
-        		if (ctx.children == null || ctx.children.size() == 0) {
-        			return;
-        		}
-        		
-        		printSpaces(depth);
-        		System.out.println(cnt + ":" + ctx.getText() + "  " + CoolParser.ruleNames[ctx.getRuleIndex()]);
-        		cnt++;
-        		
-        		System.out.println("");
-        		
-        		depth++;
-        	}
-        	
-        	@Override
-        	public void exitEveryRule(ParserRuleContext ctx) {
-        		if (ctx.children == null || ctx.children.size() == 0) {
-        			return;
-        		}
-        		
-        		depth--;
-        	}
-        };
-        var treeWalker = new ParseTreeWalker();
-        treeWalker.walk(listener, globalTree);
-        */
+        if (SymbolTable.globals.lookup("Main") == null) {
+            System.err.println("Nu exista clasa Main!");
+            return;
+        } else if (((ClassSymbol) SymbolTable.globals.lookup("Main")).lookupMethod("main") == null) {
+            System.err.println("Clasa Main nu are metoda main!");
+            return;
+        }
+
+        var group = new STGroupFile("src/cool/codegen/cgen.stg");
+        var astCodeGenVisitor = new ASTCodeGenVisitor(group);
+        ast.accept(astCodeGenVisitor);
+
+        astCodeGenVisitor.computeResultMIPS();
+        System.out.println(astCodeGenVisitor.getResultMIPS().render());
+
     }
 }

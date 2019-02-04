@@ -1,0 +1,40 @@
+Tema 3
+
+Reprezentarea obiectelor in memorie (Object_protObj)
+- eticheta clasei: numar intreg
+- dimensiunea masurata in cuvinte
+- dispatch pointer: catre tabelul de metode (Object_dispTab) - care e unic pt o clasa intreaga, adica fiecare obiect
+                                                               dintr-o clasa pointeaza la acelasi tabel de metode
+- atribute, adaugate in continuarea celor mostenite
+
+Tebel de metode: lista adreselor metodelor unei clase
+
+Pornirea in executie a unui program cool se face prin:
+1. instantierea unui obiect de tipul Main (adica prin copierea pe heap a prototipului clasei Main - Main_protObj)
+2. apelarea rutinei de initializare, Main_init
+3. apelarea metodei Main.main
+
+De exemplu, codul din trap.handler.nogc pt executia programului main este
+
+	.text
+	.globl __start
+__start:
+	li	$v0 9           # sbrk
+	move	$a0 $zero   # parametru 0 pentru sbrk
+	syscall		        # sbrk invocat cu argumentul 0 va returna (in $v0) adresa lui 'program break'
+	                    # 'program break' e prima locatie DUPA sfarsitul zonei de date neinitializate
+	move	$s7 $v0		# init limit pointer
+	la	$gp heap_start	# init heap pointer
+        la      $a0 Main_protObj
+        jal     Object.copy	# Call copy
+        jal     Main_init
+
+
+La inceputul unei metode: $s0, $fp si $ra trebuie salvate pe stiva, $a0 (care contine adresa lui self) e pus in $s0
+La finalul metodei, $a0 va contine adresa obiectului rezultat
+
+$sp mereu afiseaza spre o adresa libera din stiva
+
+Prototipul unui obiect intotdeauna va avea atributele void daca e de un tip diferit de String, Bool, Int si
+str_const0, bool_const0, int_const0 altfel. Daca atributele au valori predefinite, acestea sunt setate
+in functia init a clasei respective.

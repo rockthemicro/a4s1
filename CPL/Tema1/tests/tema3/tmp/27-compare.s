@@ -1,0 +1,13 @@
+Exception in thread "main" java.lang.NullPointerException
+	at cool.visitors.ASTSymbolsSolveVisitor2.visit(ASTSymbolsSolveVisitor2.java:31)
+	at cool.compiler.ASTMethodParamsNode.accept(ASTMethodParamsNode.java:35)
+	at cool.visitors.ASTNopVisitor.visit(ASTNopVisitor.java:147)
+	at cool.compiler.ASTMethodNode.accept(ASTMethodNode.java:39)
+	at cool.visitors.ASTNopVisitor.visit(ASTNopVisitor.java:16)
+	at cool.compiler.ASTClassBodyNode.accept(ASTClassBodyNode.java:22)
+	at cool.visitors.ASTNopVisitor.visit(ASTNopVisitor.java:23)
+	at cool.compiler.ASTClassNode.accept(ASTClassNode.java:31)
+	at cool.visitors.ASTNopVisitor.visit(ASTNopVisitor.java:164)
+	at cool.compiler.ASTProgramNode.accept(ASTProgramNode.java:24)
+	at cool.compiler.Compiler.main(Compiler.java:164)
+	at cool.tester.Tester2.main(Tester2.java:31)

@@ -2,15 +2,159 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d181381-69aa-4d9d-a99f-c97c508022f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tema3/dataset_tema3.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tema3/tema3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tema3/test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BD2/Frontend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BD2/Frontend/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CPL/Tema1/EXPLICATII.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CPL/Tema1/src/cool/visitors/ASTCodeGenVisitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CPL/Tema1/tests/tema3/01-class.cl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CPL/Tema1/tests/tema3/01-class.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CPL/Tema1/tests/tema3/01-class.ref" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CPL/Tema1/tests/tema3/01-class.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CPL/Tema1/tests/tema3/01-class.s-model" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CPL/Tema1/tests/tema3/experiments/1test.cl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CPL/Tema1/tests/tema3/experiments/2test.cl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CPL/Tema1/tests/tema3/experiments/3test.cl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab13/Lab13-NLP-Grammar_solved2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BD2/SpringServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BD2/SpringServer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BD2/oracle_scripts/.02_package.sql.swp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/IA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/IA.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CPL/Tema1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema1/bin/SONTICA_Alexandru-Florentin_341C3_Tema2CPL.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema1/bin/cool/compiler/Compiler$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CPL/Tema1/bin/cool/compiler/Compiler$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema1/bin/cool/compiler/Compiler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CPL/Tema1/bin/cool/compiler/Compiler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema1/bin/cool/tester/Tester2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CPL/Tema1/bin/cool/tester/Tester2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema1/bin/cool/visitors/ASTTypeCheckingVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CPL/Tema1/bin/cool/visitors/ASTTypeCheckingVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema1/src/cool/compiler/Compiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CPL/Tema1/src/cool/compiler/Compiler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema1/src/cool/tester/Tester2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CPL/Tema1/src/cool/tester/Tester2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema1/src/cool/visitors/ASTTypeCheckingVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CPL/Tema1/src/cool/visitors/ASTTypeCheckingVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/.settings/org.eclipse.wst.common.project.facet.core.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/bin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/lib/antlr-4.7.1-complete.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/src/cool/compiler/Compiler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/src/cool/lexer/CoolLexer.g4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/src/cool/lexer/CoolLexer.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/src/cool/lexer/CoolLexer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/src/cool/lexer/CoolLexer.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/src/cool/parser/CoolLexer.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/src/cool/parser/CoolParser.g4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/src/cool/parser/CoolParser.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/src/cool/parser/CoolParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/src/cool/parser/CoolParser.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/src/cool/parser/CoolParserBaseListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/src/cool/parser/CoolParserBaseVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/src/cool/parser/CoolParserListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/src/cool/parser/CoolParserVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/src/cool/structures/DefaultScope.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/src/cool/structures/Scope.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/src/cool/structures/Symbol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/src/cool/structures/SymbolTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/src/cool/tester/Tester1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/src/cool/tester/Tester2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/target/generated-sources/antlr4/cool/lexer/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/target/generated-sources/antlr4/cool/parser/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/01-class.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/01-class.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/01-class.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/02-attribute-no-init.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/02-attribute-no-init.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/02-attribute-no-init.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/03-attribute-init.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/03-attribute-init.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/03-attribute-init.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/04-method.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/04-method.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/04-method.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/05-literal-id.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/05-literal-id.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/05-literal-id.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/06-arithmetic.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/06-arithmetic.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/06-arithmetic.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/07-relational.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/07-relational.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/07-relational.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/08-assignment.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/08-assignment.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/08-assignment.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/09-new-isvoid.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/09-new-isvoid.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/09-new-isvoid.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/10-dispatch.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/10-dispatch.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/10-dispatch.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/11-if.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/11-if.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/11-if.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/12-while.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/12-while.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/12-while.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/13-let.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/13-let.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/13-let.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/14-case.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/14-case.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/14-case.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/15-block.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/15-block.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/15-block.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/16-string-special-chars.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/16-string-special-chars.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/16-string-special-chars.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/17-big.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/17-big.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/17-big.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/18-error-string.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/18-error-string.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/18-error-string.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/19-error-comment.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/19-error-comment.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/19-error-comment.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/20-error-invalid-character.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/20-error-invalid-character.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema1/20-error-invalid-character.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema2/01-define-class.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema2/01-define-class.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema2/02-define-attribute.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema2/02-define-attribute.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema2/03-define-method.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema2/03-define-method.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema2/04-define-let.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema2/04-define-let.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema2/05-define-case.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema2/05-define-case.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema2/06-resolve-id.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema2/06-resolve-id.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema2/07-type-arithmetic.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema2/07-type-arithmetic.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema2/08-type-relational.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema2/08-type-relational.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema2/09-type-assignment.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema2/09-type-assignment.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema2/10-type-new-isvoid.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema2/10-type-new-isvoid.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema2/11-type-while.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema2/11-type-while.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema2/12-type-if.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema2/12-type-if.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema2/13-type-case.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema2/13-type-case.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema2/14-type-block.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema2/14-type-block.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema2/15-type-let.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema2/15-type-let.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema2/16-type-attr.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema2/16-type-attr.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema2/17-type-method.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema2/17-type-method.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema2/18-type-dispatch.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema2/18-type-dispatch.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema2/19-self_type.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema2/19-self_type.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema2/20-basic-classes.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema2/20-basic-classes.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CPL/Tema2/Tema2Skel/tests/tema2/main.cl" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema3/tema3.py" beforeDir="false" afterPath="$PROJECT_DIR$/tema3/tema3.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,29 +170,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tema3/tema3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="59" column="13" lean-forward="true" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+            <state relative-caret-position="634">
+              <caret line="194" column="3" lean-forward="true" selection-start-line="194" selection-start-column="3" selection-end-line="194" selection-end-column="3" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tema3/dataset_tema3.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="231" column="67" lean-forward="true" selection-start-line="231" selection-start-column="67" selection-end-line="231" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tema3/test.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -64,11 +190,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>activities.append</find>
-      <find>instances_position</find>
-      <find>domains</find>
-      <find>vars</find>
-      <find>cost</find>
       <find>acceptable_cos</find>
       <find>priint</find>
       <find>f1</find>
@@ -94,6 +215,11 @@
       <find>the administration of union territory</find>
       <find>Malaika slams</find>
       <find>air india's curr</find>
+      <find>all_cases</find>
+      <find>start</find>
+      <find>end</find>
+      <find>all_match</find>
+      <find>se_afla</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -113,6 +239,8 @@
         <option value="$PROJECT_DIR$/tema2/tema.py" />
         <option value="$PROJECT_DIR$/lab12 - NLP/Lab12-NLP-Skel.py" />
         <option value="$PROJECT_DIR$/tema3/test.csv" />
+        <option value="$PROJECT_DIR$/lab13/Lab13-NLP-Grammar_solved.py" />
+        <option value="$PROJECT_DIR$/lab13/Lab13-NLP-Grammar_solved2.py" />
         <option value="$PROJECT_DIR$/tema3/tema3.py" />
       </list>
     </option>
@@ -131,7 +259,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -142,12 +269,18 @@
             <path>
               <item name="IA" type="b2602c69:ProjectViewProjectNode" />
               <item name="IA" type="462c0819:PsiDirectoryNode" />
+              <item name="lab13" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IA" type="462c0819:PsiDirectoryNode" />
               <item name="tema3" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -156,11 +289,12 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lab13" />
+      <recent name="$PROJECT_DIR$/tema1" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/tema3" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/tema1" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -175,7 +309,49 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.tema3">
+    <configuration name="Lab13-NLP-Grammar_solved" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="IA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab13" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab13/Lab13-NLP-Grammar_solved.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Lab13-NLP-Grammar_solved2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="IA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab13" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab13/Lab13-NLP-Grammar_solved2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="tema3" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="IA" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -200,6 +376,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.tema3" />
+        <item itemvalue="Python.Lab13-NLP-Grammar_solved2" />
+        <item itemvalue="Python.Lab13-NLP-Grammar_solved" />
       </list>
     </recent_temporary>
   </component>
@@ -230,7 +408,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.50085473" side_tool="true" weight="0.2431694" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49785408" visible="true" weight="0.14644809" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49785408" visible="true" weight="0.10819672" />
       <window_info id="Structure" order="2" sideWeight="0.50214595" side_tool="true" weight="0.21092896" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.40064794" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -238,7 +416,7 @@
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.32937366" />
       <window_info anchor="bottom" id="Version Control" order="5" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.3088553" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.22138229" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.47084233" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -276,6 +454,16 @@
           <url>file://$PROJECT_DIR$/tema3/tema3.py</url>
           <line>184</line>
           <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/lab13/Lab13-NLP-Grammar_solved.py</url>
+          <line>174</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/lab13/Lab13-NLP-Grammar_solved2.py</url>
+          <line>116</line>
+          <option name="timeStamp" value="66" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -450,24 +638,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tema3/test.csv">
+    <entry file="file://$PROJECT_DIR$/tema3/dataset_tema3.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        <state>
+          <caret line="231" column="67" selection-start-line="231" selection-start-column="67" selection-end-line="231" selection-end-column="67" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tema3/dataset_tema3.csv">
+    <entry file="file://$PROJECT_DIR$/tema3/test.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="231" column="67" lean-forward="true" selection-start-line="231" selection-start-column="67" selection-end-line="231" selection-end-column="67" />
+        <state>
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab13/Lab13-NLP-Grammar_solved.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="174" column="12" selection-start-line="174" selection-start-column="12" selection-end-line="174" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab13/Lab13-NLP-Grammar_solved2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="146" column="34" selection-start-line="146" selection-start-column="34" selection-end-line="146" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tema3/tema3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="59" column="13" lean-forward="true" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+        <state relative-caret-position="634">
+          <caret line="194" column="3" lean-forward="true" selection-start-line="194" selection-start-column="3" selection-end-line="194" selection-end-column="3" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>

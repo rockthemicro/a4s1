@@ -65,7 +65,7 @@ def main():
 
     articles = []
     where_word_appears = {}
-    with open("test.csv") as file:
+    with open("dataset_tema3.csv") as file:
         csv_reader = csv.reader(file, delimiter=',')
         line_id = 0
         almost_useless_idx = 0

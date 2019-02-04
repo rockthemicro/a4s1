@@ -1,0 +1,177 @@
+literal(value) ::= "li $a0 <value>"
+
+bigLiteral(higher, lower) ::= <<
+li $a0 <higher>
+sll $a0 $a0 16
+ori $a0 <lower>
+>>
+
+global_var(var) ::= <<
+<var>:
+	.word 0
+>>
+
+ifthenelse(cond, then, elsee) ::= <<
+<cond>
+be $a0 0 else_label
+
+<then>
+jr end_of_if
+
+else_label:
+<elsee>
+
+end_of_if:
+>>
+
+plus(e1, e2) ::= <<
+<e1>
+sw $a0 0($sp)
+addiu $sp $sp -4
+<e2>
+lw $t1 4($sp)
+add $a0 $t1 $a0
+addiu $sp $sp 4
+>>
+
+
+sub(e1, e2) ::= <<
+<e1>
+sw $a0 0($sp)
+addiu $sp $sp -4
+<e2>
+lw $t1 4($sp)
+sub $a0 $t1 $a0
+addiu $sp $sp 4
+>>
+
+div(e1, e2) ::= <<
+<e1>
+sw $a0 0($sp)
+addiu $sp $sp -4
+<e2>
+lw $t1 4($sp)
+div $t1 $a0
+mfhi $a0
+addiu $sp $sp 4
+>>
+
+mod(e1, e2) ::= <<
+<e1>
+sw $a0 0($sp)
+addiu $sp $sp -4
+<e2>
+lw $t1 4($sp)
+div $t1 $a0
+mflo $a0
+addiu $sp $sp 4
+>>
+
+
+sequence(e) ::= "<e; separator=\"\n\">"
+
+
+
+
+
+
+
+
+
+anything(e) ::= <<
+<e>
+>>
+
+data() ::= <<
+    .data
+    .align  2
+>>
+
+global(e) ::= <<
+    .globl  <e>
+>>
+
+label(e) ::= <<
+<e>:
+>>
+
+word(e) ::= <<
+    .word   <e>
+>>
+
+string_const(id, stringClassTag, size, intConstTag, name) ::= <<
+str_const<id>:
+    .word   <stringClassTag>
+    .word   <size>
+    .word   String_dispTab
+    .word   int_const<intConstTag>
+    .asciiz "<name>"
+    .align  2
+>>
+
+int_const(id, intClassTag, val) ::= <<
+int_const<id>:
+    .word   <intClassTag>
+    .word   4
+    .word   Int_dispTab
+    .word   <val>
+>>
+
+bool_const(id, boolClassTag) ::= <<
+bool_const<id>:
+    .word   <boolClassTag>
+    .word   4
+    .word   Bool_dispTab
+    .word   <id>
+>>
+
+
+prot_obj(className, classTag, size, attr) ::= <<
+<className>_protObj:
+    .word   <classTag>
+    .word   <size>
+    .word   <className>_dispTab
+    <attr; separator="\n">
+>>
+
+disp_tab(className, meth) ::= <<
+<className>_dispTab:
+    <meth; separator="\n">
+>>
+
+heap_start() ::= <<
+heap_start:
+    .word   0
+    .text
+    .globl  Int_init
+    .globl  String_init
+    .globl  Bool_init
+    .globl  Main_init
+    .globl  Main.main
+>>
+
+func_start(name) ::= <<
+<name>:
+    addiu   $sp $sp -12
+    sw      $fp 12($sp)
+    sw      $s0 8($sp)
+    sw      $ra 4($sp)
+    addiu   $fp $sp 4
+    move    $s0 $a0
+>>
+
+func_end() ::= <<
+    lw      $fp 12($sp)
+    lw      $s0 8($sp)
+    lw      $ra 4($sp)
+    addiu   $sp $sp 12
+    jr      $ra
+>>
+
+return_self() ::= <<
+    move    $a0 $s0
+>>
+
+return_0() ::= <<
+    la      $a0 int_const0
+>>

@@ -221,6 +221,7 @@ public class ASTTypeCheckingVisitor extends ASTNopVisitor {
         } else {
             lastTypeChecked = node.type;
         }
+
     }
 
     @Override
