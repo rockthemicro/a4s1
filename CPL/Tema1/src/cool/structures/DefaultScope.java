@@ -40,7 +40,20 @@ public class DefaultScope implements Scope {
     public Scope getParent() {
         return parent;
     }
-    
+
+    @Override
+    public Scope lookupScope(String str) {
+        var sym = symbols.get(str);
+
+        if (sym != null)
+            return this;
+
+        if (parent != null)
+            return parent.lookupScope(str);
+
+        return null;
+    }
+
     @Override
     public String toString() {
         return symbols.values().toString();

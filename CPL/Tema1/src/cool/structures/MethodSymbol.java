@@ -5,6 +5,7 @@ import cool.compiler.ASTMethodNode;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+@SuppressWarnings("Duplicates")
 public class MethodSymbol extends IdSymbol implements Scope {
 
     // For implementing Scope
@@ -64,6 +65,19 @@ public class MethodSymbol extends IdSymbol implements Scope {
     @Override
     public Scope getParent() {
         return parent;
+    }
+
+    @Override
+    public Scope lookupScope(String str) {
+        var sym = symbols.get(str);
+
+        if (sym != null)
+            return this;
+
+        if (parent != null)
+            return parent.lookupScope(str);
+
+        return null;
     }
 
     public boolean exists(String s) {

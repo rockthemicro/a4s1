@@ -19,8 +19,6 @@ public class ASTExprNegNode extends ASTBaseNode {
 	@Override
 	public void accept(ASTVisitor v) {
 		v.visit(this);
-
-		//expr.accept(v);
 	}
 
 }

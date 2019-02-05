@@ -7,6 +7,7 @@ import org.antlr.v4.runtime.ParserRuleContext;
 public abstract class ASTBaseNode {
 	public ParserRuleContext ctx = null;
 	public Scope currentScope = null;
+	public String type = "";
 
 	public abstract void accept(ASTVisitor v);
 

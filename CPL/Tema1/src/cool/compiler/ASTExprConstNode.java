@@ -12,7 +12,7 @@ public class ASTExprConstNode extends ASTBaseNode {
 		super.printSpaces(depth);
 		System.out.println(value);
 	}
-	
+
 	enum Types {
 		NUMBER,
 		BOOLEAN,
@@ -30,6 +30,21 @@ public class ASTExprConstNode extends ASTBaseNode {
 		}
 
 		return "Int";
+	}
+
+	public Integer getInt() {
+		return Integer.parseInt(this.value);
+	}
+
+	public Boolean getBool() {
+		if (this.value.equals("false"))
+			return Boolean.FALSE;
+		else
+			return Boolean.TRUE;
+	}
+
+	public String getString() {
+		return this.value;
 	}
 	
 	public void setNumberType() {

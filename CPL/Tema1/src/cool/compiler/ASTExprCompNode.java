@@ -20,11 +20,6 @@ public class ASTExprCompNode extends ASTBaseNode {
 	@Override
 	public void accept(ASTVisitor v) {
 		v.visit(this);
-
-		/*
-		expr1.accept(v);
-		expr2.accept(v);
-		*/
 	}
 
 }

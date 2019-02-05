@@ -38,3 +38,12 @@ $sp mereu afiseaza spre o adresa libera din stiva
 Prototipul unui obiect intotdeauna va avea atributele void daca e de un tip diferit de String, Bool, Int si
 str_const0, bool_const0, int_const0 altfel. Daca atributele au valori predefinite, acestea sunt setate
 in functia init a clasei respective.
+
+
+DACA VREI SA REINCEPI TEMA:
+- pana la testul 8 a fost facut ok
+- testele 10, 12 si 20 au intrat dupa ce am facut 8
+- teste 10 si 12 par sa fie bine, dar nu inteleg cum merge 20
+- ca sa rulezi toate testele, te duci in /Tema1 si dai ./t3_tester.sh
+- ca sa rulezi doar pana la faza de compilare, fara executie, dai cu run
+la intellij ca sa ruleze Tester2

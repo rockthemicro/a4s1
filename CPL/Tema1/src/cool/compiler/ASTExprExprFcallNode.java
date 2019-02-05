@@ -2,6 +2,7 @@ package cool.compiler;
 
 import cool.visitors.ASTVisitor;
 
+// modeleaza apeluri de genul expr.f() si expr@TYPE.f()
 public class ASTExprExprFcallNode extends ASTBaseNode {
 	public ASTBaseNode expr = null;
 	public String type = null;
@@ -23,11 +24,6 @@ public class ASTExprExprFcallNode extends ASTBaseNode {
 	@Override
 	public void accept(ASTVisitor v) {
 		v.visit(this);
-
-		/*
-		expr.accept(v);
-		fcall.accept(v);
-		*/
 	}
 
 }

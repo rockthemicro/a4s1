@@ -2,161 +2,103 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5e3fbbf-386c-41b8-bc3e-0f19253b1c53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/EXPLICATII.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cool/codegen/cgen.stg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cool/visitors/ASTCodeGenVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/tema3/01-class.cl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/tema3/01-class.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/tema3/01-class.ref" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/tema3/01-class.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/tema3/01-class.s-model" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/tema3/experiments/1test.cl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/tema3/experiments/2test.cl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/tema3/experiments/3test.cl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../IA/lab13/Lab13-NLP-Grammar_solved2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BD2/SpringServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../BD2/SpringServer/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/02-attr-no-init.cl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/02-attr-no-init.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/02-attr-no-init.ref" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/02-attr-no-init.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/03-attr-init.cl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/03-attr-init.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/03-attr-init.ref" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/03-attr-init.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/04-method-def.cl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/04-method-def.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/04-method-def.ref" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/04-method-def.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/04-method-def.s-model" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/05-dispatch-explicit-abort.cl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/05-dispatch-explicit-abort.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/05-dispatch-explicit-abort.ref" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/05-dispatch-explicit-abort.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/05-dispatch-explicit-abort.s-model" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/06-dispatch-implicit-abort.cl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/06-dispatch-implicit-abort.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/06-dispatch-implicit-abort.ref" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/06-dispatch-implicit-abort.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/06-dispatch-implicit-abort.s-model" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/07-dispatch-on-void-abort.cl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/07-dispatch-on-void-abort.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/07-dispatch-on-void-abort.ref" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/07-dispatch-on-void-abort.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/07-dispatch-on-void-abort.s-model" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/08-dispatch-block-IO.cl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/08-dispatch-block-IO.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/08-dispatch-block-IO.ref" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/08-dispatch-block-IO.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/08-dispatch-block-IO.s-model" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/10-dispatch-Object.cl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/10-dispatch-Object.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/10-dispatch-Object.ref" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/10-dispatch-Object.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/10-dispatch-Object.s-model" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/12-attr-no-init-ref.cl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/12-attr-no-init-ref.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/12-attr-no-init-ref.ref" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/12-attr-no-init-ref.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/12-attr-no-init-ref.s-model" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/20-static-dispatch.cl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/20-static-dispatch.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/20-static-dispatch.ref" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/20-static-dispatch.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tema3/20-static-dispatch.s-model" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/SONTICA_Alexandru-Florentin_341C3_Tema2CPL.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/cool/compiler/Compiler$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/cool/compiler/Compiler$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXPLICATII.txt" beforeDir="false" afterPath="$PROJECT_DIR$/EXPLICATII.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/cool/codegen/cgen.stg" beforeDir="false" afterPath="$PROJECT_DIR$/bin/cool/codegen/cgen.stg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/cool/compiler/ASTAttributeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/cool/compiler/ASTAttributeNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/cool/compiler/ASTBaseNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/cool/compiler/ASTBaseNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/cool/compiler/ASTClassNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/cool/compiler/ASTClassNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/cool/compiler/ASTExprAssignNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/cool/compiler/ASTExprAssignNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/cool/compiler/ASTExprCompNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/cool/compiler/ASTExprCompNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/cool/compiler/ASTExprConstNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/cool/compiler/ASTExprConstNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/cool/compiler/ASTExprExprFcallNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/cool/compiler/ASTExprExprFcallNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/cool/compiler/ASTExprFcallNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/cool/compiler/ASTExprFcallNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/cool/compiler/ASTExprNegNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/cool/compiler/ASTExprNegNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/cool/compiler/ASTFcallNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/cool/compiler/ASTFcallNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/cool/compiler/ASTManyExprNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/cool/compiler/ASTManyExprNode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/cool/compiler/Compiler.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/cool/compiler/Compiler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/cool/tester/Tester2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/cool/tester/Tester2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/cool/structures/ClassSymbol.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/cool/structures/ClassSymbol.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/cool/structures/DefaultScope.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/cool/structures/DefaultScope.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/cool/structures/MethodSymbol.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/cool/structures/MethodSymbol.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/cool/structures/Scope.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/cool/structures/Scope.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/cool/visitors/ASTCodeGenVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/cool/visitors/ASTCodeGenVisitor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/cool/visitors/ASTTypeCheckingVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/cool/visitors/ASTTypeCheckingVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SONTICA_Alexandru-Florentin_341C3_Tema2CPL.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cool/codegen/cgen.stg" beforeDir="false" afterPath="$PROJECT_DIR$/src/cool/codegen/cgen.stg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cool/compiler/ASTAttributeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cool/compiler/ASTAttributeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cool/compiler/ASTBaseNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cool/compiler/ASTBaseNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cool/compiler/ASTClassNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cool/compiler/ASTClassNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cool/compiler/ASTExprAssignNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cool/compiler/ASTExprAssignNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cool/compiler/ASTExprCompNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cool/compiler/ASTExprCompNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cool/compiler/ASTExprConstNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cool/compiler/ASTExprConstNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cool/compiler/ASTExprExprFcallNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cool/compiler/ASTExprExprFcallNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cool/compiler/ASTExprFcallNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cool/compiler/ASTExprFcallNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cool/compiler/ASTExprNegNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cool/compiler/ASTExprNegNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cool/compiler/ASTFcallNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cool/compiler/ASTFcallNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cool/compiler/ASTManyExprNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cool/compiler/ASTManyExprNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cool/compiler/Compiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cool/compiler/Compiler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cool/structures/ClassSymbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cool/structures/ClassSymbol.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cool/tester/Tester2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cool/tester/Tester2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cool/structures/DefaultScope.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cool/structures/DefaultScope.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cool/structures/MethodSymbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cool/structures/MethodSymbol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cool/structures/Scope.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cool/structures/Scope.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cool/visitors/ASTCodeGenVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cool/visitors/ASTCodeGenVisitor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cool/visitors/ASTTypeCheckingVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cool/visitors/ASTTypeCheckingVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/.settings/org.eclipse.wst.common.project.facet.core.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/bin/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/lib/antlr-4.7.1-complete.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/src/cool/compiler/Compiler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/src/cool/lexer/CoolLexer.g4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/src/cool/lexer/CoolLexer.interp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/src/cool/lexer/CoolLexer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/src/cool/lexer/CoolLexer.tokens" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/src/cool/parser/CoolLexer.tokens" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/src/cool/parser/CoolParser.g4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/src/cool/parser/CoolParser.interp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/src/cool/parser/CoolParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/src/cool/parser/CoolParser.tokens" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/src/cool/parser/CoolParserBaseListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/src/cool/parser/CoolParserBaseVisitor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/src/cool/parser/CoolParserListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/src/cool/parser/CoolParserVisitor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/src/cool/structures/DefaultScope.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/src/cool/structures/Scope.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/src/cool/structures/Symbol.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/src/cool/structures/SymbolTable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/src/cool/tester/Tester1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/src/cool/tester/Tester2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/target/generated-sources/antlr4/cool/lexer/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/target/generated-sources/antlr4/cool/parser/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/01-class.cl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/01-class.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/01-class.ref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/02-attribute-no-init.cl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/02-attribute-no-init.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/02-attribute-no-init.ref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/03-attribute-init.cl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/03-attribute-init.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/03-attribute-init.ref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/04-method.cl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/04-method.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/04-method.ref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/05-literal-id.cl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/05-literal-id.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/05-literal-id.ref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/06-arithmetic.cl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/06-arithmetic.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/06-arithmetic.ref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/07-relational.cl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/07-relational.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/07-relational.ref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/08-assignment.cl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/08-assignment.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/08-assignment.ref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/09-new-isvoid.cl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/09-new-isvoid.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/09-new-isvoid.ref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/10-dispatch.cl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/10-dispatch.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/10-dispatch.ref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/11-if.cl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/11-if.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/11-if.ref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/12-while.cl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/12-while.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/12-while.ref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/13-let.cl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/13-let.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/13-let.ref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/14-case.cl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/14-case.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/14-case.ref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/15-block.cl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/15-block.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/15-block.ref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/16-string-special-chars.cl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/16-string-special-chars.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/16-string-special-chars.ref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/17-big.cl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/17-big.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/17-big.ref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/18-error-string.cl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/18-error-string.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/18-error-string.ref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/19-error-comment.cl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/19-error-comment.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/19-error-comment.ref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/20-error-invalid-character.cl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/20-error-invalid-character.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema1/20-error-invalid-character.ref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema2/01-define-class.cl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema2/01-define-class.ref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema2/02-define-attribute.cl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema2/02-define-attribute.ref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema2/03-define-method.cl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema2/03-define-method.ref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema2/04-define-let.cl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema2/04-define-let.ref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema2/05-define-case.cl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema2/05-define-case.ref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema2/06-resolve-id.cl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema2/06-resolve-id.ref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema2/07-type-arithmetic.cl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema2/07-type-arithmetic.ref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema2/08-type-relational.cl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema2/08-type-relational.ref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema2/09-type-assignment.cl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema2/09-type-assignment.ref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema2/10-type-new-isvoid.cl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema2/10-type-new-isvoid.ref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema2/11-type-while.cl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema2/11-type-while.ref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema2/12-type-if.cl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema2/12-type-if.ref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema2/13-type-case.cl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema2/13-type-case.ref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema2/14-type-block.cl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema2/14-type-block.ref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema2/15-type-let.cl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema2/15-type-let.ref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema2/16-type-attr.cl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema2/16-type-attr.ref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema2/17-type-method.cl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema2/17-type-method.ref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema2/18-type-dispatch.cl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema2/18-type-dispatch.ref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema2/19-self_type.cl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema2/19-self_type.ref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema2/20-basic-classes.cl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema2/20-basic-classes.ref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tema2/Tema2Skel/tests/tema2/main.cl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../IA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../IA/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../IA/tema3/tema3.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../IA/tema3/tema3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/tema3/01-class.out" beforeDir="false" afterPath="$PROJECT_DIR$/tests/tema3/01-class.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/tema3/01-class.s" beforeDir="false" afterPath="$PROJECT_DIR$/tests/tema3/01-class.s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/tema3/experiments/1test.cl" beforeDir="false" afterPath="$PROJECT_DIR$/tests/tema3/experiments/1test.cl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/tema3/experiments/1test.ref" beforeDir="false" afterPath="$PROJECT_DIR$/tests/tema3/experiments/1test.ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/tema3/experiments/2test.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/tema3/experiments/2test.ref" beforeDir="false" afterPath="$PROJECT_DIR$/tests/tema3/03-attr-init.s-model" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/tema3/experiments/3test.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/tema3/experiments/3test.ref" beforeDir="false" afterPath="$PROJECT_DIR$/tests/tema3/02-attr-no-init.s-model" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -169,39 +111,46 @@
     <favorites_list name="Tema1" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.59227747">
+    <splitter split-orientation="horizontal" split-proportion="0.58900523">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/cool/codegen/cgen.stg">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="523">
-                  <caret line="175" column="16" selection-start-line="175" selection-start-column="16" selection-end-line="175" selection-end-column="16" />
+                <state relative-caret-position="658">
+                  <caret line="205" selection-start-line="205" selection-end-line="205" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/cool/visitors/ASTCodeGenVisitor.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="453">
-                  <caret line="212" column="66" selection-start-line="212" selection-start-column="66" selection-end-line="212" selection-end-column="66" />
+                <state relative-caret-position="378">
+                  <caret line="202" column="62" selection-start-line="202" selection-start-column="62" selection-end-line="202" selection-end-column="62" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="method#getStringConst#0;class#ASTCodeGenVisitor#0" />
-                    <element signature="e#2089#2123#1" />
-                    <element signature="e#3689#3690#0" expanded="true" />
+                    <element signature="method#ASTCodeGenVisitor#0;class#ASTCodeGenVisitor#0" />
+                    <element signature="method#visit#0;class#ASTCodeGenVisitor#0" />
+                    <element signature="method#visit#1;class#ASTCodeGenVisitor#0" />
+                    <element signature="method#visit#3;class#ASTCodeGenVisitor#0" />
+                    <element signature="method#visit#3;class#ASTCodeGenVisitor#0" />
+                    <element signature="method#visit#2;class#ASTCodeGenVisitor#0" />
+                    <element signature="method#computeResultMIPS#0;class#ASTCodeGenVisitor#0" />
                     <element signature="method#getResultMIPS#0;class#ASTCodeGenVisitor#0" />
                     <element signature="e#3778#3822#1" />
-                    <element signature="e#8582#8583#0" expanded="true" />
+                    <element signature="e#17710#17711#0" expanded="true" />
+                    <element signature="method#getAndIncClassTagCounter#0;class#ASTCodeGenVisitor#0" />
                     <element signature="e#4000#4047#1" />
-                    <element signature="e#8807#8808#0" expanded="true" />
+                    <element signature="e#17935#17936#0" expanded="true" />
                     <element signature="method#getAndIncIntConstTagCounter#0;class#ASTCodeGenVisitor#0" />
                     <element signature="method#obtainIntConstTag#0;class#ASTCodeGenVisitor#0" />
                     <element signature="e#4237#4287#1" />
-                    <element signature="e#9348#9349#0" expanded="true" />
+                    <element signature="e#18476#18477#0" expanded="true" />
                     <element signature="method#getAndIncStringConstTagCounter#0;class#ASTCodeGenVisitor#0" />
                     <element signature="method#obtainStringConstTag#0;class#ASTCodeGenVisitor#0" />
+                    <element signature="method#getAndIncDispatchCounter#0;class#ASTCodeGenVisitor#0" />
                     <element signature="method#getProtObj#0;class#ASTCodeGenVisitor#0" />
                     <element signature="method#addAttributes#0;class#ASTCodeGenVisitor#0" />
                   </folding>
@@ -212,8 +161,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/tests/tema3/experiments/1test.cl">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+                <state relative-caret-position="75">
+                  <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
                 </state>
               </provider>
             </entry>
@@ -221,35 +170,17 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/tests/tema3/experiments/1test.ref">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="388">
-                  <caret line="284" selection-start-line="284" selection-end-line="284" selection-end-column="26" />
+                <state relative-caret-position="585">
+                  <caret line="306" column="22" selection-start-line="306" selection-start-column="22" selection-end-line="306" selection-end-column="22" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tests/tema3/01-class.s-model">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/tests/tema3/20-static-dispatch.s-model">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-6617">
-                  <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/EXPLICATII.txt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="472">
-                  <caret line="37" column="107" selection-start-line="37" selection-start-column="107" selection-end-line="37" selection-end-column="107" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/trap.handler.nogc">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="77">
-                  <caret line="425" column="20" lean-forward="true" selection-start-line="425" selection-start-column="20" selection-end-line="425" selection-end-column="20" />
+                <state relative-caret-position="72">
+                  <caret line="668" column="41" lean-forward="true" selection-start-line="668" selection-start-column="41" selection-end-line="668" selection-end-column="41" />
                 </state>
               </provider>
             </entry>
@@ -257,21 +188,21 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tests/tema3/01-class.cl">
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/tests/tema3/20-static-dispatch.cl">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="45">
-                  <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+                <state relative-caret-position="15">
+                  <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/tests/tema3/01-class.s">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/tests/tema3/20-static-dispatch.s">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="388">
-                  <caret line="248" column="16" selection-start-line="248" selection-start-column="16" selection-end-line="248" selection-end-column="16" />
+                <state relative-caret-position="522">
+                  <caret line="679" lean-forward="true" selection-start-line="679" selection-end-line="679" />
                 </state>
               </provider>
             </entry>
@@ -315,6 +246,10 @@
       <find>io</find>
       <find>tag</find>
       <find>.globl</find>
+      <find>string_const</find>
+      <find>_dispatch_abo</find>
+      <find>alreadyEx</find>
+      <find>explicit_dispatch</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -323,33 +258,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/cool/compiler/ASTExprArithmNode.java" />
-        <option value="$PROJECT_DIR$/src/cool/compiler/ASTExprAssignNode.java" />
-        <option value="$PROJECT_DIR$/src/cool/compiler/ASTExprBlockNode.java" />
-        <option value="$PROJECT_DIR$/src/cool/compiler/ASTExprCompNode.java" />
-        <option value="$PROJECT_DIR$/src/cool/compiler/ASTExprIfNode.java" />
-        <option value="$PROJECT_DIR$/src/cool/compiler/ASTExprNegNode.java" />
-        <option value="$PROJECT_DIR$/src/cool/compiler/ASTExprNotNode.java" />
-        <option value="$PROJECT_DIR$/src/cool/compiler/ASTExprVoidNode.java" />
-        <option value="$PROJECT_DIR$/src/cool/compiler/ASTExprWhileNode.java" />
-        <option value="$PROJECT_DIR$/src/cool/compiler/ASTExprNewNode.java" />
         <option value="$PROJECT_DIR$/src/cool/compiler/ASTExprIdNode.java" />
         <option value="$PROJECT_DIR$/src/cool/visitors/ASTNopVisitor.java" />
-        <option value="$PROJECT_DIR$/src/cool/compiler/ASTBaseNode.java" />
         <option value="$PROJECT_DIR$/src/cool/structures/CaseScope.java" />
         <option value="$PROJECT_DIR$/src/cool/compiler/ASTExprCaseNode.java" />
         <option value="$PROJECT_DIR$/src/cool/compiler/ASTExprLetNode.java" />
         <option value="$PROJECT_DIR$/src/cool/visitors/ASTSymbolsSolveVisitor2.java" />
-        <option value="$PROJECT_DIR$/src/cool/compiler/ASTExprConstNode.java" />
         <option value="$PROJECT_DIR$/tests/tema2/08-type-relational.cl" />
         <option value="$PROJECT_DIR$/src/cool/structures/TypeSymbol.java" />
         <option value="$PROJECT_DIR$/tests/tema2/09-type-assignment.out" />
         <option value="$PROJECT_DIR$/src/cool/compiler/ASTLetNode.java" />
-        <option value="$PROJECT_DIR$/src/cool/structures/DefaultScope.java" />
-        <option value="$PROJECT_DIR$/src/cool/compiler/ASTExprExprFcallNode.java" />
-        <option value="$PROJECT_DIR$/src/cool/compiler/ASTExprFcallNode.java" />
         <option value="$PROJECT_DIR$/src/cool/compiler/BuildASTVisitor.java" />
-        <option value="$PROJECT_DIR$/src/cool/compiler/ASTFcallNode.java" />
         <option value="$PROJECT_DIR$/src/cool/visitors/ASTSymbolsSolveVisitor.java" />
         <option value="$PROJECT_DIR$/tests/tema2/19-self_type.cl" />
         <option value="$PROJECT_DIR$/tests/tema2/20-basic-classes.ref" />
@@ -358,7 +277,6 @@
         <option value="$PROJECT_DIR$/tests/tema2/21-test1.ref" />
         <option value="$PROJECT_DIR$/tests/tema2/21-test1.cl" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/cool/visitors/ASTTypeCheckingVisitor.java" />
         <option value="$PROJECT_DIR$/src/cool/visitors/ASTSymbolsDefineVisitor.java" />
         <option value="$PROJECT_DIR$/tests/tema3/experiments/test1.cl" />
         <option value="$PROJECT_DIR$/tests/tema3/experiments/2test.cl" />
@@ -366,14 +284,31 @@
         <option value="$PROJECT_DIR$/src/cool/tester/Tester2.java" />
         <option value="$PROJECT_DIR$/tests/tema3/01-class.cl" />
         <option value="$PROJECT_DIR$/tests/tema3/experiments/1test.ref" />
-        <option value="$PROJECT_DIR$/src/cool/compiler/Compiler.java" />
         <option value="$PROJECT_DIR$/trap.handler.nogc" />
         <option value="$PROJECT_DIR$/tests/tema3/01-class.s" />
-        <option value="$PROJECT_DIR$/EXPLICATII.txt" />
+        <option value="$PROJECT_DIR$/tests/tema3/03-attr-init.s" />
+        <option value="$PROJECT_DIR$/src/cool/compiler/ASTAttributeNode.java" />
+        <option value="$PROJECT_DIR$/src/cool/compiler/ASTExprConstNode.java" />
+        <option value="$PROJECT_DIR$/src/cool/compiler/ASTExprFcallNode.java" />
+        <option value="$PROJECT_DIR$/src/cool/compiler/ASTExprExprFcallNode.java" />
+        <option value="$PROJECT_DIR$/src/cool/compiler/ASTFcallNode.java" />
+        <option value="$PROJECT_DIR$/src/cool/compiler/ASTClassNode.java" />
+        <option value="$PROJECT_DIR$/src/cool/compiler/ASTExprAssignNode.java" />
+        <option value="$PROJECT_DIR$/src/cool/compiler/ASTExprCompNode.java" />
+        <option value="$PROJECT_DIR$/src/cool/compiler/ASTExprNegNode.java" />
+        <option value="$PROJECT_DIR$/src/cool/compiler/ASTBaseNode.java" />
+        <option value="$PROJECT_DIR$/src/cool/visitors/ASTTypeCheckingVisitor.java" />
         <option value="$PROJECT_DIR$/tests/tema3/experiments/1test.cl" />
+        <option value="$PROJECT_DIR$/tests/tema3/07-dispatch-on-void-abort.cl" />
+        <option value="$PROJECT_DIR$/src/cool/structures/Scope.java" />
+        <option value="$PROJECT_DIR$/src/cool/structures/DefaultScope.java" />
         <option value="$PROJECT_DIR$/src/cool/structures/ClassSymbol.java" />
+        <option value="$PROJECT_DIR$/src/cool/structures/MethodSymbol.java" />
+        <option value="$PROJECT_DIR$/src/cool/compiler/ASTManyExprNode.java" />
         <option value="$PROJECT_DIR$/src/cool/codegen/cgen.stg" />
+        <option value="$PROJECT_DIR$/src/cool/compiler/Compiler.java" />
         <option value="$PROJECT_DIR$/src/cool/visitors/ASTCodeGenVisitor.java" />
+        <option value="$PROJECT_DIR$/EXPLICATII.txt" />
       </list>
     </option>
   </component>
@@ -413,6 +348,17 @@
             <path>
               <item name="Tema1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tema1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tema1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tema1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="cool" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tema1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tema1" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -438,21 +384,21 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests/tema3" />
+      <recent name="$PROJECT_DIR$/src/cool/codegen" />
       <recent name="$PROJECT_DIR$/tests/tema3/experiments" />
       <recent name="$PROJECT_DIR$/tests/tema3/tmp" />
+      <recent name="$PROJECT_DIR$/tests/tema2" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="cool.visitors" />
       <recent name="cool.structures" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/cool/codegen" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/tests/tema3/experiments" />
-      <recent name="$PROJECT_DIR$/tests/tema3" />
       <recent name="$PROJECT_DIR$/tests/tema3/tmp" />
-      <recent name="$PROJECT_DIR$/tests/tema2" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -510,12 +456,12 @@
       <workItem from="1548279142081" duration="352000" />
       <workItem from="1548279513767" duration="4419000" />
       <workItem from="1549203390101" duration="27000" />
-      <workItem from="1549203464993" duration="37635000" />
+      <workItem from="1549203464993" duration="79104000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="248740000" />
+    <option name="totallyTimeSpent" value="290209000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -537,7 +483,7 @@
       <window_info id="Favorites" order="4" sideWeight="0.50252104" side_tool="true" weight="0.14941892" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3574514" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3574514" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39956802" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -545,7 +491,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32935324" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3963283" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3099352" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Dependency Viewer" order="12" weight="0.32937366" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32829374" />
@@ -597,30 +543,199 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/cool/structures/MethodSymbol.java">
+    <entry file="file://$PROJECT_DIR$/tests/tema3/06-dispatch-implicit-abort.s-model">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        <state relative-caret-position="614">
+          <caret line="590" column="25" selection-start-line="590" selection-start-column="25" selection-end-line="590" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cool/compiler/BuildASTVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="260" column="56" selection-start-line="260" selection-start-column="39" selection-end-line="260" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cool/compiler/ASTExprFcallNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="15" lean-forward="true" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/tema3/06-dispatch-implicit-abort.s">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="596" column="19" selection-start-line="596" selection-start-column="19" selection-end-line="596" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cool/compiler/ASTExprArithmNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cool/compiler/ASTExprAssignNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#437#438#0" expanded="true" />
+            <element signature="e#457#458#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/tema2/20-basic-classes.ref">
+    <entry file="file://$PROJECT_DIR$/src/cool/compiler/ASTExprCompNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        <state relative-caret-position="315">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+          <folding>
+            <element signature="e#424#425#0" expanded="true" />
+            <element signature="e#444#445#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/tema2/20-basic-classes.out">
+    <entry file="file://$PROJECT_DIR$/src/cool/compiler/ASTExprNegNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding>
+            <element signature="e#346#347#0" expanded="true" />
+            <element signature="e#366#367#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cool/compiler/ASTBaseNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cool/compiler/ASTExprIdNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/tema3/07-dispatch-on-void-abort.ref">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cool/compiler/ASTManyExprNode.java">
+    <entry file="file://$PROJECT_DIR$/src/cool/visitors/ASTSymbolsDefineVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-375">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="method#visit#0;class#ASTSymbolsDefineVisitor#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cool/visitors/ASTTypeCheckingVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="100" column="42" lean-forward="true" selection-start-line="100" selection-start-column="42" selection-end-line="100" selection-end-column="42" />
+          <folding>
+            <element signature="method#isOperand#0;class#ASTTypeCheckingVisitor#0" />
+            <element signature="method#getEnclosingClass#0;class#ASTTypeCheckingVisitor#0" />
+            <element signature="method#visit#0;class#ASTTypeCheckingVisitor#0" />
+            <element signature="method#visit#1;class#ASTTypeCheckingVisitor#0" />
+            <element signature="method#visit#3;class#ASTTypeCheckingVisitor#0" />
+            <element signature="method#visit#4;class#ASTTypeCheckingVisitor#0" />
+            <element signature="method#visit#5;class#ASTTypeCheckingVisitor#0" />
+            <element signature="method#visit#6;class#ASTTypeCheckingVisitor#0" />
+            <element signature="method#visit#7;class#ASTTypeCheckingVisitor#0" />
+            <element signature="method#visit#8;class#ASTTypeCheckingVisitor#0" />
+            <element signature="method#visit#9;class#ASTTypeCheckingVisitor#0" />
+            <element signature="method#visit#10;class#ASTTypeCheckingVisitor#0" />
+            <element signature="method#visit#11;class#ASTTypeCheckingVisitor#0" />
+            <element signature="method#visit#12;class#ASTTypeCheckingVisitor#0" />
+            <element signature="method#visit#13;class#ASTTypeCheckingVisitor#0" />
+            <element signature="method#visit#14;class#ASTTypeCheckingVisitor#0" />
+            <element signature="method#visit#15;class#ASTTypeCheckingVisitor#0" />
+            <element signature="method#visit#16;class#ASTTypeCheckingVisitor#0" />
+            <element signature="method#visit#17;class#ASTTypeCheckingVisitor#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cool/structures/Scope.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cool/structures/DefaultScope.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="53" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cool/structures/ClassSymbol.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="202" column="20" selection-start-line="202" selection-start-column="20" selection-end-line="202" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#ClassSymbol#0;class#ClassSymbol#0" />
+            <element signature="method#buildDispatchTable#0;class#ClassSymbol#0" />
+            <element signature="method#buildPrototype#0;class#ClassSymbol#0" />
+            <element signature="method#isChildOf#0;class#ClassSymbol#0" />
+            <element signature="method#getCommonType#0;class#ClassSymbol#0" />
+            <element signature="method#add#0;class#ClassSymbol#0" />
+            <element signature="method#lookupMethod#0;class#ClassSymbol#0" />
+            <element signature="method#attrExists#0;class#ClassSymbol#0" />
+            <element signature="method#methodExists#0;class#ClassSymbol#0" />
+            <element signature="method#getAllClassParents#0;class#ClassSymbol#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cool/structures/MethodSymbol.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding>
+            <element signature="e#1539#1540#0" expanded="true" />
+            <element signature="e#1568#1569#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/tema3/07-dispatch-on-void-abort.s-model">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="565" column="22" selection-start-line="565" selection-start-column="22" selection-end-line="565" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/tema3/07-dispatch-on-void-abort.cl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="22" lean-forward="true" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/tema3/07-dispatch-on-void-abort.s">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="588" column="19" lean-forward="true" selection-start-line="588" selection-start-column="19" selection-end-line="588" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/tema3/experiments/1test.cl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -631,109 +746,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cool/compiler/ASTMethodNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/tema2/20-basic-classes.cl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cool/structures/SymbolTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="108" column="51" selection-start-line="108" selection-start-column="51" selection-end-line="108" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/tema2/21-test1.cl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="103" selection-start-line="8" selection-start-column="103" selection-end-line="8" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/tema2/21-test1.ref">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" selection-start-column="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/tema3/tmp/04-method-def.s">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/tema3/tmp/04-method-def.out">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/tema3/tmp/04-method-def.s-model">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cool/visitors/ASTVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="43" column="9" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cool/compiler/ASTFcallNode.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="e#489#490#0" expanded="true" />
+            <element signature="e#509#510#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/tema3/tmp/30-case-on-void.cl">
+    <entry file="file://$PROJECT_DIR$/tests/tema3/08-dispatch-block-IO.ref">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/tema3/08-dispatch-block-IO.s">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="2" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+        <state relative-caret-position="267">
+          <caret line="629" column="17" lean-forward="true" selection-start-line="629" selection-start-column="17" selection-end-line="629" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/tema3/tmp/02-attr-no-init.ref">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/a" />
-    <entry file="file://$PROJECT_DIR$/tests/tema3/experiments/test1.out" />
-    <entry file="file://$PROJECT_DIR$/tests/tema3/experiments/e">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/tema3/experiments/2test.ref">
+    <entry file="file://$PROJECT_DIR$/tests/tema3/08-dispatch-block-IO.s-model">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="320" column="21" lean-forward="true" selection-start-line="320" selection-start-column="21" selection-end-line="320" selection-end-column="21" />
+        <state relative-caret-position="630">
+          <caret line="646" selection-start-line="646" selection-end-line="646" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/tema3/tmp/01-class.out">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/tema3/tmp/01-class.s">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/t3_tester.sh">
+    <entry file="file://$PROJECT_DIR$/src/cool/compiler/Compiler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="26" column="6" lean-forward="true" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+        <state relative-caret-position="333">
+          <caret line="189" column="47" lean-forward="true" selection-start-line="189" selection-start-column="47" selection-end-line="189" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cool/tester/Tester2.java">
+    <entry file="file://$PROJECT_DIR$/tests/tema3/08-dispatch-block-IO.cl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+        <state relative-caret-position="465">
+          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/tema3/01-class.ref">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/tests/tema3/10-dispatch-Object.cl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/tema3/01-class.out">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/cool/codegen/cgen.stg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="658">
+          <caret line="205" selection-start-line="205" selection-end-line="205" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cool/visitors/ASTNopVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+        <state relative-caret-position="189">
+          <caret line="77" column="16" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
           <folding>
             <element signature="e#884#885#0" expanded="true" />
             <element signature="e#923#924#0" expanded="true" />
@@ -745,253 +824,132 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cool/visitors/ASTSymbolsSolveVisitor.java">
+    <entry file="file://$PROJECT_DIR$/tests/tema3/08-dispatch-block-IO.out">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/tema3/10-dispatch-Object.out">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="160" column="48" selection-start-line="160" selection-start-column="48" selection-end-line="160" selection-end-column="48" />
-          <folding>
-            <element signature="method#visit#0;class#ASTSymbolsSolveVisitor#0" />
-            <element signature="method#visit#1;class#ASTSymbolsSolveVisitor#0" />
-            <element signature="method#visit#2;class#ASTSymbolsSolveVisitor#0" />
-            <element signature="method#visit#3;class#ASTSymbolsSolveVisitor#0" />
-            <element signature="method#visit#4;class#ASTSymbolsSolveVisitor#0" />
-            <element signature="method#visit#5;class#ASTSymbolsSolveVisitor#0" />
-          </folding>
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cool/visitors/ASTSymbolsDefineVisitor.java">
+    <entry file="file://$PROJECT_DIR$/tests/tema3/10-dispatch-Object.ref">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/tema3/12-attr-no-init-ref.out">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/tema3/12-attr-no-init-ref.ref">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/tema3/10-dispatch-Object.s-model">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="14" column="41" lean-forward="true" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#visit#1;class#ASTSymbolsDefineVisitor#0" />
-            <element signature="method#visit#2;class#ASTSymbolsDefineVisitor#0" />
-            <element signature="method#visit#4;class#ASTSymbolsDefineVisitor#0" />
-            <element signature="method#visit#5;class#ASTSymbolsDefineVisitor#0" />
-            <element signature="method#visit#6;class#ASTSymbolsDefineVisitor#0" />
-            <element signature="method#visit#7;class#ASTSymbolsDefineVisitor#0" />
-            <element signature="method#visit#8;class#ASTSymbolsDefineVisitor#0" />
-            <element signature="method#visit#9;class#ASTSymbolsDefineVisitor#0" />
-            <element signature="method#visit#10;class#ASTSymbolsDefineVisitor#0" />
-            <element signature="method#visit#11;class#ASTSymbolsDefineVisitor#0" />
-            <element signature="method#visit#12;class#ASTSymbolsDefineVisitor#0" />
-            <element signature="method#visit#13;class#ASTSymbolsDefineVisitor#0" />
-            <element signature="method#visit#14;class#ASTSymbolsDefineVisitor#0" />
-            <element signature="method#visit#15;class#ASTSymbolsDefineVisitor#0" />
-            <element signature="method#visit#16;class#ASTSymbolsDefineVisitor#0" />
-            <element signature="method#visit#17;class#ASTSymbolsDefineVisitor#0" />
-            <element signature="method#visit#18;class#ASTSymbolsDefineVisitor#0" />
-            <element signature="method#visit#19;class#ASTSymbolsDefineVisitor#0" />
-            <element signature="method#visit#20;class#ASTSymbolsDefineVisitor#0" />
-            <element signature="method#visit#21;class#ASTSymbolsDefineVisitor#0" />
-            <element signature="method#visit#22;class#ASTSymbolsDefineVisitor#0" />
-            <element signature="method#visit#23;class#ASTSymbolsDefineVisitor#0" />
-            <element signature="method#visit#24;class#ASTSymbolsDefineVisitor#0" />
-          </folding>
+        <state relative-caret-position="402">
+          <caret line="718" column="38" selection-start-line="718" selection-start-column="38" selection-end-line="718" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cool/visitors/ASTSymbolsSolveVisitor2.java">
+    <entry file="file://$PROJECT_DIR$/tests/tema3/10-dispatch-Object.s">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#visit#0;class#ASTSymbolsSolveVisitor2#0" />
-            <element signature="method#visit#1;class#ASTSymbolsSolveVisitor2#0" />
-          </folding>
-        </state>
+        <state relative-caret-position="-10110" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cool/visitors/ASTTypeCheckingVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="187" column="45" selection-start-line="187" selection-start-column="45" selection-end-line="187" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#isOperand#0;class#ASTTypeCheckingVisitor#0" />
-            <element signature="method#getEnclosingClass#0;class#ASTTypeCheckingVisitor#0" />
-            <element signature="method#visit#0;class#ASTTypeCheckingVisitor#0" />
-            <element signature="method#visit#1;class#ASTTypeCheckingVisitor#0" />
-            <element signature="method#visit#2;class#ASTTypeCheckingVisitor#0" />
-            <element signature="method#visit#3;class#ASTTypeCheckingVisitor#0" />
-            <element signature="method#visit#4;class#ASTTypeCheckingVisitor#0" />
-            <element signature="method#visit#5;class#ASTTypeCheckingVisitor#0" />
-            <element signature="method#visit#6;class#ASTTypeCheckingVisitor#0" />
-            <element signature="method#visit#7;class#ASTTypeCheckingVisitor#0" />
-            <element signature="method#visit#8;class#ASTTypeCheckingVisitor#0" />
-            <element signature="method#visit#9;class#ASTTypeCheckingVisitor#0" />
-            <element signature="method#visit#10;class#ASTTypeCheckingVisitor#0" />
-            <element signature="method#visit#11;class#ASTTypeCheckingVisitor#0" />
-            <element signature="method#visit#12;class#ASTTypeCheckingVisitor#0" />
-            <element signature="method#visit#14;class#ASTTypeCheckingVisitor#0" />
-            <element signature="method#visit#15;class#ASTTypeCheckingVisitor#0" />
-            <element signature="method#visit#16;class#ASTTypeCheckingVisitor#0" />
-            <element signature="method#visit#17;class#ASTTypeCheckingVisitor#0" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/tests/tema3/12-attr-no-init-ref.cl">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/tema3/experiments/3test.cl">
+    <entry file="file://$PROJECT_DIR$/src/cool/compiler/ASTManyExprNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/tema3/experiments/3test.ref">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="869">
-          <caret line="238" column="13" selection-start-line="238" selection-start-column="13" selection-end-line="238" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/tema3/experiments/2test.cl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="15">
-            <caret line="1" selection-start-line="1" selection-end-line="1" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cool/compiler/Compiler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="749">
-          <caret line="193" column="46" selection-start-line="193" selection-start-column="46" selection-end-line="193" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jrt:///usr/lib/jvm/java-1.11.0-openjdk-amd64!/java.base/java/util/HashMap.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="758" column="16" selection-start-line="758" selection-start-column="16" selection-end-line="758" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/tema3/tmp/01-class.ref">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/tema3/tmp/01-class.s-model">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EXPLICATII.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="37" column="107" selection-start-line="37" selection-start-column="107" selection-end-line="37" selection-end-column="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/tema1/01-class.cl">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/tema3/tmp/01-class.cl">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cool/structures/ClassSymbol.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="160" column="55" selection-start-line="160" selection-start-column="55" selection-end-line="160" selection-end-column="55" />
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#isChildOf#0;class#ClassSymbol#0" />
-            <element signature="method#getCommonType#0;class#ClassSymbol#0" />
-            <element signature="method#add#0;class#ClassSymbol#0" />
-            <element signature="method#lookup#0;class#ClassSymbol#0" />
-            <element signature="method#lookupMethod#0;class#ClassSymbol#0" />
-            <element signature="method#attrExists#0;class#ClassSymbol#0" />
-            <element signature="method#methodExists#0;class#ClassSymbol#0" />
-            <element signature="method#getAllClassParents#0;class#ClassSymbol#0" />
+            <element signature="e#390#391#0" expanded="true" />
+            <element signature="e#410#411#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/tema3/01-class.cl">
+    <entry file="file://$PROJECT_DIR$/tests/tema3/12-attr-no-init-ref.s-model">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trap.handler.nogc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="425" column="20" lean-forward="true" selection-start-line="425" selection-start-column="20" selection-end-line="425" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/tema3/01-class.s-model">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6617">
-          <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/tema3/01-class.s">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="248" column="16" selection-start-line="248" selection-start-column="16" selection-end-line="248" selection-end-column="16" />
-        </state>
+        <state relative-caret-position="-8898" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/tema3/experiments/1test.ref">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="284" selection-start-line="284" selection-end-line="284" selection-end-column="26" />
+        <state relative-caret-position="585">
+          <caret line="306" column="22" selection-start-line="306" selection-start-column="22" selection-end-line="306" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/tema3/experiments/1test.cl">
+    <entry file="file://$PROJECT_DIR$/tests/tema3/12-attr-no-init-ref.s">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-        </state>
+        <state relative-caret-position="-8775" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cool/codegen/cgen.stg">
+    <entry file="file://$PROJECT_DIR$/tests/tema3/20-static-dispatch.ref">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/tema3/20-static-dispatch.out">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EXPLICATII.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="175" column="16" selection-start-line="175" selection-start-column="16" selection-end-line="175" selection-end-column="16" />
+        <state relative-caret-position="582">
+          <caret line="48" column="32" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cool/visitors/ASTCodeGenVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="212" column="66" selection-start-line="212" selection-start-column="66" selection-end-line="212" selection-end-column="66" />
+        <state relative-caret-position="378">
+          <caret line="202" column="62" selection-start-line="202" selection-start-column="62" selection-end-line="202" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getStringConst#0;class#ASTCodeGenVisitor#0" />
-            <element signature="e#2089#2123#1" />
-            <element signature="e#3689#3690#0" expanded="true" />
+            <element signature="method#ASTCodeGenVisitor#0;class#ASTCodeGenVisitor#0" />
+            <element signature="method#visit#0;class#ASTCodeGenVisitor#0" />
+            <element signature="method#visit#1;class#ASTCodeGenVisitor#0" />
+            <element signature="method#visit#3;class#ASTCodeGenVisitor#0" />
+            <element signature="method#visit#3;class#ASTCodeGenVisitor#0" />
+            <element signature="method#visit#2;class#ASTCodeGenVisitor#0" />
+            <element signature="method#computeResultMIPS#0;class#ASTCodeGenVisitor#0" />
             <element signature="method#getResultMIPS#0;class#ASTCodeGenVisitor#0" />
             <element signature="e#3778#3822#1" />
-            <element signature="e#8582#8583#0" expanded="true" />
+            <element signature="e#17710#17711#0" expanded="true" />
+            <element signature="method#getAndIncClassTagCounter#0;class#ASTCodeGenVisitor#0" />
             <element signature="e#4000#4047#1" />
-            <element signature="e#8807#8808#0" expanded="true" />
+            <element signature="e#17935#17936#0" expanded="true" />
             <element signature="method#getAndIncIntConstTagCounter#0;class#ASTCodeGenVisitor#0" />
             <element signature="method#obtainIntConstTag#0;class#ASTCodeGenVisitor#0" />
             <element signature="e#4237#4287#1" />
-            <element signature="e#9348#9349#0" expanded="true" />
+            <element signature="e#18476#18477#0" expanded="true" />
             <element signature="method#getAndIncStringConstTagCounter#0;class#ASTCodeGenVisitor#0" />
             <element signature="method#obtainStringConstTag#0;class#ASTCodeGenVisitor#0" />
+            <element signature="method#getAndIncDispatchCounter#0;class#ASTCodeGenVisitor#0" />
             <element signature="method#getProtObj#0;class#ASTCodeGenVisitor#0" />
             <element signature="method#addAttributes#0;class#ASTCodeGenVisitor#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/tema3/20-static-dispatch.s-model">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="668" column="41" lean-forward="true" selection-start-line="668" selection-start-column="41" selection-end-line="668" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/tema3/20-static-dispatch.s">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="679" lean-forward="true" selection-start-line="679" selection-end-line="679" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/tema3/20-static-dispatch.cl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
         </state>
       </provider>
     </entry>

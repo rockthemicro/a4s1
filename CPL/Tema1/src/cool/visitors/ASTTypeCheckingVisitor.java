@@ -101,6 +101,8 @@ public class ASTTypeCheckingVisitor extends ASTNopVisitor {
             lastTypeChecked = "SELF_TYPE";
 
         }
+
+        node.type = lastTypeChecked;
     }
 
     @Override

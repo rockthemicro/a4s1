@@ -59,6 +59,13 @@ str_const5:
     .align  2
 str_const6:
     .word   3
+    .word   7
+    .word   String_dispTab
+    .word   int_const5
+    .asciiz "1test.cl"
+    .align  2
+str_const7:
+    .word   3
     .word   6
     .word   String_dispTab
     .word   int_const4
@@ -89,6 +96,11 @@ int_const4:
     .word   4
     .word   Int_dispTab
     .word   4
+int_const5:
+    .word   2
+    .word   4
+    .word   Int_dispTab
+    .word   8
 bool_const0:
     .word   4
     .word   4
@@ -105,7 +117,7 @@ class_nameTab:
     .word   str_const3
     .word   str_const4
     .word   str_const5
-    .word   str_const6
+    .word   str_const7
 class_objTab:
     .word   Object_protObj
     .word   Object_init
@@ -150,7 +162,7 @@ Main_protObj:
     .word   5
     .word   4
     .word   Main_dispTab
-    .word   str_const0
+    .word   0
 Object_dispTab:
     .word   Object.abort
     .word   Object.type_name
@@ -282,9 +294,18 @@ Main.main:
     sw      $ra 4($sp)
     addiu   $fp $sp 4
     move    $s0 $a0
-    la      $a0 int_const0
+    lw      $a0 12($fp)
+    bnez    $a0 dispatch0
+    la      $a0 str_const6
+    li      $t1 6
+    jal     _dispatch_abort
+dispatch0:
+    lw      $t1 8($a0)   # dispatch table
+    lw      $t1 0($t1)   # method offset
+    jalr    $t1
     lw      $fp 12($sp)
     lw      $s0 8($sp)
     lw      $ra 4($sp)
     addiu   $sp $sp 12
+    addiu   $sp $sp 4    # params free
     jr      $ra

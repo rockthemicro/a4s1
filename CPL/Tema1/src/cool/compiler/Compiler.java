@@ -187,6 +187,7 @@ public class Compiler {
             return;
         }
 
+        // cand incarci pe vmchecker, taie src/
         var group = new STGroupFile("src/cool/codegen/cgen.stg");
         var astCodeGenVisitor = new ASTCodeGenVisitor(group);
         ast.accept(astCodeGenVisitor);

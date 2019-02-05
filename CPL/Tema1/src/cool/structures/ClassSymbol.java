@@ -1,5 +1,6 @@
 package cool.structures;
 
+import cool.compiler.ASTAttributeNode;
 import cool.compiler.ASTClassNode;
 
 import java.util.ArrayList;
@@ -7,6 +8,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
 
+@SuppressWarnings("Duplicates")
 public class ClassSymbol extends TypeSymbol implements Scope {
 
     // For implementing Scope
@@ -16,10 +18,73 @@ public class ClassSymbol extends TypeSymbol implements Scope {
 
     public ASTClassNode astClassNode = null;
 
-	public ClassSymbol(String name, Scope parent) {
+    private Boolean dispatchTableBuilt = false;
+    public ArrayList<String> dispatchMethodNames = new ArrayList<>();
+
+    private Boolean prototypeBuilt = false;
+    public ArrayList<String> attrTypes = new ArrayList<>();
+    public ArrayList<String> attrNames = new ArrayList<>();
+
+    public ClassSymbol(String name, Scope parent) {
 		super(name);
 		this.parent = parent;
 	}
+
+
+    public void buildDispatchTable() {
+        if (dispatchTableBuilt)
+            return;
+
+        String className = this.getName();
+
+        ClassSymbol cs = (ClassSymbol) SymbolTable.globals.lookup(className);
+        ArrayList<ClassSymbol> classParents = cs.getAllClassParents();
+
+        for (int i = 0; i < classParents.size(); i++) {
+            ClassSymbol parentOrCs = classParents.get(i);
+            Set<String> methods = parentOrCs.getMethods();
+            for (String method : methods) {
+                boolean alreadyExists = false;
+
+                // daca metoda este suprascrisa mai jos in lantul de mostenire, nu o mai marcam
+                // pentru clasa curenta 'className'
+                for (int j = i + 1; j < classParents.size(); j++) {
+                    Set<String> tmpMethods = classParents.get(j).getMethods();
+                    if (tmpMethods.contains(method)) {
+                        alreadyExists = true;
+                        break;
+                    }
+                }
+
+                if (!alreadyExists) {
+                    this.dispatchMethodNames.add(parentOrCs.getName() + "." + method);
+                }
+            }
+        }
+
+        this.dispatchTableBuilt = true;
+    }
+
+    public void buildPrototype() {
+        if (prototypeBuilt)
+            return;
+
+        ArrayList<ClassSymbol> classParents = this.getAllClassParents();
+        for (ClassSymbol parentOrCs : classParents) {
+
+            if (parentOrCs.astClassNode != null) {
+                /* obtinem atributele unui parinte (sau ale noastre) */
+                ArrayList<ASTAttributeNode> attributes = parentOrCs.astClassNode.getAttributes();
+                for (var attribute : attributes) {
+                    attrNames.add(attribute.id);
+                    attrTypes.add(attribute.type);
+
+                }
+            }
+        }
+
+        this.prototypeBuilt = true;
+    }
 
     public boolean isChildOf(String type) {
 	    if (this.getName().equals("SELF_TYPE") && type.equals("SELF_TYPE"))
@@ -123,6 +188,19 @@ public class ClassSymbol extends TypeSymbol implements Scope {
     @Override
     public Scope getParent() {
         return parent;
+    }
+
+    @Override
+    public Scope lookupScope(String str) {
+        var sym = symbols.get(str);
+
+        if (sym != null)
+            return this;
+
+        if (parent != null)
+            return parent.lookupScope(str);
+
+        return null;
     }
 
     public void setParent(Scope parent) {

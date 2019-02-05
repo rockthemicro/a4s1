@@ -23,11 +23,5 @@ public class ASTExprAssignNode extends ASTBaseNode {
 	@Override
 	public void accept(ASTVisitor v) {
 		v.visit(this);
-
-		/*
-		if (expr != null) {
-			expr.accept(v);
-		}
-		*/
 	}
 }

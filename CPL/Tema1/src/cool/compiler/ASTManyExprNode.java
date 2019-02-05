@@ -22,11 +22,5 @@ public class ASTManyExprNode extends ASTBaseNode {
 	@Override
 	public void accept(ASTVisitor v) {
 		v.visit(this);
-
-		/*
-		for (var child : children) {
-			child.accept(v);
-		}
-		*/
 	}
 }

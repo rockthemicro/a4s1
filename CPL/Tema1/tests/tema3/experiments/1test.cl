@@ -1,5 +1,8 @@
 
 class Main {
-    s : String;
-    main() : Object { 0 };
+    x : SELF_TYPE;
+
+    main(a : Object) : Object {
+        a.abort()
+    };
 };

@@ -2,6 +2,7 @@ package cool.compiler;
 
 import cool.visitors.ASTVisitor;
 
+// modeleaza apeluri de genul f()
 public class ASTExprFcallNode extends ASTBaseNode {
 	public ASTFcallNode fcall = null;
 	

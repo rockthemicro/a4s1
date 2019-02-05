@@ -23,12 +23,6 @@ public class ASTFcallNode extends ASTBaseNode {
 	@Override
 	public void accept(ASTVisitor v) {
 		v.visit(this);
-
-		/*
-		if (params != null) {
-			params.accept(v);
-		}
-		*/
 	}
 
 }
