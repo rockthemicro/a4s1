@@ -33,7 +33,7 @@ class Main inherits E {
         in {
             out_int(a.f());
             out_int(b.f());
-            out_int(c@A.f());
+            out_int(c.f());
         }
     };
 };
